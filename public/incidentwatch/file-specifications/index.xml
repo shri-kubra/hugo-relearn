@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IncidentWatch File Specifications :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/incidentwatch/file-specifications/index.html</link>
+    <description>IncidentWatch uses data feeds for asset data. Asset files define the locations and properties of the assets to be displayed on the IncidentWatch map.&#xA;KUBRA recommends providing asset files at least once per week and no more than once per day.&#xA;Providing Data Feeds Asset files must be delivered via HTTPS POST request. The POST requests require Basic Authentication. This is provided as the Authentication header value with the string value Basic followed by the base64-encoded username and password of a user that has access to upload files, in the format username:password.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/incidentwatch/file-specifications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asset File</title>
+      <link>http://localhost:1313/incidentwatch/file-specifications/asset-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/incidentwatch/file-specifications/asset-file/index.html</guid>
+      <description>Introduction This document outlines the structure of an asset file. Asset files are assumed to be complete snapshots of asset data, as opposed to incremental updates to asset data. IncidentWatch uses the term “asset” to refer to items for which an Organization wants to accept incident reports. For example, these could be streetlights, area lights, traffic lights, signs, water pipes, meters, poles, transformers, bus stops, buildings, or roads.&#xA;Asset files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "startTime": "2016-12-15T13:45:30",
+        "crewStatus": "assigned",
+        "id": "OUT456",
+        "type": "X",
+        "pplAff": 100,
+        "numberOfHazards": 1
+      },
+      "geometry": {
+        "coordinates": [
+          -111.92232168155347,
+          33.417296979668095
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "startTime": "2016-12-15T13:55:30",
+        "crewStatus": "assigned",
+        "id": "OUT457",
+        "type": "WD",
+        "pplAff": 250,
+        "numberOfHazards": 3
+      },
+      "geometry": {
+        "coordinates": [
+          -111.7411580594887,
+          33.37573206036812
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "startTime": "2016-12-15T14:05:30",
+        "crewStatus": "assigned",
+        "id": "OUT458",
+        "type": "PD",
+        "pplAff": 14051,
+        "numberOfHazards": 21
+      },
+      "geometry": {
+        "coordinates": [
+          -111.86008990298167,
+          33.31103602225062
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "startTime": "2016-12-15T14:15:30",
+        "crewStatus": "assigned",
+        "id": "OUT459",
+        "type": "F0",
+        "pplAff": 10,
+        "numberOfHazards": 1
+      },
+      "geometry": {
+        "coordinates": [
+          -111.9983827442525,
+          33.43345574523288
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "startTime": "2016-12-15T14:25:30",
+        "crewStatus": "assigned",
+        "id": "OUT460",
+        "type": "LW",
+        "pplAff": 50,
+        "numberOfHazards": 1
+      },
+      "geometry": {
+        "coordinates": [
+          -110.92050773256545,
+          32.376188232851035
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "PHX01",
+      "latitude": 33.468867,
+      "longitude": -112.050206,
+      "customersServed": 2,
+      "areas": [
+        { "areaId": "05", "areaType": "county"},
+        { "areaId": "85006", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "PHX02",
+      "latitude": 33.48519,
+      "longitude": -112.087285,
+      "customersServed": 3,
+      "areas": [
+        { "areaId": "05", "areaType": "county"},
+        { "areaId": "85013", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "PHX03",
+      "latitude": "33.485190",
+      "longitude": "-112.087285",
+      "customersServed": 2,
+      "areas": [
+        { "areaId": "05", "areaType": "county"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "SCOTTS01",
+      "latitude": "33.480322",
+      "longitude": "-111.922490",
+      "customersServed": 1,
+      "areas": [
+        { "areaId": "05", "areaType": "county"},
+        { "areaId": "85013", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "SCOTTS02",
+      "latitude": "33.468580",
+      "longitude": "-111.920086",
+      "customersServed": 3,
+      "areas": [
+        { "areaId": "05", "areaType": "county"},
+        { "areaId": "85013", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "SCOTTS03",
+      "latitude": "33.46653",
+      "longitude": "-111.92245",
+      "customersServed": 1,
+      "areas": [
+        { "areaId": "05", "areaType": "county"},
+        { "areaId": "85013", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "SANC001",
+      "latitude": "33.069633",
+      "longitude": "-110.261267",
+      "customersServed": null,
+      "areas": [
+        { "areaId": "03", "areaType": "county"},
+        { "areaId": "85530", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "SANC002",
+      "latitude": "33.063568",
+      "longitude": "-110.289686",
+      "customersServed": 1,
+      "areas": [
+        { "areaId": "03", "areaType": "county"},
+        { "areaId": "85530", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "TUCSON01",
+      "latitude": "32.191540",
+      "longitude": "-110.961272",
+      "customersServed": null,
+      "areas": [
+        { "areaId": "15", "areaType": "county"},
+        { "areaId": "85713", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    },
+    {
+      "id": "TUCSON02",
+      "latitude": "32.188264",
+      "longitude": "-110.930306",
+      "customersServed": 1,
+      "areas": [
+        { "areaId": "15", "areaType": "county"},
+        { "areaId": "85013", "areaType": "zip"}
+      ],
+      "regionCode": "AZ"
+    }
+  ]
+}

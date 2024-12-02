@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<catalog>
+  <plannedOutages>
+    <plannedOutage>
+      <id>PO-PHX01</id>
+      <cause>Tree Trimming</cause>
+      <comments></comments>
+      <start>2017-04-05T13:27:06.974Z</start>
+      <end>2017-04-05T17:27:06.974Z</end>
+      <duration>14400</duration>
+      <updatedAt>2017-04-05T17:27:01.000Z</updatedAt>
+      <customersAffected>10</customersAffected>
+      <metadata>
+        <internalNote>Vegetation Management</internalNote>
+        <affectedTransformers>5</affectedTransformers>
+      </metadata>
+      <affectedDeliveryNodes>
+        <dnId>PHX01</dnId>
+      </affectedDeliveryNodes>
+      <geometry>MULTIPOLYGON(((-111.49 34.50,-114.91 34.50,-114.91 31.28,-111.49 31.28,-111.49 34.50)),((-113.577 34.610,-112.598 35.411,-113.576 35.411,-113.577 34.610)))</geometry>
+    </plannedOutage>
+    <plannedOutage>
+      <id>PO-PHX02</id>
+      <cause>Equipment Maintenance</cause>
+      <comments>Replacing Pole</comments>
+      <start>2017-04-05T08:13:00.000Z</start>
+      <end>2017-04-05T21:30:00.000Z</end>
+      <duration>47820</duration>
+      <updatedAt>2017-04-05T17:27:01.000Z</updatedAt>
+      <customersAffected></customersAffected>
+      <metadata>
+        <internalNote></internalNote>
+        <affectedTransformers>1</affectedTransformers>
+      </metadata>
+      <affectedDeliveryNodes>
+        <dnId>PHX02</dnId>
+      </affectedDeliveryNodes>
+    </plannedOutage>
+  </plannedOutages>
+</catalog>

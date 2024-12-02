@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="Notifi uses message templates for proactive messages that include static content and data elements. The Template Manager tool allows you to review the content of these message templates and to submit changes to the templates for review and promotion from a test instance to the production instance.
+InfoThe Template Manager tool only contains templates for proactive (one-way, outbound) messages. Interactive automated conversations (two-way messages) are managed separately. You must submit a ticket to KUBRA support for any requested changes to conversation verbiage.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Template Manager :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="Notifi uses message templates for proactive messages that include static content and data elements. The Template Manager tool allows you to review the content of these message templates and to submit changes to the templates for review and promotion from a test instance to the production instance.
+InfoThe Template Manager tool only contains templates for proactive (one-way, outbound) messages. Interactive automated conversations (two-way messages) are managed separately. You must submit a ticket to KUBRA support for any requested changes to conversation verbiage.">
+    <meta property="og:url" content="http://localhost:1313/notifi/management-console/template-manager/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Template Manager :: KUBRA Product Documentation">
+    <meta property="og:description" content="Notifi uses message templates for proactive messages that include static content and data elements. The Template Manager tool allows you to review the content of these message templates and to submit changes to the templates for review and promotion from a test instance to the production instance.
+InfoThe Template Manager tool only contains templates for proactive (one-way, outbound) messages. Interactive automated conversations (two-way messages) are managed separately. You must submit a ticket to KUBRA support for any requested changes to conversation verbiage.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Notifi">
+    <meta itemprop="name" content="Template Manager :: KUBRA Product Documentation">
+    <meta itemprop="description" content="Notifi uses message templates for proactive messages that include static content and data elements. The Template Manager tool allows you to review the content of these message templates and to submit changes to the templates for review and promotion from a test instance to the production instance.
+InfoThe Template Manager tool only contains templates for proactive (one-way, outbound) messages. Interactive automated conversations (two-way messages) are managed separately. You must submit a ticket to KUBRA support for any requested changes to conversation verbiage.">
+    <meta itemprop="wordCount" content="1469">
+    <title>Template Manager :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/notifi/management-console/template-manager/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#access">Access</a></li>
+    <li><a href="#navigation">Navigation</a></li>
+    <li><a href="#edit-templates">Edit Templates</a>
+      <ul>
+        <li><a href="#tips-for-editing-templates">Tips for Editing Templates</a></li>
+        <li><a href="#template-variables">Template Variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#edit-globals">Edit Globals</a></li>
+    <li><a href="#latest-activity">Latest Activity</a></li>
+    <li><a href="#deploy-changes">Deploy Changes</a></li>
+    <li><a href="#examples-of-template-edits">Examples of Template Edits</a>
+      <ul>
+        <li><a href="#example-1---add-an-additional-note-to-an-outage-email">Example 1 - Add an additional note to an outage email</a></li>
+        <li><a href="#example-2---change-a-term-used-in-an-english-sms-message-to-reduce-character-count">Example 2 - Change a term used in an English SMS message to reduce character count</a></li>
+        <li><a href="#example-3---update-the-company-name">Example 3 - Update the company name</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notifi/index.html"><span itemprop="name">Notifi</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notifi/management-console/index.html"><span itemprop="name">Management Console for Notifi</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Template Manager</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notifi/management-console/broadcast/index.html" title="Broadcast (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notifi/management-console/admin/index.html" title="Admin (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable notifi" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="template-manager">Template Manager</h1>
+
+<p>Notifi uses message templates for proactive messages that include static content and data elements. The Template Manager tool allows you to review the content of these message templates and to submit changes to the templates for review and promotion from a test instance to the production instance.</p>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>The Template Manager tool only contains templates for proactive (one-way, outbound) messages. Interactive automated conversations (two-way messages) are managed separately. You must submit a ticket to KUBRA support for any requested changes to conversation verbiage.</p>
+  </div>
+</div>
+<h2 id="access">Access</h2>
+<p>Access to the Template Manager tool may require a second login using the same username and password you use for the Notifi Management Console.</p>
+<p>The Template Manager tool may open in a new browser tab. You may need to close the tab and/or use the primary Notifi Management Console URL to access other Notifi management tools.</p>
+<h2 id="navigation">Navigation</h2>
+<p>The Template Manager tool includes the following sections:</p>
+<ul>
+<li>Edit Templates</li>
+<li>Latest Activity</li>
+<li>Deploy Changes</li>
+</ul>
+<p>By default, the tool opens to show the Edit Templates section.</p>
+<h2 id="edit-templates">Edit Templates</h2>
+<p>The Edit Templates section shows options for message channels supported by the Notifi implementation and an option called &ldquo;Globals&rdquo; for elements shared by multiple message templates. If the Notifi implementation supports more than one language, there is a language selection option under each channel and under the Globals option.</p>
+<p>After you select a message channel and a language if applicable, you will see a list of message templates or assets organized by message topic. You can select a template to view a preview or edit its contents.</p>
+<p>After you click the <strong>Edit</strong> button to edit a specific template, you will see an Edit Template panel with four tabs:</p>
+<ul>
+<li>Body - a rich-text editor for the template body content</li>
+<li>Parts - plain-text fields for the message subject and the message body (only applicable for email templates)</li>
+<li>Placeholders - plain-text fields for variables such as the message title (only applicable for email templates)</li>
+<li>Preview - a preview of any changes you have made in the Body tab or the Placeholders tab</li>
+</ul>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Edits you make in the Body tab do NOT copy over to the Parts tab automatically. The <strong>Plaintext</strong> field in the Parts tab should contain the plain-text version of the email body content, excluding HTML annotations. This plain-text version is used by the <a href="/notifi/management-console/history/index.html">Notifi History tool</a>. The plain-text version of the email body will also be sent to recipients who cannot receive rich-text email messages.</p>
+  </div>
+</div>
+<p>To save your changes, click the <strong>Save</strong> button. To discard your changes, click the <strong>Cancel</strong> button.</p>
+<h3 id="tips-for-editing-templates">Tips for Editing Templates</h3>
+<ul>
+<li>Variable values will not be the same length as the variable in the message template.</li>
+<li>SMS or text messages have a maximum character limit of 160 characters in the U.S. and 140 characters in Canada for English language messages.</li>
+<li>Voice templates have a maximum Unicode character limit of 4,096 characters.</li>
+<li>Punctuation such as commas and periods in voice templates will be interpreted as natural pauses.</li>
+<li>The text-to-speech program used for voice messages will make assumptions about how to pronounce numbers, dates, times, amounts of money and other abbreviations.</li>
+<li>You can format initialisms or acronyms in voice templates with a space between each letter to have the text-to-speech program pronounce each letter separately - for example, <code>E T R</code> would be read as &ldquo;ee tee ar.&rdquo;</li>
+</ul>
+<h3 id="template-variables">Template Variables</h3>
+<p>There are four types of variable or conditional content used in Notifi message templates:</p>
+<ol>
+<li>Placeholders or local variables such as <code>{$ title $}</code>, which refers to the Title placeholder for an email template. These variables can be used in more than one location within a specific message template and are managed in the Placeholders section of the Edit Template form.</li>
+<li>Global variables such as <code>{$ g_sms_contact $}</code> or <code>{$ g_resume_alerts_link $}</code>. These variables can be used in more than one message template and are managed in the Globals section of the Template Manager tool.</li>
+<li>Notifi variables that use event data to create messages for customers, such as <code>{{Subscriptions.contactId}}</code> for a contact ID such as an email address or a user-provided nickname for the email address, or <code>{{Address.longAddress}}</code> for the long form of the street address.</li>
+<li>Conditional Notifi expressions such as the expression <code>{{#if (crewsAreDispatched CrewStatus)}}Our crews have been assigned to investigate the situation.{{/if}}</code>, which will include the text &ldquo;Our crews have been assigned to investigate the situation.&rdquo; if the <code>CrewStatus</code> variable value indicates that crews have been dispatched.</li>
+</ol>
+<p>Notifi templates also use standard HTML such as <code>&lt;a href=&quot;www.example.com&quot;&gt;Example hypertext&lt;/a&gt;</code> for hypertext and <code>&lt;strong&gt;bold words&lt;/strong&gt;</code> for bold text.</p>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>Opening and closing characters are required for both variable content and HTML elements. If you would like to make changes to variables or conditional Notifi expressions, please contact KUBRA support for assistance.</p>
+  </div>
+</div>
+<h2 id="edit-globals">Edit Globals</h2>
+<p>After you select the Globals option and a language if applicable, you will see a file called <code>global.yml</code>. Select the file name to view or edit a list of global values used by multiple message templates.</p>
+<p>Some implementations will also have environment-specific files in the Globals section. These files use names such as <code>global.test.yml</code> for the Test environment and <code>global.prod.yml</code> for the Production environment. Values in an environment-specific file will override the values in the main <code>global.yml</code> file.</p>
+<p>You can use the environment-specific global files to set environment-specific values such as test links and phone numbers if those items are different from the production items.</p>
+<h2 id="latest-activity">Latest Activity</h2>
+<p>The Latest Activity section shows a list of recent template change deployments to either the test environment or the production environment.</p>
+<p>Select a deployment to view the following information:</p>
+<ul>
+<li>Service Name - the name of the service used for the deployment</li>
+<li>Date - the date and time at which the deployment was made</li>
+<li>Files - a list of template files changed by the deployment</li>
+<li>Changes - a list of changes made to the template files</li>
+</ul>
+<p>Click the <strong>View Details</strong> link for a specific change to view the following information:</p>
+<ul>
+<li>Description - a brief description of the change.</li>
+<li>Files - the location of the template files that were changed.</li>
+<li>Diff - an excerpt of the file content focusing on the content that changed. Removed content is shown in red with a &ldquo;-&rdquo; symbol at the start of the row. Added content is shown in green with a &ldquo;+&rdquo; symbol at the start of the row.</li>
+<li>Date - the date and time at which the change was made.</li>
+<li>By - the username of the person who made the change.</li>
+</ul>
+<h2 id="deploy-changes">Deploy Changes</h2>
+<p>The Deploy Changes section shows a list of environments and the number of changes, if any, that are ready to be deployed to the environment.</p>
+<p>Select an environment name to view changes to the environment and deploy the changes. To view details about a specific change, click the <strong>View Details</strong> link next to the change description. The details shown are the same as in the <a href="/notifi/management-console/template-manager/index.html#latest-activity">Latest Activity section</a></p>
+<p>If there are no pending changes for an environment, the <strong>Deploy</strong> button will be disabled.</p>
+<p>To deploy changes, click the <strong>Deploy</strong> button. Changes always move from development to test or from test to production.</p>
+<h2 id="examples-of-template-edits">Examples of Template Edits</h2>
+<h3 id="example-1---add-an-additional-note-to-an-outage-email">Example 1 - Add an additional note to an outage email</h3>
+<ol>
+<li>Access the &ldquo;Edit Templates&rdquo; section of the Template Manager tool.</li>
+<li>Select &ldquo;Email&rdquo; and &ldquo;English.&rdquo;</li>
+<li>Select the name of the outage template file, such as &ldquo;out_new.njk.&rdquo;</li>
+<li>Click the <strong>Edit</strong> button.</li>
+<li>In the Body tab, scan the template for the location where you want to add the additional content.</li>
+<li>Type the new content into the outage template body. Be careful not to disturb any variables or conditional elements.</li>
+<li>In the Parts tab, scan the template for the location where you want to add the additional content, and copy the change you made in the Body tab. Be careful not to disturb any variables or conditional elements.</li>
+<li>Use the Preview option to check the results of your edits.</li>
+<li>Click the <strong>Save</strong> button to save your changes.</li>
+</ol>
+<p>Repeat these steps for templates in other supported languages, replacing &ldquo;English&rdquo; with the appropriate language, as needed.</p>
+<h3 id="example-2---change-a-term-used-in-an-english-sms-message-to-reduce-character-count">Example 2 - Change a term used in an English SMS message to reduce character count</h3>
+<ol>
+<li>Access the &ldquo;Edit Templates&rdquo; section of the Template Manager tool.</li>
+<li>Select &ldquo;SMS&rdquo; and &ldquo;English.&rdquo;</li>
+<li>Select the name of the template file, such as &ldquo;contact_paused.njk.&rdquo;</li>
+<li>Click the <strong>Edit</strong> button.</li>
+<li>Scan the template for the term you want to change.</li>
+<li>Edit the template content.</li>
+<li>Use the Preview option to check the results of your edit.</li>
+<li>Click the <strong>Save</strong> button to save your changes.</li>
+</ol>
+<h3 id="example-3---update-the-company-name">Example 3 - Update the company name</h3>
+<ol>
+<li>Access the &ldquo;Edit Templates&rdquo; section of the Template Manager tool.</li>
+<li>Select &ldquo;Globals.&rdquo;</li>
+<li>Select the &ldquo;global.yml&rdquo; file.</li>
+<li>Click the <strong>Edit</strong> button.</li>
+<li>Locate the variable or variables for the company name. There may be more than one version, such as an SMS Greeting, a Formal Company Name, and a Sender Name.</li>
+<li>Edit the variables.</li>
+<li>Click the <strong>Save</strong> button to save your changes.</li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="parent " data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740" checked><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d"><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610"><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/notifi/management-console/template-manager/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

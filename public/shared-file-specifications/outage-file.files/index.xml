@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outage File :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/shared-file-specifications/outage-file.files/index.html</link>
+    <description>Introduction This document outlines the structure of an outage file. Outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.&#xA;Outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.&#xA;Info&#xD;outages-schema.xsd (5 KB)&#xD;outage.xml (3 KB)&#xD;outage.json (3 KB)&#xD;File Structure JSON The outage file can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab&#xD;.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/shared-file-specifications/outage-file.files/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

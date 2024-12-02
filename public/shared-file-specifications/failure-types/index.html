@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="There are two types of file processing failures for delivery node, outage, and planned outage data feeds:
+Critical: Fatal; processing aborts and the entire file fails. Non-critical: Non-fatal; processing continues, but some or all of the affected entry may be discarded, the resulting outage data may be incorrect, etc. The following are the critical and non-critical failures that can occur when processing delivery node, outage, and planned outage files.
+Delivery Node Files 1.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Data Feed Processing Failures :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="There are two types of file processing failures for delivery node, outage, and planned outage data feeds:
+Critical: Fatal; processing aborts and the entire file fails. Non-critical: Non-fatal; processing continues, but some or all of the affected entry may be discarded, the resulting outage data may be incorrect, etc. The following are the critical and non-critical failures that can occur when processing delivery node, outage, and planned outage files.
+Delivery Node Files 1.">
+    <meta property="og:url" content="http://localhost:1313/shared-file-specifications/failure-types/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Data Feed Processing Failures :: KUBRA Product Documentation">
+    <meta property="og:description" content="There are two types of file processing failures for delivery node, outage, and planned outage data feeds:
+Critical: Fatal; processing aborts and the entire file fails. Non-critical: Non-fatal; processing continues, but some or all of the affected entry may be discarded, the resulting outage data may be incorrect, etc. The following are the critical and non-critical failures that can occur when processing delivery node, outage, and planned outage files.
+Delivery Node Files 1.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Shared File Specifications and Resources">
+    <meta itemprop="name" content="Data Feed Processing Failures :: KUBRA Product Documentation">
+    <meta itemprop="description" content="There are two types of file processing failures for delivery node, outage, and planned outage data feeds:
+Critical: Fatal; processing aborts and the entire file fails. Non-critical: Non-fatal; processing continues, but some or all of the affected entry may be discarded, the resulting outage data may be incorrect, etc. The following are the critical and non-critical failures that can occur when processing delivery node, outage, and planned outage files.
+Delivery Node Files 1.">
+    <meta itemprop="wordCount" content="1726">
+    <title>Data Feed Processing Failures :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/shared-file-specifications/failure-types/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#delivery-node-files">Delivery Node Files</a>
+      <ul>
+        <li><a href="#1-critical-complete-file-failure">1. Critical (Complete File Failure)</a></li>
+        <li><a href="#2-non-critical-partial-file-failure">2. Non-critical (Partial File Failure)</a></li>
+      </ul>
+    </li>
+    <li><a href="#outage-files">Outage Files</a>
+      <ul>
+        <li><a href="#1--critical-complete-file-failure">1.  Critical (Complete File Failure)</a></li>
+        <li><a href="#2-non-critical-partial-file-failure-1">2. Non-critical (Partial File Failure)</a></li>
+      </ul>
+    </li>
+    <li><a href="#planned-outage-files">Planned Outage Files</a>
+      <ul>
+        <li><a href="#1--critical-complete-file-failure-1">1.  Critical (Complete File Failure)</a></li>
+        <li><a href="#2-non-critical-partial-file-failure-2">2. Non-critical (Partial File Failure)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/shared-file-specifications/index.html"><span itemprop="name">Shared File Specifications and Resources</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Data Feed Processing Failures</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/shared-file-specifications/planned-outage-file/index.html" title="Planned Outage File (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/shared-file-specifications/image-resource-manager/index.html" title="Image Resource Manager (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable shared-file-specifications" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="data-feed-processing-failures">Data Feed Processing Failures</h1>
+
+<p>There are two types of file processing failures for delivery node, outage, and planned outage data feeds:</p>
+<ol>
+<li><strong>Critical</strong>: Fatal; processing aborts and the entire file fails.</li>
+<li><strong>Non-critical</strong>: Non-fatal; processing continues, but some or all of the affected entry may be discarded, the resulting outage data may be incorrect, etc.</li>
+</ol>
+<p>The following are the critical and non-critical failures that can occur when processing delivery node, outage, and planned outage files.</p>
+<h2 id="delivery-node-files">Delivery Node Files</h2>
+<h3 id="1-critical-complete-file-failure">1. Critical (Complete File Failure)</h3>
+<h4 id="11-bad-syntax">1.1. Bad syntax</h4>
+<p>Files that do not adhere to the file format specification (JSON, JSON Lines, or XML) will result in a fatal error. The data cannot be processed and the file will fail.</p>
+<p>Zero byte files are considered an invalid format and will not be processed.</p>
+<h4 id="12-empty-nodes-array-or-all-nodes-filtered">1.2. Empty <code>nodes</code> array or all nodes filtered</h4>
+<p>If there are no valid delivery nodes included in a file, or if all delivery nodes in a file are filtered, the file will fail and the error will be logged. Delivery nodes are filtered from a file when any of the following is true:</p>
+<ul>
+<li>the delivery node&rsquo;s coordinates are outside the region</li>
+<li>the delivery node&rsquo;s coordinates are outside one or more of the thematic areas for the thematic selected to be used for filtering delivery nodes</li>
+<li>one or more of the delivery node&rsquo;s <code>areaId</code> values do not match any of the values for <code>areaId</code> provided in the corresponding thematic file</li>
+<li>the delivery node&rsquo;s <code>regionCode</code> does not match any of the values for <code>regionCode</code> entered in the Instance Manager interface</li>
+</ul>
+<h4 id="13-internal-processing-error">1.3. Internal processing error</h4>
+<p>Internal errors with the Storm Center platform, such as hardware limitations, hardware failures, etc. This is a fatal error and the file will fail.</p>
+<h4 id="14-missing--empty-or-null-id-field">1.4. Missing , empty, or null <code>id</code> field</h4>
+<p>This is a required field. If any delivery nodes are missing the <code>id</code> field, the field is empty, or the field value is null, the file will fail.</p>
+<h4 id="15-duplicate-id-field">1.5. Duplicate <code>id</code> field</h4>
+<p>This is a required field. ID values must be unique. If duplicate delivery node IDs exist, the file will fail.</p>
+<h4 id="16-invalid-customersserved-field">1.6. Invalid <code>customersServed</code> field</h4>
+<p>This is an optional field. If present, for values other than non-negative integers, the file will fail.</p>
+<h4 id="17-missing-empty-or-null-latitude-andor-longitude-fields">1.7. Missing, empty, or null <code>latitude</code> and/or <code>longitude</code> fields</h4>
+<p>Coordinates are required. If any delivery node&rsquo;s <code>latitude</code> and/or <code>longitude</code> value is missing, empty, or null, the file will fail and the delivery nodes with errors will be logged.</p>
+<h4 id="18-invalid-latitude-andor-longitude-fields">1.8. Invalid <code>latitude</code> and/or <code>longitude</code> fields</h4>
+<p>If any delivery node&rsquo;s coordinates do not adhere to the <a href="https://spatialreference.org/ref/epsg/wgs-84/" target="_blank" rel="external">WGS84/EPSG:4326 coordinate system <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ or the coordinates are not formatted as Decimal Degrees, the file will fail and the delivery node or delivery nodes with errors will be logged. A latitude value outside of -90 to 90 inclusive, a longitude value outside of -180 to 180 inclusive, or a value for either latitude or longitude that includes alphabetic characters is invalid. For example, latitude values of <code>-95</code>, <code>-90.02</code>, <code>92</code>, and <code>103</code> are invalid, and longitude values of <code>-200</code>, <code>-180.773</code>, <code>182</code>, and <code>3000</code> are invalid.</p>
+<h3 id="2-non-critical-partial-file-failure">2. Non-critical (Partial File Failure)</h3>
+<h4 id="21-coordinates-outside-of-region-or-regions">2.1. Coordinates outside of region or regions</h4>
+<p>Delivery nodes with coordinates that are outside of the defined region or regions will be discarded.</p>
+<h4 id="22-coordinates-outside-of-thematic-or-thematics">2.2. Coordinates outside of thematic or thematics</h4>
+<p>Delivery nodes with coordinates that are outside one or more (depending on the configuration) of the thematic areas for the thematic selected to be used for filtering delivery nodes will be discarded.</p>
+<h4 id="23-invalid-areaid-for-the-areatype-used-to-filter-delivery-nodes">2.3. Invalid <code>areaId</code> for the <code>areaType</code> used to filter delivery nodes</h4>
+<p>Delivery nodes with a specified <code>areaId</code> for the <code>areaType</code> selected to be used for filtering delivery nodes that does not match any of the values for <code>areaId</code> provided in the corresponding thematic file will be discarded.</p>
+<h4 id="24-invalid-regioncode">2.4. Invalid <code>regionCode</code></h4>
+<p>Delivery nodes with a specified <code>regionCode</code> that does not match any of the values for <code>regionCode</code> entered in the Instance Manager interface when uploading a region file will be discarded.</p>
+<h2 id="outage-files">Outage Files</h2>
+<h3 id="1--critical-complete-file-failure">1.  Critical (Complete File Failure)</h3>
+<h4 id="11-bad-syntax-1">1.1. Bad syntax</h4>
+<p>Files that do not adhere to the file format specification (JSON or XML) will result in a fatal error. The data cannot be processed and the file will fail.</p>
+<p>Zero byte files are considered an invalid format. At a minimum, an outage file must contain an empty <code>outages</code> array.</p>
+<h4 id="12-internal-processing-error">1.2. Internal processing error</h4>
+<p>Internal errors with the Storm Center platform, such as hardware limitations, hardware failures, etc. This is a fatal error and the file will fail.</p>
+<h4 id="13-missing-empty-or-null-id-field">1.3. Missing, empty, or null <code>id</code> field</h4>
+<p>This is a required field. If any outages have a missing <code>id</code> field or an <code>id</code> field with an empty or null value, the file will fail.</p>
+<h4 id="14-duplicate-id-field">1.4. Duplicate <code>id</code> field</h4>
+<p>This is a required field. ID values must be unique. If duplicate outage IDs exist, the file will fail.</p>
+<h4 id="15-missing-or-null-affecteddeliverynodes-array">1.5. Missing or null <code>affectedDeliveryNodes</code> array</h4>
+<p>This is a required field. If the array of <code>affectedDeliveryNodes</code> is missing or null for one or more outages, the file will fail. An empty array is valid.</p>
+<h4 id="16-invalid-affecteddeliverynodes-array">1.6. Invalid <code>affectedDeliveryNodes</code> array</h4>
+<p>This is a required field. If any outage contains values other than an empty array or an array of <code>affectedDeliveryNode</code> elements, the file will fail.</p>
+<h4 id="17-invalid-outageconfirmed-field">1.7. Invalid <code>outageConfirmed</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>true</code> or <code>false</code>, the file will fail.</p>
+<h4 id="18-invalid-crewiconindicator-field">1.8. Invalid <code>crewIconIndicator</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>true</code> or <code>false</code>, the file will fail.</p>
+<h4 id="19-invalid-etr-field">1.9. Invalid <code>etr</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>null</code> or a date and time in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 format <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+, the file will fail.</p>
+<h4 id="110-invalid-etrconfidence-field">1.10. Invalid <code>etrConfidence</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>LOW</code>, <code>MEDIUM</code>, or <code>HIGH</code>, the file will fail.</p>
+<h4 id="111-invalid-startedat-field">1.11. Invalid <code>startedAt</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>null</code> or a date and time in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 format <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+, the file will fail.</p>
+<h4 id="112-invalid-restoredat-field">1.12. Invalid <code>restoredAt</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>null</code> or a date and time in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 format <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+, the file will fail.</p>
+<h4 id="113-invalid-updatedat-field">1.13. Invalid <code>updatedAt</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>null</code> or a date and time in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 format <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+, the file will fail.</p>
+<h4 id="114-missing-dnid-field-in-affecteddeliverynodes-element">1.14. Missing <code>dnId</code> field in <code>affectedDeliveryNodes</code> element</h4>
+<p>This is a required field. If not present in an <code>affectedDeliveryNodes</code> element on one or more outages, the file will fail.</p>
+<h4 id="115-invalid-confidence-field-in-affecteddeliverynodes-element">1.15. Invalid <code>confidence</code> field in <code>affectedDeliveryNodes</code> element</h4>
+<p>This is an optional field. If present, for values other than <code>LOW</code>, <code>MEDIUM</code>, or <code>HIGH</code>, the file will fail.</p>
+<h4 id="116-invalid-reported-field-in-affecteddeliverynodes-element">1.16. Invalid <code>reported</code> field in <code>affectedDeliveryNodes</code> element</h4>
+<p>This is an optional field.  If present, for values other than <code>true</code> or <code>false</code>,  the file will fail.</p>
+<h3 id="2-non-critical-partial-file-failure-1">2. Non-critical (Partial File Failure)</h3>
+<h4 id="21-dnid-field-in-affecteddeliverynodes-element-does-not-match-any-entries-from-the-delivery-node-file">2.1. <code>dnId</code> field in <code>affectedDeliveryNodes</code> element does not match any entries from the delivery node file</h4>
+<p>This is a required field. The number of customers served cannot be looked up for delivery node IDs that do not match an entry in the delivery node file. This will result in the wrong number of customers affected being calculated for the associated outage, thematics, reports, and/or summary.</p>
+<h2 id="planned-outage-files">Planned Outage Files</h2>
+<h3 id="1--critical-complete-file-failure-1">1.  Critical (Complete File Failure)</h3>
+<h4 id="11-bad-syntax-2">1.1. Bad syntax</h4>
+<p>Files that do not adhere to the file format specification (JSON or XML) will result in a fatal error. The data cannot be processed and the file will fail.</p>
+<p>Zero byte files are considered an invalid format. At a minimum, a planned outage file must contain an empty <code>plannedOutages</code> array.</p>
+<h4 id="12-internal-processing-error-1">1.2. Internal processing error</h4>
+<p>Internal errors with the Storm Center platform, such as hardware limitations, hardware failures, etc. This is a fatal error and the file will fail.</p>
+<h4 id="13-missing-empty-or-null-id-field-1">1.3. Missing, empty, or null <code>id</code> field</h4>
+<p>This is a required field. If any outages have a missing <code>id</code> field or an <code>id</code> field with an empty or null value, the file will fail.</p>
+<h4 id="14-duplicate-id-field-1">1.4. Duplicate <code>id</code> field</h4>
+<p>This is a required field. ID values must be unique. If duplicate outage IDs exist, the file will fail.</p>
+<h4 id="15-invalid-start-field">1.5. Invalid <code>start</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>null</code> or a date and time in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 format <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+, the file will fail.</p>
+<h4 id="16-invalid-end-field">1.6. Invalid <code>end</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>null</code> or a date and time in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 format <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+, the file will fail.</p>
+<h4 id="17-invalid-updatedat-field">1.7. Invalid <code>updatedAt</code> field</h4>
+<p>This is an optional field. If present, for values other than <code>null</code> or a date and time in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 format <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+, the file will fail.</p>
+<h4 id="18-invalid-affecteddeliverynodes-array">1.8. Invalid <code>affectedDeliveryNodes</code> array</h4>
+<p>This is an optional field. If present, if any outage contains values other than an empty array or an array of <code>affectedDeliveryNodes</code> elements, the file will fail.</p>
+<h4 id="19-missing-dnid-field-in-affecteddeliverynodes-element">1.9. Missing <code>dnId</code> field in <code>affectedDeliveryNodes</code> element</h4>
+<p>This is a required field. If not present in an <code>affectedDeliveryNodes</code> element on one or more outages, the file will fail.</p>
+<h4 id="110-missing-both-geometry-and-affecteddeliverynodes-elements">1.10. Missing both <code>geometry</code> and <code>affectedDeliveryNodes</code> elements</h4>
+<p>Either <code>geometry</code> or <code>affectedDeliveryNodes</code> is required to locate an outage on the map. If both elements are missing on one or more outages, the file will fail.</p>
+<h4 id="111-missing-both-customersaffected-and-affecteddeliverynodes-elements">1.11. Missing both <code>customersAffected</code> and <code>affectedDeliveryNodes</code> elements</h4>
+<p>Either <code>customersAffected</code> or <code>affectedDeliveryNodes</code> is required to determine the number of customers affected by an outage. If both elements are missing on one or more outages, the file will fail.</p>
+<h3 id="2-non-critical-partial-file-failure-2">2. Non-critical (Partial File Failure)</h3>
+<h4 id="21-value-for-customers-affected-equals-0">2.1. Value for customers affected equals 0</h4>
+<p>Outages are only displayed if they have a positive integer value for customers affected. If the value for customers affected (either calculated based on the customers served values associated with the <code>affectedDeliveryNodes</code> or provided as <code>customersAffected</code>) is equal to 0, the outage will be filtered from the planned outage file and will not be displayed on the map.</p>
+<h4 id="22-dnid-field-in-affecteddeliverynodes-element-does-not-match-any-entries-from-the-delivery-node-file">2.2. <code>dnId</code> field in <code>affectedDeliveryNodes</code> element does not match any entries from the delivery node file</h4>
+<p>This is a required field. The number of customers served cannot be looked up for delivery node IDs that do not match an entry in the delivery node file. This will result in the wrong number of customers affected being calculated for the associated outage.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740"><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d" checked><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610"><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/shared-file-specifications/failure-types/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

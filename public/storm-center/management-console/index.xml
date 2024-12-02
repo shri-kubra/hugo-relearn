@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Management Console for Storm Center (Control Center) :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/storm-center/management-console/index.html</link>
+    <description>Control Center Dashboard The Control Center Dashboard acts as the management console for Storm Center. It allows admin users at an organization to manage some configurable features of their deployed Storm Center outage maps. The dashboard includes three sections: Apps, Deployments, and App Administration.&#xA;For users in a Control Center access group, the app and tool names appear in a navigation panel on the left side of the screen. Users who have access to more than one instance can see the name of the selected instance in the navigation panel, under the Control Center title.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/storm-center/management-console/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alert Banner App</title>
+      <link>http://localhost:1313/storm-center/management-console/alert-banner/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/management-console/alert-banner/index.html</guid>
+      <description>To access the Alert Banner app, click the Alert Banner button on the Control Center Dashboard under “Apps.”&#xA;You can use the Alert Banner app to create alert banners and messages and associate them with Storm Center maps. Each map can show one alert banner at a time.&#xA;Create an Alert Banner To create a new alert banner, click the Create an Alert button.&#xA;Banner Position and Visibility You can choose to show the alert banner either at the bottom of the screen or at the top of the screen.</description>
+    </item>
+    <item>
+      <title>Area Manager App</title>
+      <link>http://localhost:1313/storm-center/management-console/area-manager/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/management-console/area-manager/index.html</guid>
+      <description>To access the Area Manager app, click the Area Manager button on the Control Center Dashboard under “Apps.”&#xA;Note&#xD;Access to the Area Manager app requires the optional Area Manager module. If you cannot see the Area Manager app, it may be because your organization does not have the Storm Center Area Manager module.&#xA;The Area Manager app screen includes a drop-down list for selecting one of the thematics associated with the instance, an option to provide an overwritten value for estimated restoration times (ETRs) for all areas in the thematic, and a table with a list of area names included in the currently selected thematic.</description>
+    </item>
+    <item>
+      <title>Custom Layers App</title>
+      <link>http://localhost:1313/storm-center/management-console/custom-layers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/management-console/custom-layers/index.html</guid>
+      <description>To access the Custom Layers app, click the Custom Layers button on the Control Center Dashboard under “Apps.”&#xA;You can use the Custom Layers app to add, edit, view, and delete ad hoc information items on the Storm Center outage map to communicate additional information to customers or other map users. The categories of information you can communicate are determined by the Information Area and Information Point categories set in the Custom Layers Admin tool.</description>
+    </item>
+    <item>
+      <title>Settings App</title>
+      <link>http://localhost:1313/storm-center/management-console/settings/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/management-console/settings/index.html</guid>
+      <description>To access the Settings app, click the Settings button on the Control Center Dashboard under “Apps.”&#xA;You can use the Settings app to manage data feed processing, redirect map URLs, change the map view choice shown on map page load, and update the wording shown on the map to let users know how often data is updated.&#xA;Turn Data Feed Processing On or Off By default, the delivery node, outage, and planned outage data feeds are active.</description>
+    </item>
+    <item>
+      <title>Area Manager Admin Tool</title>
+      <link>http://localhost:1313/storm-center/management-console/area-manager-admin/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/management-console/area-manager-admin/index.html</guid>
+      <description>To access the Area Manager Admin tool, click the Area Manager button on the Control Center Dashboard under “App Administration.”&#xA;You can use the Area Manager Admin tool to determine which types of information can be overwritten in the Area Manager app, and to provide a hierarchy for thematic areas in the Area Manager app.&#xA;Configure Thematics By default, all thematics associated with the instance allow overwritten values for estimated restoration time (ETR) and for customers affected.</description>
+    </item>
+    <item>
+      <title>Custom Layers Admin Tool</title>
+      <link>http://localhost:1313/storm-center/management-console/custom-layers-admin/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/management-console/custom-layers-admin/index.html</guid>
+      <description>To access the Custom Layers Admin tool, click the Custom Layers button on the Control Center Dashboard under “App Administration.”&#xA;You can use the Custom Layers Admin tool to configure the items that will be available to add to the map in the Custom Layers app. There are two types of Custom Layers items: Information Area and Information Point.&#xA;Information Areas An Information Area is a shape that you can draw on the map to represent locations for items such as gas leaks, flood zones, an estimated restoration time for multiple counties or towns (or another kind of area), or reliability improvement work.</description>
+    </item>
+    <item>
+      <title>User Management - Storm Center</title>
+      <link>http://localhost:1313/storm-center/management-console/user-management/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/management-console/user-management/index.html</guid>
+      <description>KUBRA administrators must create accounts with User Administrator permissions for each tenant in Instance Manager as part of a Storm Center implementation project. After these accounts are created, admin users can sign in to Instance Manager and access tools for creating and managing additional Instance Manager user accounts.&#xA;Info&#xD;If the organization is using single sign-on via an identity provider such as Active Directory, all user management will be done by the organization’s identity provider administrators.</description>
+    </item>
+  </channel>
+</rss>

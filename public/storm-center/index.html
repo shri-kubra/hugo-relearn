@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="What is Storm Center? Storm Center is KUBRA’s online outage map product. Storm Center uses outage data provided by an organization such as a utility company to show information about power outages on an interactive online map. Customers can access the map from a link on the utility’s website to see information about outages in their area or across the utility’s service territory.
+The Storm Center product is deployed on a multi-tenant architecture supported by Amazon Web Services.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Storm Center :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="What is Storm Center? Storm Center is KUBRA’s online outage map product. Storm Center uses outage data provided by an organization such as a utility company to show information about power outages on an interactive online map. Customers can access the map from a link on the utility’s website to see information about outages in their area or across the utility’s service territory.
+The Storm Center product is deployed on a multi-tenant architecture supported by Amazon Web Services.">
+    <meta property="og:url" content="http://localhost:1313/storm-center/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Storm Center :: KUBRA Product Documentation">
+    <meta property="og:description" content="What is Storm Center? Storm Center is KUBRA’s online outage map product. Storm Center uses outage data provided by an organization such as a utility company to show information about power outages on an interactive online map. Customers can access the map from a link on the utility’s website to see information about outages in their area or across the utility’s service territory.
+The Storm Center product is deployed on a multi-tenant architecture supported by Amazon Web Services.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Storm Center :: KUBRA Product Documentation">
+    <meta itemprop="description" content="What is Storm Center? Storm Center is KUBRA’s online outage map product. Storm Center uses outage data provided by an organization such as a utility company to show information about power outages on an interactive online map. Customers can access the map from a link on the utility’s website to see information about outages in their area or across the utility’s service territory.
+The Storm Center product is deployed on a multi-tenant architecture supported by Amazon Web Services.">
+    <meta itemprop="wordCount" content="1015">
+    <title>Storm Center :: KUBRA Product Documentation</title>
+    <link href="/storm-center/index.xml" rel="alternate" type="application/rss+xml" title="Storm Center :: KUBRA Product Documentation"><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/storm-center/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#what-is-storm-center">What is Storm Center?</a></li>
+    <li><a href="#benefits-of-storm-center">Benefits of Storm Center</a>
+      <ul>
+        <li><a href="#interactive-map-with-responsive-design">Interactive Map with Responsive Design</a></li>
+        <li><a href="#outage-information-by-location">Outage Information by Location</a></li>
+        <li><a href="#outage-information-by-area">Outage Information by Area</a></li>
+      </ul>
+    </li>
+    <li><a href="#maps-with-access-restrictions">Maps with Access Restrictions</a></li>
+    <li><a href="#supported-browsers">Supported Browsers</a>
+      <ul>
+        <li><a href="#desktop-browsers">Desktop Browsers</a></li>
+        <li><a href="#mobile-device-browsers">Mobile Device Browsers</a></li>
+      </ul>
+    </li>
+    <li><a href="#admin-features">Admin Features</a></li>
+    <li><a href="#implementing-storm-center">Implementing Storm Center</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Storm Center</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/shared-file-specifications/image-resource-manager/index.html" title="Image Resource Manager (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/features/index.html" title="Map Feature List (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable index" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="storm-center">Storm Center</h1>
+
+<h2 id="what-is-storm-center">What is Storm Center?</h2>
+<p>Storm Center is KUBRA&rsquo;s online outage map product. Storm Center uses outage data provided by an organization such as a utility company to show information about power outages on an interactive online map. Customers can access the map from a link on the utility&rsquo;s website to see information about outages in their area or across the utility&rsquo;s service territory.</p>
+<p>The Storm Center product is deployed on a multi-tenant architecture supported by Amazon Web Services. All clients (utility companies) who use Storm Center to create maps for their customers use the same Production environment but have separate instances. A single client can have multiple instances, such as an instance for testing configurations or data feeds and an instance for live maps. Each instance can include multiple maps, such as a map for the public, a map for inclusion in a mobile app, and a map for employees.</p>
+<h2 id="benefits-of-storm-center">Benefits of Storm Center</h2>
+<table>
+<thead>
+<tr>
+<th>Benefits</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quick implementation</td>
+<td>Instance Manager makes it easy to set up and launch a new map</td>
+</tr>
+<tr>
+<td>Highly configurable</td>
+<td>Instance Manager includes many options for controlling data and views on a map</td>
+</tr>
+<tr>
+<td>Flexible structure</td>
+<td>Supports multiple maps for different audiences that use the same data feeds, map layouts with or without a header, and multiple options for embedding maps in websites and applications</td>
+</tr>
+<tr>
+<td>Durable and scalable infrastructure</td>
+<td>Amazon Web Services resources adjust to support user traffic while taking advantage of economies of scale</td>
+</tr>
+<tr>
+<td>Standardized features</td>
+<td>Based on KUBRA&rsquo;s years of experience building outage maps for utilities</td>
+</tr>
+<tr>
+<td>Mobile-friendly design</td>
+<td>Allows customers to access maps from desktop and mobile web browsers</td>
+</tr>
+<tr>
+<td>Multilingual interface</td>
+<td>Map and information can be displayed in English, French, and Spanish</td>
+</tr>
+<tr>
+<td>Ongoing updates</td>
+<td>Multi-tenant architecture allows KUBRA to provide updates to all clients at the same time without altering production map configurations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="interactive-map-with-responsive-design">Interactive Map with Responsive Design</h3>
+<p>The Google Maps API provides the background map. The map interface allows users to search for an address, use location services to zoom to their current location, or pan and zoom manually. Responsive design supports both desktop and mobile web browsers, which is especially important for customers experiencing power outages, who may only be able to view the map from a mobile device using cellular data for internet access.</p>
+<p>Storm Center maps can show outage data in two main ways: by location and by area. All views include information panels with information about outages, such as</p>
+<ul>
+<li>the number of customers affected</li>
+<li>an estimated restoration time</li>
+<li>the cause of the outage</li>
+<li>the start time of the outage</li>
+</ul>
+<p>An organization using Storm Center can choose which types of information to provide in the information panels based on the data available in an Outage Management System or other outage data source.</p>
+<h3 id="outage-information-by-location">Outage Information by Location</h3>
+<p>Storm Center maps represent outage locations using icons with color coding and shapes based on the number of customers affected by the outage. At zoom levels that show a bigger area such as an entire state or multiple states, outage location icons which are close together are grouped into cluster icons. Outage clustering is based on the distance between outage location icons at a particular zoom level, screen size, and browser window size. Different devices may therefore see different arrangements of cluster icons.</p>
+<h3 id="outage-information-by-area">Outage Information by Area</h3>
+<p>Storm Center maps represent outage locations by area using color-coded shading based on the number or the percentage of customers affected by outages in the area. A Storm Center map can have more than one type of area represented, so users can switch between viewing outages by county and viewing outages by ZIP code, for example.</p>
+<h2 id="maps-with-access-restrictions">Maps with Access Restrictions</h2>
+<p>Storm Center supports both public maps and &ldquo;internal&rdquo; maps or other maps that include access restrictions. This allows authorized users to access a different map than the general public, which can include additional information such as outage ID numbers and internal comments. By default, users are logged out of maps with access restrictions after 2 hours of inactivity.</p>
+<h2 id="supported-browsers">Supported Browsers</h2>
+<p>KUBRA strives to provide compatibility with a range of browsers to make our software widely accessible while also using modern web design and security practices that may limit compatibility with some legacy browsers. For Storm Center maps, the following browsers are officially supported.</p>
+<h3 id="desktop-browsers">Desktop Browsers</h3>
+<ul>
+<li>Google Chrome - current version and previous version</li>
+<li>Mozilla Firefox - current version and previous version</li>
+<li>Apple Safari - current version and previous version on Mac OS X</li>
+<li>Microsoft Edge - current version</li>
+</ul>
+<h3 id="mobile-device-browsers">Mobile Device Browsers</h3>
+<p>For mobile devices, support is limited to the stock web browser installed on the device by the manufacturer.</p>
+<ul>
+<li>Google Android - current version of Chrome on Android 4.4+</li>
+<li>Apple iOS - Mobile Safari on the current and previous major versions of iOS</li>
+</ul>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Storm Center 5 does not support landscape mode in mobile devices.</p>
+  </div>
+</div>
+<h2 id="admin-features">Admin Features</h2>
+<p>The Storm Center product includes a management console called Control Center. Control Center allows admin users at a utility to manage some of the configurable features of their deployed maps.</p>
+<p>Control Center includes tools for managing</p>
+<ul>
+<li>Update Interval Note - tells users of the map how often data on the map is updated</li>
+<li>Page Mode - allows a different default map view choice for blue-sky or storm situations, as well as URL redirects for map maintenance</li>
+<li>Alert Banner - a banner at the top or bottom of the map with a link to a longer alert message that can communicate storm updates, upcoming maintenance, etc.</li>
+<li>Custom Layers - ad hoc icons and area shading that can provide information about ice distribution, shelters, flood zones, etc.</li>
+<li>Overwritten Data - allows administrators to overwrite Estimated Restoration Times, Customers Affected numbers, or both for the individual areas on the map</li>
+</ul>
+<p>Storm Center also includes an admin tool for viewing historical outage data. This Map History tool allows administrators to review outage data from up to five years ago on a map interface similar to a Storm Center outage map.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Some admin features are provided as additional-cost modules to the Storm Center product.</p>
+  </div>
+</div>
+<h2 id="implementing-storm-center">Implementing Storm Center</h2>
+<p>To set up a new Storm Center instance, start by reviewing the <a href="/storm-center/getting-started/index.html">Getting Started</a> document.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740"><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d"><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="active parent " data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610" checked><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/storm-center/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

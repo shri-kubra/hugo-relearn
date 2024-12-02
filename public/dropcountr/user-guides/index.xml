@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>User Guides :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/dropcountr/user-guides/index.html</link>
+    <description>Introduction KUBRA hosts Dropcountr user guides in this section for newly added features and support for its numerous dashboard.&#xA;User guide list CLEAR Self-Serve Pricing&#xD;CLEAR Tips</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/dropcountr/user-guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CLEAR Self-Serve Pricing</title>
+      <link>http://localhost:1313/dropcountr/user-guides/clear-self-serve-pricing/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dropcountr/user-guides/clear-self-serve-pricing/index.html</guid>
+      <description>Introduction to Self-Serve Pricing The CLEAR self-service pricing module allows utility employees to update pricing in CLEAR. This helps consumers more accurately estimate their water bill and receive notifications based on when their estimated bill reaches a threshold.&#xA;Navigate to the Pricing Module Log in to the Dropcountr CLEAR dashboard. On the left menu bar, click Pricings. Click a pricing option to view existing pricing. The updated view allows you to see each version of pricing information separately.</description>
+    </item>
+    <item>
+      <title>CLEAR Tips</title>
+      <link>http://localhost:1313/dropcountr/user-guides/clear-tips/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dropcountr/user-guides/clear-tips/index.html</guid>
+      <description>Introduction to the Tips module The CLEAR self-service Tips module allows utility employees to create and update water-saving tips that will be shown to consumers.&#xA;Navigate to the Tips Module Log in to the Dropcountr CLEAR dashboard. On the left menu bar, click Tips. Click a tip name to view its details. Edit Tip Info To modify the text, water savings, savings type, categories, or seasons of a tip, follow these steps:</description>
+    </item>
+  </channel>
+</rss>

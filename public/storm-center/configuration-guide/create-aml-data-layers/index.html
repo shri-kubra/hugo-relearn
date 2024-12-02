@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="Storm Center also allows you to display additional data like hazards, gas outages, flooding etc. on your public or internal Outage Maps using Additional Map Layers.
+To create an Additional Map Layer, use the Data Layers sub-section of the Shared Resources section of the Instance Dashboard.
+WarningAdditional Map Layers can only be created once you have outage maps; they cannot exist in isolation.
+Layer Name, Source, and Titles Click the Create Data Layer button.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Create AML Data Layers :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="Storm Center also allows you to display additional data like hazards, gas outages, flooding etc. on your public or internal Outage Maps using Additional Map Layers.
+To create an Additional Map Layer, use the Data Layers sub-section of the Shared Resources section of the Instance Dashboard.
+WarningAdditional Map Layers can only be created once you have outage maps; they cannot exist in isolation.
+Layer Name, Source, and Titles Click the Create Data Layer button.">
+    <meta property="og:url" content="http://localhost:1313/storm-center/configuration-guide/create-aml-data-layers/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Create AML Data Layers :: KUBRA Product Documentation">
+    <meta property="og:description" content="Storm Center also allows you to display additional data like hazards, gas outages, flooding etc. on your public or internal Outage Maps using Additional Map Layers.
+To create an Additional Map Layer, use the Data Layers sub-section of the Shared Resources section of the Instance Dashboard.
+WarningAdditional Map Layers can only be created once you have outage maps; they cannot exist in isolation.
+Layer Name, Source, and Titles Click the Create Data Layer button.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Storm Center">
+    <meta itemprop="name" content="Create AML Data Layers :: KUBRA Product Documentation">
+    <meta itemprop="description" content="Storm Center also allows you to display additional data like hazards, gas outages, flooding etc. on your public or internal Outage Maps using Additional Map Layers.
+To create an Additional Map Layer, use the Data Layers sub-section of the Shared Resources section of the Instance Dashboard.
+WarningAdditional Map Layers can only be created once you have outage maps; they cannot exist in isolation.
+Layer Name, Source, and Titles Click the Create Data Layer button.">
+    <meta itemprop="wordCount" content="2146">
+    <title>Create AML Data Layers :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/storm-center/configuration-guide/create-aml-data-layers/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#layer-name-source-and-titles">Layer Name, Source, and Titles</a></li>
+    <li><a href="#layer-data-source-and-information-panel-fields">Layer Data Source and Information Panel Fields</a></li>
+    <li><a href="#information-panel-fields-and-data-fields-for-additional-map-layers">Information Panel Fields and Data Fields for Additional Map Layers</a></li>
+    <li><a href="#data-mapping-for-additional-map-layers">Data Mapping for Additional Map Layers</a></li>
+    <li><a href="#additional-settings-for-additional-map-layers">Additional Settings for Additional Map Layers</a></li>
+    <li><a href="#range-styles-for-additional-map-layers">Range Styles for Additional Map Layers</a>
+      <ul>
+        <li><a href="#range-expressions">Range Expressions</a></li>
+        <li><a href="#kubra-recommended-icons-and-colorshape-combinations">KUBRA-recommended icons and color/shape combinations</a></li>
+      </ul>
+    </li>
+    <li><a href="#legend-labels">Legend Labels</a></li>
+    <li><a href="#layer-field-labels">Layer Field Labels</a></li>
+    <li><a href="#buttons-for-external-links">Buttons for External Links</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/storm-center/index.html"><span itemprop="name">Storm Center</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/storm-center/configuration-guide/index.html"><span itemprop="name">Configuration Guide</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Create AML Data Layers</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/configuration-guide/create-outage-layers/index.html" title="Create Outage Data Layers (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/configuration-guide/create-service-territory/index.html" title="Create Service Territory (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable storm-center" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="create-aml-data-layers">Create AML Data Layers</h1>
+
+<p>Storm Center also allows you to display additional data like hazards, gas outages, flooding etc. on your public or internal Outage Maps using Additional Map Layers.</p>
+<p>To create an Additional Map Layer, use the <strong>Data Layers</strong> sub-section of the <strong>Shared Resources</strong> section of the Instance Dashboard.</p>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Warning
+  </div>
+  <div class="box-content">
+<p>Additional Map Layers can only be created once you have outage maps; they cannot exist in isolation.</p>
+  </div>
+</div>
+<h2 id="layer-name-source-and-titles">Layer Name, Source, and Titles</h2>
+<ol>
+<li>Click the <strong>Create Data Layer</strong> button.</li>
+<li>Enter a name for the layer - this name is how you will identify the layer in other areas of the Instance Manager; it will not show up on the map.</li>
+<li>Select an access restriction policy. The options available in the drop-down come from the policies created in the <a href="/storm-center/configuration-guide/index.html#create-access-restriction-policies">Access Restriction section</a> of the Instance Dashboard.</li>
+<li>Select a layer type. For an Additional Map Layer, select AML.
+<ul>
+<li>&ldquo;AML&rdquo; is for showing non-outage data on a map layer. This layer type is only available with the Additional Map Layer module.</li>
+</ul>
+</li>
+<li>Enter titles for the layer for each language supported by the instance - these titles will be used at the top of the information panels on the map.
+<ul>
+<li>If you want to use the value of the specific property (such as the name) as the information panel title, enter <code>${name}</code> in the layer title fields..</li>
+<li>Enter a title for the information panels associated with individual icons and a title for the information panels associated with cluster icons.</li>
+<li>KUBRA recommends a maximum of 15-20 characters for these titles. You may need to adjust the length or formatting of the titles after testing them on a map to ensure that they display and wrap well.</li>
+</ul>
+</li>
+<li>Select the type of layer you want the AML to be. Your choices are <strong>Client Cluster</strong> or <strong>Vector</strong>.
+<ul>
+<li>Client Cluster - Allows for clustering to be done on your data. Allows both clustered icons and individual icons.</li>
+<li>Vector - Allows the map to display data as-is, no clustering</li>
+</ul>
+</li>
+</ol>
+<h2 id="layer-data-source-and-information-panel-fields">Layer Data Source and Information Panel Fields</h2>
+<ol>
+<li>Under Layer Sources, select the AML data you want to associate with the layer.</li>
+<li>Under Information Panel Fields, use the <strong>Add Data Fields</strong> button to define each data field included in the Additional Map Layer data feed.</li>
+</ol>
+<h2 id="information-panel-fields-and-data-fields-for-additional-map-layers">Information Panel Fields and Data Fields for Additional Map Layers</h2>
+<p>AML GeoJSON files contain elements that you need to define for the layer. You can create data fields for an Additional Map Layer similar to how you currently create metadata fields for outage layers.</p>
+<ol>
+<li>Define the element name indicated in the GeoJSON files</li>
+<li>Define the element path to the element in the data feed</li>
+<li>Input the Reduce function for this element. This is the operation/aggregation function you want to run on the AML data to display as a cluster</li>
+<li>Select the data type for the element from the drop-down. Options are
+<ul>
+<li>string</li>
+<li>number</li>
+<li>datetime</li>
+</ul>
+</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Aggregation functions can only be run when the AML data type is string or number.</p>
+  </div>
+</div>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Element names are case-sensitive. Ensure you think about case when naming elements.</p>
+  </div>
+</div>
+<h2 id="data-mapping-for-additional-map-layers">Data Mapping for Additional Map Layers</h2>
+<p>The Field Mappings selection of the data layer form associates data field mapping with one or more field types in the data layer. This allows the map to mask field values from an AML file with customer-friendly or public-facing values.</p>
+<p>If you want to provide mapping for one or more data fields in the information panel for AML icons, click the <strong>Submit</strong> button at the bottom of the Create Data Layer form to save your in-progress layer and then follow the instructions to <a href="/storm-center/configuration-guide/create-data-labels/index.html#outageaml-data-mapping">create data mapping</a>.</p>
+<p>After you create the data mapping you want to use, return to the edit data layer form under Data Layers and click the <strong>Add Field Mapping Relationship</strong> button. Next, select a data field from the drop-down and then select the mapping name.</p>
+<h2 id="additional-settings-for-additional-map-layers">Additional Settings for Additional Map Layers</h2>
+<ol>
+<li>Provide zoom settings and cluster tolerance.
+<ul>
+<li>Enter a maximum zoom level at which to combine AML location icons into Clusters.</li>
+<li>Enter a zoom level at which to provide expanded AML information in the information panels for AML cluster icons - KUBRA recommends setting this zoom level one level below the <strong>Max Zoom to Cluster</strong> setting. If you do not want to show individual AML information in cluster icon information panels at any zoom level, set the <strong>Start Zoom to Paginate Outage</strong> to -1.</li>
+<li>Select a Cluster Tolerance Level on the slider between 20 and 40.</li>
+</ul>
+</li>
+</ol>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>The recommended Cluster Tolerance Level is based on the size of the AML location and cluster icons. If you are using the default WCAG-compliant icon set, KUBRA recommends setting the cluster tolerance to 35.</p>
+  </div>
+</div>
+<h2 id="range-styles-for-additional-map-layers">Range Styles for Additional Map Layers</h2>
+<p>You can customize how a Storm Center layer looks by writing a JSON object. For a map data layer, each JSON object consists of properties representing the ranges.</p>
+<p>Storm Center provides 3 choices to assist you in writing your JSON object.</p>
+<ol>
+<li>Select a pre-existing template under <strong>Apply Styling Template</strong>, modify if needed
+OR</li>
+<li>Copy a template from another layer in the same instance, modify if needed
+OR</li>
+<li>Write your own JSON object.</li>
+</ol>
+<p>This table lists all the choices you have while writing or editing a range on a JSON object.</p>
+<table>
+<thead>
+<tr>
+<th>JSON property</th>
+<th>Description</th>
+<th>Possible use cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>legendOrder</code></td>
+<td>Decides the order of the defined range in the legend.</td>
+<td>A legend order of <code>-1</code> will hide this range style from the legend.</td>
+</tr>
+<tr>
+<td><code>rangeExpr</code></td>
+<td>Decides range conditions.</td>
+<td>See <a href="/storm-center/configuration-guide/create-aml-data-layers/index.html#range-expressions">Range Expressions</a> for more details.</td>
+</tr>
+<tr>
+<td><code>rangeLabel</code></td>
+<td>Defines the range label for each range, appears to the right of the icon in the map legend.</td>
+<td>Each defined range should have range labels in all languages supported for that instance of Storm Center. KUBRA recommends a maximum of 25 characters for these labels.</td>
+</tr>
+<tr>
+<td><code>rangeStyles</code></td>
+<td>Defines the styles associated with a range.</td>
+<td>Since it is an object that contains the styles, all options under <strong>Range Styles</strong> will be included in the table with a dot notation.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape</code></td>
+<td>Defines all the characteristics of a polygon shape.</td>
+<td>These characteristics exist when there is a shape to represent for AML polygons.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.borderColor</code></td>
+<td>Defines the polygon&rsquo;s border color.</td>
+<td>Use Hex color codes.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.borderOpacity</code></td>
+<td>Defines the polygon&rsquo;s border opacity.</td>
+<td>Accepts a decimal value between and including 0 and 1.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.borderWeight</code></td>
+<td>Defines the polygon&rsquo;s border weight.</td>
+<td>Accepts an integer value equal to or greater than 0.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.fillColor</code></td>
+<td>Defines the polygon&rsquo;s fill color.</td>
+<td>Use Hex color codes.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.opacity</code></td>
+<td>Defines the polygon&rsquo;s opacity.</td>
+<td>Accepts a decimal value between and including 0 and 1.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon</code></td>
+<td>Defines all the characteristics of the icon specific to that range.</td>
+<td>These characteristics exist when there is an icon to represent the AML location.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.url</code></td>
+<td>Defines the url for the icon.</td>
+<td>KUBRA requires using the path URL from Image Resource Manager for this purpose.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.size</code></td>
+<td>Defines the icon size.</td>
+<td>Provide a width and height in pixels for the icon. Input accepted is an array [width, height].</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.anchor</code></td>
+<td>Defines the icon anchor.</td>
+<td>The coordinates of the &ldquo;tip&rdquo; of the icon (relative to its top left corner). The icon will be aligned so that this point is at the marker&rsquo;s geographical location. Input accepted is an array [x,y].</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.labelValue</code></td>
+<td>Displays a map label for that icon.</td>
+<td>Clients can request specific values they want the label to display. You can use properties of the record for the label value, for example <code>${n_out}</code>, <code>${cust_a.val}</code>.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.labelAnchor</code></td>
+<td>Defines the icon label anchor.</td>
+<td>The coordinates of the &ldquo;tip&rdquo; of the icon label (relative to its top left corner). The label will be aligned so that this point is at the marker&rsquo;s geographical location. Input accepted is an array [x,y].</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.opacity</code></td>
+<td>Defines icon opacity.</td>
+<td>Accepts a decimal value between and including 0 and 1.</td>
+</tr>
+</tbody>
+</table>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>When styling mapped data fields, the original data has a <code>.orig</code> added to it. You can use <code>fieldName.orig</code> in your Range Expressions to avoid adding translations when performing data mapping.</p>
+  </div>
+</div>
+<h3 id="range-expressions">Range Expressions</h3>
+<p>A range expression is a JSON property which decides range definition conditions. Conditions are defined over data fields. Each data field supports specific operators depending on the data type of the field.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Range expressions can include one or more conditions using the &amp;&amp; (AND) and || (OR) operators.</p>
+  </div>
+</div>
+<p>You can use the following conditions to define a range:</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>JSON parameter</th>
+<th>Data type</th>
+<th>Special features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cluster</td>
+<td><code>cluster</code></td>
+<td>boolean</td>
+<td>Special field indicating if the map element corresponds to a cluster or not.</td>
+</tr>
+<tr>
+<td>Cause</td>
+<td><code>cause</code></td>
+<td>string, JSON object</td>
+<td>Supports mapping tables; view warning below when using mapping tables for Range Expressions.</td>
+</tr>
+<tr>
+<td>Number of customers affected</td>
+<td><code>cust_a.val</code></td>
+<td>integer</td>
+<td>To access the <code>value</code> of <code>cust_a</code>, use the <code>cust_a.val</code> parameter.</td>
+</tr>
+<tr>
+<td>Percentage of customers affected</td>
+<td><code>perc_cust_a.val</code></td>
+<td>integer</td>
+<td>To access the <code>value</code> of <code>perc_cust_a</code>, use the <code>perc_cust_a.val</code> parameter.</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td><code>comments</code></td>
+<td>string</td>
+<td>No special features.</td>
+</tr>
+<tr>
+<td>Crew icon</td>
+<td><code>crew_icon</code></td>
+<td>boolean</td>
+<td>To determine whether the crew icon is shown for the AML location on the Storm Center map. If <strong>True</strong>, the crew icon will be shown. If <strong>False</strong>, the crew icon will not be shown. However, you still need to click the <strong>Enable Crew Indicator</strong> checkbox to confirm the icon will be visible.</td>
+</tr>
+<tr>
+<td>Crew status</td>
+<td><code>crew_status</code></td>
+<td>string, JSON object</td>
+<td>Supports mapping tables; view warning below when using mapping tables for Range Expressions.</td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td><code>metadata</code></td>
+<td>JSON object, supports integer, string, boolean</td>
+<td>Elements within the Metadata property support mapping tables depending on the configuration; view warning below when using mapping tables for Range Expressions.</td>
+</tr>
+<tr>
+<td>Number of AML elements</td>
+<td><code>n_out</code></td>
+<td>integer</td>
+<td>No special features.</td>
+</tr>
+</tbody>
+</table>
+<p>When using mapping tables for a range expression, you should reference mapping table languages with square brackets like <code>parameter['language']</code>. The languages available are EN-US, ES-ES, es-US, and fr-CA. For example, accessing the cause in French would be <code>cause['fr-CA']</code>. Ideally, we recommend using the default language used when creating the instance when you reference a language in the mapping table.</p>
+<p>Ensure you have an additional condition defining the parameter as not equal to null (to avoid an error when parsing the expression).</p>
+<p>For example, &ldquo;cause != null&rdquo;. &ldquo;cause != null &amp;&amp; cause[&lsquo;EN-US&rsquo;] == &lsquo;Planned maintenance&rsquo;&rdquo; is an example of a condition that supports mapping tables.</p>
+<p>The table below indicates the operators allowed with data types used in Range Expressions.</p>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>Operators allowed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>OR, AND, ==, !=, unary operator (!a)</td>
+</tr>
+<tr>
+<td>string</td>
+<td>OR, AND, ===, ==, !==, !=, can use (&lt;, &gt;, &lt;=, &gt;=) operators when lexical and case dependent matching</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>OR, AND, ===, ==, !==, !=, &lt;, &gt;, &lt;=, &gt;=, +, -, *, /, unary operators (+a, -a, !a)</td>
+</tr>
+</tbody>
+</table>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>AML uses data fields specifically defined for it. Ensure you use those data fields while defining Range Expressions.</p>
+  </div>
+</div>
+<h3 id="kubra-recommended-icons-and-colorshape-combinations">KUBRA-recommended icons and color/shape combinations</h3>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>KUBRA recommends using a combination of color and shape for AML icons to help users with color vision deficiency. In addition, the colors for the recommended icons are selected to provide adequate contrast with the white color used for the icon shapes and with the background map.</p>
+  </div>
+</div>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>KUBRA recommends using the following image sizes (in pixels):
+24x24 up to 32x32 SVGs for individual elements and 40x40 SVGs for element clusters, similar to the recommended icon sizes for outages and outage clusters.</p>
+  </div>
+</div>
+<h4 id="icons-for-additional-map-layers">Icons for Additional Map Layers</h4>
+<p>These are the default KUBRA-recommended ADA-compliant icons for an Additional Map layer:</p>
+<ul>
+<li>Water Outage</li>
+<li>Water Cluster</li>
+<li>Gas Outage</li>
+<li>Gas Cluster</li>
+<li>General Hazard</li>
+<li>Hazard Cluster</li>
+<li>Fire</li>
+<li>Road Closure</li>
+<li>General Water</li>
+<li>Gas Leak</li>
+</ul>
+<p><a href="#R-image-1b42c1cac57621c4525e1d4e7df6da0e" class="lightbox-link"><img alt="WCAG-compliant AML icons" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/default-aml-icons.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1b42c1cac57621c4525e1d4e7df6da0e"><img alt="WCAG-compliant AML icons" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/default-aml-icons.png"></a></p>
+<h2 id="legend-labels">Legend Labels</h2>
+<p>The map legend includes an introductory label to indicate what the numbers for each range refer to. For example, if you chose &ldquo;Customers Affected&rdquo; as the method for determining ranges, you could use &ldquo;Customers Affected&rdquo; as the Legend Label.</p>
+<p>Enter labels to be used on the map legend for each language supported by the instance. KUBRA recommends a maximum of 25 characters for the map legend labels.</p>
+<h2 id="layer-field-labels">Layer Field Labels</h2>
+<p>You can determine the order of the data fields shown in the information panel for the layer and provide labels for each field. Data fields are arranged vertically - the field with order 1 will be at the top of the information panel, followed by the field with order 2, and so on.</p>
+<p>Choose an order for each data field and enter labels for each language supported by the instance. Labels for mobile browsers should be shorter than labels for desktop browsers so they can be read on a narrow screen.</p>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>If you want to include punctuation after the field labels in the information panel, you <strong>must</strong> include the punctuation in the text fields here.</p>
+  </div>
+</div>
+<p>KUBRA recommends a maximum of 45 characters for information panel field labels. You may need to adjust the length or formatting of the labels after testing them on a map to ensure that they display and wrap well.</p>
+<h2 id="buttons-for-external-links">Buttons for External Links</h2>
+<p>If you want to add one or more buttons to the bottom of the information panels for the layer, click the drop-down under <strong>Custom Footer Buttons</strong> and then select a button name from the list.</p>
+<p>Before you can select a button here, you must <a href="/storm-center/configuration-guide/create-buttons/index.html">create buttons</a>.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740"><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d"><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610" checked><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/storm-center/configuration-guide/create-aml-data-layers/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

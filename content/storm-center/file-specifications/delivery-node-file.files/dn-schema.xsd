@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="catalog" type="catalogType"/>
+  <xs:simpleType name="empty-string">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value=""/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="non-negative-int-or-nothing">
+    <xs:union memberTypes="xs:nonNegativeInteger empty-string"/>
+  </xs:simpleType>
+  <xs:simpleType name="latitudeType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="-90"/>
+      <xs:maxInclusive value="90"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="longitudeType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="-180"/>
+      <xs:maxInclusive value="180"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="areaSchemaType">
+    <xs:sequence>
+      <xs:element name="areaType" type="xs:string"></xs:element>
+      <xs:element name="areaId" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dnType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id" />
+      <xs:element type="latitudeType" name="latitude"/>
+      <xs:element type="longitudeType" name="longitude"/>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="customersServed" type="non-negative-int-or-nothing" minOccurs="0"/>
+        <xs:element name="articles" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:choice>
+      <xs:element name="areas" type="areaSchemaType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="regionCode" type="xs:string" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="catalogType">
+    <xs:sequence>
+      <xs:element type="dnType" name="dn" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

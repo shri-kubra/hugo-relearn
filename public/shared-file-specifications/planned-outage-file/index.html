@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="Introduction This document outlines the structure of a planned outage file. Planned outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.
+Planned outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.
+Attachmentsplanned-outage.json(1 kb)planned-outage.xml(1 kb)planned-outages-schema.xsd(2 kb)File Structure JSON Planned outage files can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Planned Outage File :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="Introduction This document outlines the structure of a planned outage file. Planned outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.
+Planned outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.
+Attachmentsplanned-outage.json(1 kb)planned-outage.xml(1 kb)planned-outages-schema.xsd(2 kb)File Structure JSON Planned outage files can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab.">
+    <meta property="og:url" content="http://localhost:1313/shared-file-specifications/planned-outage-file/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Planned Outage File :: KUBRA Product Documentation">
+    <meta property="og:description" content="Introduction This document outlines the structure of a planned outage file. Planned outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.
+Planned outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.
+Attachmentsplanned-outage.json(1 kb)planned-outage.xml(1 kb)planned-outages-schema.xsd(2 kb)File Structure JSON Planned outage files can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Shared File Specifications and Resources">
+    <meta itemprop="name" content="Planned Outage File :: KUBRA Product Documentation">
+    <meta itemprop="description" content="Introduction This document outlines the structure of a planned outage file. Planned outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.
+Planned outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.
+Attachmentsplanned-outage.json(1 kb)planned-outage.xml(1 kb)planned-outages-schema.xsd(2 kb)File Structure JSON Planned outage files can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab.">
+    <meta itemprop="wordCount" content="1148">
+    <title>Planned Outage File :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/shared-file-specifications/planned-outage-file/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#file-structure">File Structure</a>
+      <ul>
+        <li><a href="#json">JSON</a></li>
+        <li><a href="#xml">XML</a></li>
+      </ul>
+    </li>
+    <li><a href="#elements">Elements</a>
+      <ul>
+        <li><a href="#relationships-between-affecteddeliverynodes-customersaffected-and-geometry-elements">Relationships between affectedDeliveryNodes, customersAffected, and geometry Elements</a></li>
+        <li><a href="#geographic-coordinate-system-for-geometry-elements">Geographic Coordinate System for Geometry Elements</a></li>
+        <li><a href="#affected-delivery-node-elements">Affected Delivery Node Elements</a></li>
+      </ul>
+    </li>
+    <li><a href="#failure-scenarios">Failure Scenarios</a></li>
+    <li><a href="#compression">Compression</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/shared-file-specifications/index.html"><span itemprop="name">Shared File Specifications and Resources</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Planned Outage File</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/shared-file-specifications/outage-file/index.html" title="Outage File (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/shared-file-specifications/failure-types/index.html" title="Data Feed Processing Failures (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable shared-file-specifications" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="planned-outage-file">Planned Outage File</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>This document outlines the structure of a planned outage file. Planned outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.</p>
+<p>Planned outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.</p>
+<section class="attachments orange">
+	<label>
+		<i class="fas fa-paperclip"></i>
+		Attachments
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//shared-file-specifications/planned-outage-file.files/planned-outage.json" >
+					planned-outage.json
+				</a>
+				(1 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//shared-file-specifications/planned-outage-file.files/planned-outage.xml" >
+					planned-outage.xml
+				</a>
+				(1 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//shared-file-specifications/planned-outage-file.files/planned-outages-schema.xsd" >
+					planned-outages-schema.xsd
+				</a>
+				(2 kb)
+			</li>
+		
+	
+	</div>
+	
+</section>
+
+<h2 id="file-structure">File Structure</h2>
+<h3 id="json">JSON</h3>
+<p>Planned outage files can be sent in JavaScript Object Notation (JSON) format as specified in <a href="https://tools.ietf.org/html/rfc7159" target="_blank" rel="external">Internet Engineering Task Force standard RFC7159 <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+. The .json file extension <strong>MUST</strong> be used to indicate file type.</p>
+<h4 id="example-1---a-planned-outage-file-in-json-format">Example 1 - A planned outage file in JSON format</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;plannedOutages&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;PO-PHX01&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;cause&#34;</span>: <span style="color:#e6db74">&#34;Tree Trimming&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;comments&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;start&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T13:27:06.974Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;end&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T17:27:06.974Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;duration&#34;</span>: <span style="color:#ae81ff">14400</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;updatedAt&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T17:27:01.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;customersAffected&#34;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;metadata&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;internalNote&#34;</span>: <span style="color:#e6db74">&#34;Vegetation Management&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;affectedTransformers&#34;</span>: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;affectedDeliveryNodes&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;dnId&#34;</span>: <span style="color:#e6db74">&#34;PHX01&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;geometry&#34;</span>: <span style="color:#e6db74">&#34;MULTIPOLYGON(((-111.49 34.50,-114.91 34.50,-114.91 31.28,-111.49 31.28,-111.49 34.50)),((-113.577 34.610,-112.598 35.411,-113.576 35.411,-113.577 34.610)))&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;PO-PHX02&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;cause&#34;</span>: <span style="color:#e6db74">&#34;Equipment Maintenance&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;comments&#34;</span>: <span style="color:#e6db74">&#34;Replacing Pole&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;start&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T08:13:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;end&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T21:30:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;duration&#34;</span>: <span style="color:#ae81ff">47820</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;updatedAt&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T17:27:01.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;customersAffected&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;metadata&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;internalNote&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;affectedTransformers&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;affectedDeliveryNodes&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;dnId&#34;</span>: <span style="color:#e6db74">&#34;PHX02&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="xml">XML</h3>
+<p>Planned outage files can be sent in XML format as specified by the <a href="https://www.w3.org/TR/REC-xml/" target="_blank" rel="external">W3 XML 1.0 5th Edition recommendation <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ adhering to the following schema:</p>
+<blockquote>
+<p><a href="../planned-outage-file.files/planned-outages-schema.xsd">planned-outages-schema.xsd</a></p>
+</blockquote>
+<p>The .xml file extension <strong>MUST</strong> be used to indicate file type.</p>
+<h4 id="example-2---a-planned-outage-file-in-xml-format">Example 2 - A planned outage file in XML format</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;catalog&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;plannedOutages&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;plannedOutage&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;id&gt;</span>PO-PHX01<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;cause&gt;</span>Tree Trimming<span style="color:#f92672">&lt;/cause&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;comments&gt;&lt;/comments&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;start&gt;</span>2017-04-05T13:27:06.974Z<span style="color:#f92672">&lt;/start&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;end&gt;</span>2017-04-05T17:27:06.974Z<span style="color:#f92672">&lt;/end&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;duration&gt;</span>14400<span style="color:#f92672">&lt;/duration&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;updatedAt&gt;</span>2017-04-05T17:27:01.000Z<span style="color:#f92672">&lt;/updatedAt&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;customersAffected&gt;</span>10<span style="color:#f92672">&lt;/customersAffected&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;metadata&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;internalNote&gt;</span>Vegetation Management<span style="color:#f92672">&lt;/internalNote&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;affectedTransformers&gt;</span>5<span style="color:#f92672">&lt;/affectedTransformers&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/metadata&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;affectedDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;dnId&gt;</span>PHX01<span style="color:#f92672">&lt;/dnId&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/affectedDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;geometry&gt;</span>MULTIPOLYGON(((-111.49 34.50,-114.91 34.50,-114.91 31.28,-111.49 31.28,-111.49 34.50)),((-113.577 34.610,-112.598 35.411,-113.576 35.411,-113.577 34.610)))<span style="color:#f92672">&lt;/geometry&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/plannedOutage&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;plannedOutage&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;id&gt;</span>PO-PHX02<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;cause&gt;</span>Equipment Maintenance<span style="color:#f92672">&lt;/cause&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;comments&gt;</span>Replacing Pole<span style="color:#f92672">&lt;/comments&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;start&gt;</span>2017-04-05T08:13:00.000Z<span style="color:#f92672">&lt;/start&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;end&gt;</span>2017-04-05T21:30:00.000Z<span style="color:#f92672">&lt;/end&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;duration&gt;</span>47820<span style="color:#f92672">&lt;/duration&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;updatedAt&gt;</span>2017-04-05T17:27:01.000Z<span style="color:#f92672">&lt;/updatedAt&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;customersAffected&gt;&lt;/customersAffected&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;metadata&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;internalNote&gt;&lt;/internalNote&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;affectedTransformers&gt;</span>1<span style="color:#f92672">&lt;/affectedTransformers&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/metadata&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;affectedDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;dnId&gt;</span>PHX02<span style="color:#f92672">&lt;/dnId&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/affectedDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/plannedOutage&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/plannedOutages&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/catalog&gt;</span></span></span></code></pre></div>
+<h2 id="elements">Elements</h2>
+<p>A <code>plannedOutages</code> wrapper member is used to encapsulate the planned outage elements. These are referred to as planned outages.</p>
+<p>A <code>plannedOutage</code> member <strong>MUST</strong> contain at least the following element:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>A string indicating the external ID in your system for tracking planned outages.</td>
+</tr>
+</tbody>
+</table>
+<p>A <code>plannedOutage</code> member <strong>MAY</strong> contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start</td>
+<td>A dateTime representing the date and time of the estimated start of the outage in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ format.</td>
+</tr>
+<tr>
+<td>end</td>
+<td>A dateTime representing the date and time of the estimated end of the outage (possibly also known as the estimated restoration time) in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ format.</td>
+</tr>
+<tr>
+<td>cause</td>
+<td>A string representing the cause of the outage, or a code which can be mapped to a specific string.</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>A string representing comments for the outage.</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>An integer representing the estimated duration of the outage in seconds.</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>A dateTime representing the date and time when the outage status was last updated in ISO-8601 format.</td>
+</tr>
+<tr>
+<td>customersAffected</td>
+<td>The number of customers affected by the planned outage. This element is required when an array of affectedDeliveryNodes is not provided.</td>
+</tr>
+<tr>
+<td>affectedDeliveryNodes</td>
+<td>An array of <code>affectedDeliveryNodes</code> members representing the affected delivery nodes or an empty array. This element is required unless a customersAffected element and a geometry element are provided.</td>
+</tr>
+<tr>
+<td>geometry</td>
+<td>A set of coordinates representing the area affected by the planned outage, in <a href="http://docs.opengeospatial.org/is/12-063r5/12-063r5.html" target="_blank" rel="external">WKT <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ format. Only Point, MultiPoint, LineString, Polygon, and MultiPolygon types will be accepted. This element is required when an array of affectedDeliveryNodes is not provided.</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>An object to support custom data. This can include custom properties to be displayed with the planned outage that are not represented in the other elements of the <code>plannedOutage</code> member. Supported data types for metadata objects are string, number, percentage, datetime, and HTML markup.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="relationships-between-affecteddeliverynodes-customersaffected-and-geometry-elements">Relationships between affectedDeliveryNodes, customersAffected, and geometry Elements</h3>
+<p>There are multiple options for presenting information about the area affected by a planned outage and the number of customers affected by a planned outage, depending on the set of optional elements included in the planned outages file.</p>
+<table>
+<thead>
+<tr>
+<th>Elements Included</th>
+<th>Source for Area Affected</th>
+<th>Source for Customers Affected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>affectedDeliveryNodes</code></td>
+<td>Calculation using latitude and longitude values from delivery nodes identified by <code>dnId</code></td>
+<td>Calculation using customers served values from delivery nodes identified by <code>dnId</code></td>
+</tr>
+<tr>
+<td><code>affectedDeliveryNodes</code> and <code>geometry</code></td>
+<td>Coordinates provided in <code>geometry</code></td>
+<td>Calculation using customers served values from delivery nodes identified by <code>dnId</code></td>
+</tr>
+<tr>
+<td><code>affectedDeliveryNodes</code> and <code>customersAffected</code></td>
+<td>Calculation using latitude and longitude values from delivery nodes identified by <code>dnId</code></td>
+<td>Value provided as <code>customersAffected</code></td>
+</tr>
+<tr>
+<td><code>affectedDeliveryNodes</code>, <code>customersAffected</code>, and <code>geometry</code></td>
+<td>Coordinates provided in <code>geometry</code></td>
+<td>Value provided as <code>customersAffected</code></td>
+</tr>
+<tr>
+<td><code>customersAffected</code> and <code>geometry</code></td>
+<td>Coordinates provided in <code>geometry</code></td>
+<td>Value provided as <code>customersAffected</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="geographic-coordinate-system-for-geometry-elements">Geographic Coordinate System for Geometry Elements</h3>
+<p>Planned outage files support a <code>geometry</code> element in <a href="https://en.wikipedia.org/wiki/Well-known_text" target="_blank" rel="external">Well-known text (WKT) <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ format. Of the geometric objects supported by WKT, planned outage files only support Point, MultiPoint, LineString, Polygon, and MultiPolygon.</p>
+<p>Coordinate pairs must be presented with the longitude followed by the latitude. The coordinate points of each geometry element must be provided in EPSG:4326, also known as WGS84. There is currently no support for providing coordinates in other geographic projection systems. For details about the EPSG:4326 coordinate system, access the <a href="https://spatialreference.org/ref/epsg/wgs-84/" target="_blank" rel="external">specification provided by Spatial Reference <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+.</p>
+<p>The Open Geospatial Consortium standard for WKT requires a polygon to be topologically closed. If the exterior linear ring of a polygon is defined in a counter clockwise direction, it will be seen from the &ldquo;top.&rdquo; Any interior linear rings should be defined in the opposite direction as the exterior ring, in this case, clockwise.</p>
+<h4 id="example-point">Example Point</h4>
+<div class="highlight wrap-code"><pre tabindex="0"><code>POINT(-108.72070312499997 34.99400375757577)</code></pre></div>
+<h4 id="example-multipoint">Example MultiPoint</h4>
+<div class="highlight wrap-code"><pre tabindex="0"><code>MULTIPOINT((-108.72070312499997 34.99400375757577),(-108.71744155883789 34.99203495489647))</code></pre></div>
+<h4 id="example-linestring">Example LineString</h4>
+<div class="highlight wrap-code"><pre tabindex="0"><code>LINESTRING(-108.71967315673827 34.995128766415135,-108.71641159057616 34.991753693504876,-108.72053146362303 34.989081662082214,-108.7152099609375 34.98865975441066,-108.71091842651366 34.98739401834899)</code></pre></div>
+<h4 id="example-polygon-without-hole">Example Polygon without Hole</h4>
+<div class="highlight wrap-code"><pre tabindex="0"><code>POLYGON((-108.72070312499997 34.99400375757577,-100.01953124999997 46.58906908309183,-90.79101562499996 34.92197103616377,-108.72070312499997 34.99400375757577))</code></pre></div>
+<h4 id="example-polygon-with-hole">Example Polygon with Hole</h4>
+<div class="highlight wrap-code"><pre tabindex="0"><code>POLYGON((-108.72070312499997 34.99400375757577,-100.01953124999997 46.58906908309183,-90.79101562499996 34.92197103616377,-108.72070312499997 34.99400375757577),(-100.10742187499997 41.47566020027821,-102.91992187499996 37.61423141542416,-96.85546874999996 37.54457732085582,-100.10742187499997 41.47566020027821))</code></pre></div>
+<h4 id="example-multipolygon-without-hole">Example MultiPolygon without Hole</h4>
+<div class="highlight wrap-code"><pre tabindex="0"><code>MULTIPOLYGON(((-108.72070312499997 34.99400375757577,-100.01953124999997 46.58906908309183,-90.79101562499996 34.92197103616377,-108.72070312499997 34.99400375757577)),((-85.16601562499999 34.84987503195417,-80.771484375 28.497660832963476,-76.904296875 34.92197103616377,-85.16601562499999 34.84987503195417)))</code></pre></div>
+<h4 id="example-multipolygon-with-hole">Example MultiPolygon with Hole</h4>
+<div class="highlight wrap-code"><pre tabindex="0"><code>MULTIPOLYGON(((-108.72070312499997 34.99400375757577,-100.01953124999997 46.58906908309183,-90.79101562499996 34.92197103616377,-108.72070312499997 34.99400375757577),(-100.10742187499997 41.47566020027821,-102.91992187499996 37.61423141542416,-96.85546874999996 37.54457732085582,-100.10742187499997 41.47566020027821)),((-85.16601562499999 34.84987503195417,-80.771484375 28.497660832963476,-76.904296875 34.92197103616377,-85.16601562499999 34.84987503195417)))</code></pre></div>
+<h3 id="affected-delivery-node-elements">Affected Delivery Node Elements</h3>
+<p>An <code>affectedDeliveryNodes</code> member <strong>MUST</strong> contain at least the following element:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dnId</td>
+<td>A string indicating the delivery node ID.</td>
+</tr>
+</tbody>
+</table>
+<p>An <code>affectedDeliveryNodes</code> member <strong>MAY</strong> contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>confidence</td>
+<td>A string representing the confidence level. The default value is LOW. This value is case sensitive and must match exactly one of the following values: <code>LOW</code>, <code>MEDIUM</code>, or <code>HIGH</code>.</td>
+</tr>
+<tr>
+<td>callbackContact</td>
+<td>A string representing the callback contact information such as a phone number or email.</td>
+</tr>
+<tr>
+<td>reported</td>
+<td>A boolean to determine whether the outage for the affected delivery node was reported by a customer.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="failure-scenarios">Failure Scenarios</h2>
+<p>Complete and partial planned outage file processing failures are described on the <a href="/shared-file-specifications/failure-types/index.html#planned-outage-files">Data Feed Processing Failures page</a>.</p>
+<p>If an outage is discarded from the planned outage file, outage data associated with that outage will not appear on the map.</p>
+<h2 id="compression">Compression</h2>
+<p><a href="https://www.gnu.org/software/gzip/" target="_blank" rel="external">GZip <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ file compression is supported for all file types. All GZip compressed files should end with .gz, such as <code>plannedOutages_20180101123045.json.gz</code>.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740"><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d" checked><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610"><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/shared-file-specifications/planned-outage-file/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

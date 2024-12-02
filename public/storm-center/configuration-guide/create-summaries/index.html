@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="Storm Center outage and AML maps can optionally show summary information for the entire service territory at the top of the overview panel. The workflow for each of them differs significantly so they have been documented separately.
+To set up summary data, use the Summaries sub-section of the Shared Resources section of the Instance Dashboard.
+Outage Summaries Click the Create Summary button. Enter a name for the summary - this name is how you will identify the summary information in other areas of the Instance Manager; it will not show up on the map.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Create Summaries and Summary Reports :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="Storm Center outage and AML maps can optionally show summary information for the entire service territory at the top of the overview panel. The workflow for each of them differs significantly so they have been documented separately.
+To set up summary data, use the Summaries sub-section of the Shared Resources section of the Instance Dashboard.
+Outage Summaries Click the Create Summary button. Enter a name for the summary - this name is how you will identify the summary information in other areas of the Instance Manager; it will not show up on the map.">
+    <meta property="og:url" content="http://localhost:1313/storm-center/configuration-guide/create-summaries/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Create Summaries and Summary Reports :: KUBRA Product Documentation">
+    <meta property="og:description" content="Storm Center outage and AML maps can optionally show summary information for the entire service territory at the top of the overview panel. The workflow for each of them differs significantly so they have been documented separately.
+To set up summary data, use the Summaries sub-section of the Shared Resources section of the Instance Dashboard.
+Outage Summaries Click the Create Summary button. Enter a name for the summary - this name is how you will identify the summary information in other areas of the Instance Manager; it will not show up on the map.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Storm Center">
+    <meta itemprop="name" content="Create Summaries and Summary Reports :: KUBRA Product Documentation">
+    <meta itemprop="description" content="Storm Center outage and AML maps can optionally show summary information for the entire service territory at the top of the overview panel. The workflow for each of them differs significantly so they have been documented separately.
+To set up summary data, use the Summaries sub-section of the Shared Resources section of the Instance Dashboard.
+Outage Summaries Click the Create Summary button. Enter a name for the summary - this name is how you will identify the summary information in other areas of the Instance Manager; it will not show up on the map.">
+    <meta itemprop="wordCount" content="2413">
+    <title>Create Summaries and Summary Reports :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/storm-center/configuration-guide/create-summaries/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#outage-summaries">Outage Summaries</a></li>
+    <li><a href="#aml-summaries">AML Summaries</a></li>
+    <li><a href="#outage-summary-reports">Outage Summary Reports</a>
+      <ul>
+        <li><a href="#data-fields-and-labels">Data Fields and Labels</a></li>
+        <li><a href="#report-behavior-settings">Report Behavior Settings</a></li>
+        <li><a href="#etr-settings">ETR Settings</a></li>
+        <li><a href="#totals-settings">Totals Settings</a></li>
+        <li><a href="#customer-masking">Customer Masking</a></li>
+        <li><a href="#access-restriction">Access Restriction</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/storm-center/index.html"><span itemprop="name">Storm Center</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/storm-center/configuration-guide/index.html"><span itemprop="name">Configuration Guide</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Create Summaries and Summary Reports</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/configuration-guide/create-service-territory/index.html" title="Create Service Territory (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/configuration-guide/create-buttons/index.html" title="Create Buttons and Content Blocks (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable storm-center" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="create-summaries-and-summary-reports">Create Summaries and Summary Reports</h1>
+
+<p>Storm Center outage and AML maps can optionally show summary information for the entire service territory at the top of the overview panel. The workflow for each of them differs significantly so they have been documented separately.</p>
+<p>To set up summary data, use the <strong>Summaries</strong> sub-section of the <strong>Shared Resources</strong> section of the Instance Dashboard.</p>
+<h2 id="outage-summaries">Outage Summaries</h2>
+<ol>
+<li>Click the <strong>Create Summary</strong> button.</li>
+<li>Enter a name for the summary - this name is how you will identify the summary information in other areas of the Instance Manager; it will not show up on the map.</li>
+<li>Select the <strong>Summary Type</strong> to define what type of map you are creating the summary for. In this case, we will choose <strong>Outage</strong>.</li>
+<li>Select one or more region files to use for the summary information.</li>
+<li>If you have multiple region files and you want to combine information into one summary, select the <strong>Merge Multiple Regions</strong> checkbox. If you have only one region file, this option is not applicable.</li>
+<li>Select the data fields you want to include in the overview panel summary. Options are:
+<ul>
+<li>Tool Panel Title</li>
+<li>%Customers With/Without Power</li>
+<li>Active Outages</li>
+<li>Total Customers Affected</li>
+<li>Total Customers Served</li>
+</ul>
+</li>
+<li>Enter text labels for the summary data fields you selected for each language supported by the instance.
+<ul>
+<li>KUBRA recommends that labels be as short as possible. You may need to adjust the length or formatting of the labels after testing them on a map to ensure that they display and wrap well.</li>
+</ul>
+</li>
+<li>If you want to include a date/time stamp that shows the last time active outage data on the map was updated, select the <strong>Last Updated</strong> checkbox.</li>
+<li>Enter text labels for the Last Updated time for each language supported by the instance. This text will appear before the date/time stamp.</li>
+<li>If you want to mask the exact number of customers affected at or below a specific value, click the <strong>Customer Masking</strong> checkbox and then enter a number.
+<ul>
+<li>The value you enter for customer masking here will be combined with verbiage you enter in the <strong>Shared Resources</strong> section of the <strong>Create New View</strong> form to create a label on the map such as &ldquo;Fewer than 5.&rdquo;</li>
+</ul>
+</li>
+<li>Select an access restriction policy. The options available in the drop-down come from the policies created in the <strong>Access Restriction</strong> section of the Instance Dashboard.</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>For %Customers Affected in the overview panel summary, pick between %Customers With Power or %Customers Without Power. You can also configure the precision of the metric up to two decimal places.</p>
+  </div>
+</div>
+<h2 id="aml-summaries">AML Summaries</h2>
+<ol>
+<li>Click the <strong>Create Summary</strong> button.</li>
+<li>Enter a name for the summary - this name is how you will identify the summary information in other areas of the Instance Manager; it will not show up on the map.</li>
+<li>Select the <strong>Summary Type</strong> to define what type of map you are creating the summary for. In this case, we will choose <strong>AML</strong>.</li>
+<li>Select the <strong>Summary Source Type</strong> from the drop-down.</li>
+<li>If you want to add <strong>Summary Data Fields</strong>, click on the button with the name. You can create multiple summary data fields.</li>
+<li>Name the Summary element you want to create.</li>
+<li>Select the Aggregation Method. Your choices are Sum, Count, Min, and Max.</li>
+<li>Select the Data type for the Summary Data Field. Your choices are String, Number, and Datetime.</li>
+<li>Enter text labels for the summary data fields you created for each language supported by the instance.
+<ul>
+<li>KUBRA recommends that labels be as short as possible. You may need to adjust the length or formatting of the labels after testing them on a map to ensure that they display and wrap well.</li>
+</ul>
+</li>
+<li>Enter the summary title for each language supported by the instance.</li>
+<li>Select the precision percentage you want to allow for your summary values. You can configure integer values between 0 and 2.</li>
+<li>Select an access restriction policy. The options available in the drop-down come from the policies created in the <strong>Access Restriction</strong> section of the Instance Dashboard.</li>
+</ol>
+<h2 id="outage-summary-reports">Outage Summary Reports</h2>
+<p>Storm Center outage maps can include outage summary reports that show outage information by geographical area. These reports are accessed from buttons in the overview panel.</p>
+<p>To set up summary reports to show outage information by area, use the <strong>Summary Reports</strong> sub-section of the <strong>Shared Resources</strong> section of the Instance Dashboard.</p>
+<ol>
+<li>Click the <strong>Create New Summary Report</strong> button.</li>
+<li>Enter a name for the report - this name is how you will identify the summary report in other areas of the Instance Manager; it will not show up on the map.</li>
+<li>Choose the report type - options are &ldquo;ZIP,&rdquo; &ldquo;County,&rdquo; &ldquo;CTV,&rdquo; and any Custom thematic names, if you created custom thematics when you <a href="/storm-center/configuration-guide/connect-data-files/index.html#set-up-thematic-data">set up thematic data</a> for the instance.
+<ul>
+<li>You will only see options in this list if there is a corresponding thematic file associated with your instance.</li>
+</ul>
+</li>
+<li>Enter a label to be used for the summary report button in the overview panel. Enter a label for each language supported by the instance.
+<ul>
+<li>KUBRA recommends that these labels be 10-15 characters. You may need to adjust the length or formatting of the label or labels after testing them on a map to ensure that they display and wrap well.</li>
+</ul>
+</li>
+<li>Enter a title to be used at the top of the summary report for each language supported by the instance.
+<ul>
+<li>KUBRA recommends that this title be no more than 30 characters.</li>
+</ul>
+</li>
+<li>If you want to include a description at the top of the summary report, click the <strong>Submit</strong> button at the bottom of the create summary report form to save your in-progress report and then follow the instructions to <a href="/storm-center/configuration-guide/create-buttons/index.html">create a configurable content block</a>. After you create the content block you want to use, return to the edit summary report form under Summary Reports and select the content block name from the <strong>Summary Report Descriptions</strong> drop-down field.
+<ul>
+<li>KUBRA recommends that this description be no more than 368 characters and only include text and links.</li>
+<li>Hyperlinks must use a complete URL including the protocol. For example, <code>https://example.com</code>.</li>
+<li>You can include click-to-call links for phone numbers in the header message using the link format <code>tel:5555555555</code>. This link format uses the 10-digit phone number, including area code but excluding country code.</li>
+<li>On mobile screen sizes, the report description opens at the bottom of the report when the user selects a <strong>Report Details</strong> button at the bottom of the report.</li>
+</ul>
+</li>
+<li>Select one or more region files to use for the areas in the report.</li>
+<li>If you want to merge data from multiple regions, click the <strong>Merge Multiple Regions</strong> checkbox. If you have only one region file, this option is not applicable.</li>
+</ol>
+<h3 id="data-fields-and-labels">Data Fields and Labels</h3>
+<ol>
+<li>Select the data fields you want to include in the summary report. You can select a subset of the selected fields for desktop screen sizes to be shown on mobile screen sizes. The selected data fields will become columns on the summary report. For desktop, KUBRA recommends a maximum of six summary report columns, including the mandatory name column. For mobile, KUBRA recommends a maximum of four summary report columns, including the mandatory Name column. Field options are:
+<ul>
+<li>Customers Served</li>
+<li>Customers Affected</li>
+<li>Percentage Customers Affected</li>
+<li>ETR - Estimated Restoration Time</li>
+<li>Number of Outages</li>
+</ul>
+</li>
+<li>Enter field labels to be used for the report column headers for desktop and mobile browsers and for each language supported by the instance. Labels for mobile browsers should be shorter than labels for desktop browsers so they can be read on a narrow screen.
+<ul>
+<li>KUBRA recommends a maximum of 26 characters for the desktop label and a maximum of 10 characters for the mobile label.</li>
+<li>You may need to adjust the length or formatting of the labels after testing them on a map to ensure that they display and wrap well.</li>
+</ul>
+</li>
+<li>To change the order of the report columns, click the up or down arrows under &ldquo;Order.&rdquo; The order from top to bottom in the Summary Report form will become the order from left to right on the report.</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The Name field will always be included as a column on the summary report. If the thematic type you selected for the report includes a hierarchy, you will also have the option to include the hierarchy name as a column on the report. For example, you can include a &ldquo;State&rdquo; column on a County report.</p>
+  </div>
+</div>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>You cannot include a column on a summary report for mobile screen sizes if you do not show that column for desktop screen sizes.</p>
+  </div>
+</div>
+<h3 id="report-behavior-settings">Report Behavior Settings</h3>
+<ol>
+<li>If you want to include a filter field on the report that will allow users to find a specific area on the report by entering the name of the area, click the <strong>Filter by Area Name</strong> checkbox.</li>
+<li>If you have a report that includes a hierarchy (parent-child relationships) and want to have the report open with all child items visible when the report loads, click the <strong>Expand Tree on Load</strong> checkbox.</li>
+<li>If you do not want to limit the areas visible on the report for mobile browsers to areas with current outages, click the <strong>Display Areas without Outages on Mobile</strong> checkbox to set it to &ldquo;on.&rdquo; This checkbox is &ldquo;off&rdquo; by default.</li>
+<li>If you do not want to limit the areas visible on the report for desktop browsers to areas with current outages, click the <strong>Display Areas without Outages on Desktop</strong> checkbox to set it to &ldquo;on.&rdquo; This checkbox is &ldquo;on&rdquo; by default.</li>
+<li>If you want to include a button on the report that allows users to export a copy of the report data in CSV format, click the <strong>Allow summary report to be exported</strong> checkbox to set it to &ldquo;on.&rdquo; This checkbox is &ldquo;off&rdquo; by default.</li>
+<li>Use the Default Sort Field drop-down to select a data field to use for sorting the report. Options are &ldquo;Name&rdquo; and all of the data fields you selected to be included in the report.</li>
+<li>Use the Default Sort Order drop-down to select whether to sort data on the report in ascending (Asc) or descending (Desc) order based on the Default Sort Field. For example, you can choose to sort the report by area Name in ascending order (A to Z) or you can choose to sort the report by number of outages in descending order (most outages to fewest outages).</li>
+<li>If you want to create a tree format report that includes information based on a hierarchy of areas, use the drop-down lists under Tree Format Hierarchy to specify the starting and ending levels for the hierarchy. For example, selecting &ldquo;State&rdquo; as the starting hierarchy and &ldquo;County&rdquo; as the ending hierarchy will create a collapsible list of counties grouped by state.</li>
+</ol>
+<h4 id="summary-report-export">Summary Report Export</h4>
+<p>If you include an <strong>Export Data</strong> button on a summary report, all users of a map that includes the summary report will see the <strong>Export Data</strong> button.</p>
+<p>When a user clicks the Export Data button, the CSV file will include whatever data is visible on the summary report at that time in whatever order is shown on the summary report at that time.</p>
+<p>For example, if the user has applied an area filter and has sorted the report in ascending order by area name, only the areas included in the filtered view will be included in the CSV file, and they will be in alphabetical order by area name. The language in the CSV file will match the language currently selected on the Storm Center map.</p>
+<p>Summary report data files show each report row as a row in the CSV file. The first row of the CSV file includes the report column headers.</p>
+<p>For Area columns with hierarchy, the CSV file will show headers based on the data file for the area. For example, a County summary report with a tree format hierarchy where State is the starting hierarchy and County Name is the ending hierarchy will show &ldquo;County-1&rdquo; as the header for the state names and &ldquo;County-2&rdquo; as the header for the county names.</p>
+<p>The CSV file name will include the title of the summary report and the date and time of the Last Updated field on the summary report.</p>
+<h3 id="etr-settings">ETR Settings</h3>
+<ol>
+<li>If you want to show expired estimated restoration time (ETR) values on the report, click the <strong>Mask Expired ETR</strong> checkbox to set it to &ldquo;off.&rdquo; This checkbox is &ldquo;on&rdquo; by default. You may want to set this checkbox to &ldquo;off&rdquo; if you are creating an internal-facing map and want to see all ETRs as reported from the source system for outage data, for example.</li>
+<li>Select an ETR Grouping Condition - options are &ldquo;Latest ETR Any&rdquo; and &ldquo;Latest ETR All.&rdquo;</li>
+</ol>
+<ul>
+<li>&ldquo;Latest ETR Any&rdquo; means that the map will display the latest ETR for outages in the area if <strong>any</strong> of the outages has a specific, valid ETR (not null or expired). If none of the outages in the area has a specific, valid ETR, the map will display the default message specified for null or expired ETRs in the <a href="/storm-center/configuration-guide/create-data-labels/index.html">Data Labels</a> sub-section of the <strong>Shared Resources</strong> section.</li>
+<li>&ldquo;Latest ETR All&rdquo; means that the map will display the latest ETR for outages in the area only if <strong>all</strong> of the outages have a specific, valid ETR (not null or expired). If any of the outages in the area has a null or expired ETR, the map will display the default message for null or expired ETRs.</li>
+</ul>
+<h3 id="totals-settings">Totals Settings</h3>
+<ol>
+<li>If you want to show the total number of customers affected by active outages on the report, click the <strong>Total Customers Affected</strong> checkbox and enter a label to be used on the map for each language supported by the instance.</li>
+<li>If you want to show the total number of customers served on the report, click the <strong>Total Customers Served</strong> checkbox and enter a label to be used on the map for each language supported by the instance.</li>
+</ol>
+<h3 id="customer-masking">Customer Masking</h3>
+<ol>
+<li>If you want to mask the exact number of customers affected at or below a specific value, click the <strong>Customer Masking</strong> checkbox and then enter a number.</li>
+<li>If you want to mask the exact percentage of customers affected at or below a specific value, click the <strong>% Customer Masking</strong> checkbox and then enter a number.</li>
+</ol>
+<p>The values you enter for customer masking here will be combined with verbiage you enter in the <strong>Shared Resources</strong> section of the <strong>Create New View</strong> form to create a statement on the map such as &ldquo;Fewer than 5&rdquo; or &ldquo;Less than 10%.&rdquo;</p>
+<h3 id="access-restriction">Access Restriction</h3>
+<p>Select an access restriction policy. The options available in the drop-down come from the policies created in the <strong>Access Restriction</strong> section of the Instance Dashboard.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740"><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d"><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610" checked><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/storm-center/configuration-guide/create-summaries/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

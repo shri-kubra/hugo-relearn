@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="catalog" type="catalogType"/>
+  <xs:simpleType name="empty-string">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value=""/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="dateTime-or-nothing">
+    <xs:union memberTypes="xs:dateTime empty-string"/>
+  </xs:simpleType>
+  <xs:complexType name="deliveryNodesType">
+    <xs:sequence>
+      <xs:element name="dnId" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="confidence" default="LOW" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="LOW"/>
+            <xs:enumeration value="MEDIUM"/>
+            <xs:enumeration value="HIGH"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="callbackContact" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="reported" type="xs:boolean"  minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="metadataType" >
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="plannedOutageType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="id" type="xs:string"></xs:element>
+      <xs:element name="cause" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="comments" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="start" type="dateTime-or-nothing" minOccurs="0"></xs:element>
+      <xs:element name="end" type="dateTime-or-nothing" minOccurs="0"></xs:element>
+      <xs:element name="duration" type="xs:integer" minOccurs="0"></xs:element>
+      <xs:element name="updatedAt" type="xs:dateTime" minOccurs="0"></xs:element>
+      <xs:element name="geometry" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="customersAffected" type="xs:integer" minOccurs="0"></xs:element>
+      <xs:element type="deliveryNodesType" name="affectedDeliveryNodes" minOccurs="0" maxOccurs="unbounded"></xs:element>
+      <xs:element type="metadataType" name="metadata" minOccurs="0" maxOccurs="unbounded"></xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="plannedOutagesType">
+    <xs:sequence>
+      <xs:element type="plannedOutageType" name="plannedOutage" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="catalogType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="plannedOutagesType" name="plannedOutages" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="catalog" type="catalogType"/>
+  <xs:simpleType name="empty-string">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value=""/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="dateTime-or-nothing">
+    <xs:union memberTypes="xs:dateTime empty-string"/>
+  </xs:simpleType>
+  <xs:complexType name="deliveryNodesType">
+    <xs:sequence>
+      <xs:element name="dnId" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>
+      <xs:element name="confidence" default="LOW" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="LOW"/>
+            <xs:enumeration value="MEDIUM"/>
+            <xs:enumeration value="HIGH"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="callbackContact" type="xs:string" minOccurs="0"></xs:element>
+      <xs:element name="reported" type="xs:boolean"  minOccurs="0"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="metadataType" >
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="outageType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string"></xs:element>
+      <xs:element name="outageConfirmed" type="xs:boolean"></xs:element>
+      <xs:element name="crewStatus" type="xs:string"></xs:element>
+      <xs:element name="crewIconIndicator" type="xs:boolean"></xs:element>
+      <xs:element name="cause" type="xs:string"></xs:element>
+      <xs:element name="comments" type="xs:string"></xs:element>
+      <xs:element name="etr" type="dateTime-or-nothing" minOccurs="0"></xs:element>
+      <xs:element name="etrConfidence" default="LOW" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="LOW"/>
+            <xs:enumeration value="MEDIUM"/>
+            <xs:enumeration value="HIGH"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="startedAt" type="dateTime-or-nothing"/>
+      <xs:element name="updatedAt" type="dateTime-or-nothing" minOccurs="0"/>
+      <xs:element name="restoredAt" type="dateTime-or-nothing" minOccurs="0"/>
+      <xs:element type="metadataType" name="metadata" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element type="deliveryNodesType" name="affectedDeliveryNodes" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="restorationType">
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="id" type="xs:string"></xs:element>
+      <xs:element name="restorationConfidence" default="LOW" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="LOW"/>
+            <xs:enumeration value="MEDIUM"/>
+            <xs:enumeration value="HIGH"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="restoredAt" type="dateTime-or-nothing" minOccurs="0"/>
+      <xs:element name="customersRestored" type="xs:integer" minOccurs="0"/>
+      <xs:element name="cause" type="xs:string" minOccurs="0"/>
+      <xs:element name="comments" type="xs:string" minOccurs="0"/>
+      <xs:element type="metadataType" name="metadata" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element type="deliveryNodesType" name="restoredDeliveryNodes" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancellationType">
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="id" type="xs:string"/>
+      <xs:element type="metadataType" name="metadata" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element type="deliveryNodesType" name="cancelledDeliveryNodes" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="outagesType">
+    <xs:sequence>
+      <xs:element type="outageType" name="outage" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="restorationsType">
+    <xs:sequence>
+      <xs:element type="restorationType" name="restoration" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancellationsType">
+    <xs:sequence>
+      <xs:element type="cancellationType" name="cancellation" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="catalogType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element type="outagesType" name="outages" minOccurs="1"/>
+      <xs:element type="restorationsType" name="restorations" minOccurs="1"/>
+      <xs:element type="cancellationsType" name="cancellations" minOccurs="1"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:schema>

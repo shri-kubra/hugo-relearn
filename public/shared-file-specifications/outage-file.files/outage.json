@@ -1,0 +1,124 @@
+{
+  "outages": [
+    {
+      "id": "O-PHX01",
+      "outageConfirmed": true,
+      "crewStatus": "ENROUTE",
+      "crewIconIndicator": true,
+      "cause": "Branch On Line",
+      "comments": null,
+      "etr": null,
+      "etrConfidence": "LOW",
+      "startedAt": "2017-04-02T17:27:06.974Z",
+      "updatedAt": "2017-04-05T17:27:06.974Z",
+      "affectedDeliveryNodes": [
+        {
+          "dnId": "PHX01",
+          "confidence": "HIGH",
+          "callbackContact": "16235479403",
+          "reported": true
+        }
+      ]
+    },
+    {
+      "id": "O-PHX03",
+      "outageConfirmed": true,
+      "crewStatus": null,
+      "crewIconIndicator": false,
+      "cause": "Fire On Line",
+      "comments": null,
+      "etr": "2017-04-05T21:27:06.974Z",
+      "etrConfidence": "LOW",
+      "startedAt": "2017-04-02T17:27:06.974Z",
+      "updatedAt": "2017-04-05T17:27:06.974Z",
+      "affectedDeliveryNodes": [
+        {
+          "dnId": "PHX03",
+          "confidence": "HIGH",
+          "callbackContact": "15551234567",
+          "reported": true
+        },
+        {
+          "dnId": "PHX04",
+          "confidence": "MEDIUM",
+          "callbackContact": null,
+          "reported": false
+        }
+      ]
+    },
+    {
+      "id": "O-SCOTT01",
+      "outageConfirmed": true,
+      "crewStatus": null,
+      "crewIconIndicator": false,
+      "cause":"Animal Contact",
+      "comments": null,
+      "etr": "2017-04-06T12:20:06.974Z",
+      "etrConfidence": "MEDIUM",
+      "startedAt": "2017-04-02T17:27:06.974Z",
+      "updatedAt": "2017-04-05T17:27:06.974Z",
+      "affectedDeliveryNodes": [
+        {
+          "dnId": "SCOTTS01",
+          "confidence": "HIGH",
+          "callbackContact": null,
+          "reported": false
+        }
+      ]
+    }
+  ],
+  "restorations": [
+    {
+      "id": "O-PHX02",
+      "restorationConfidence": "HIGH",
+      "restoredAt": "2017-04-05T17:27:06.974Z",
+      "customersRestored": 10,
+      "cause": "Vegetation Removed",
+      "restoredDeliveryNodes": [
+        {
+          "dnId": "PHX02",
+          "confidence": "HIGH",
+          "callbackContact": "16235479403",
+          "reported": true
+        }
+      ]
+    },
+    {
+      "id": "O-SCOTT02",
+      "restorationConfidence": "LOW",
+      "restoredAt": "2017-04-06T19:27:06.974Z",
+      "customersRestored": 3,
+      "cause": "Equipment Repaired",
+      "restoredDeliveryNodes": [
+        {
+          "dnId": "SCOTTS02",
+          "confidence": "LOW",
+          "callbackContact": null,
+          "reported": false
+        },
+        {
+          "dnId": "SCOTTS03",
+          "confidence": "MEDIUM",
+          "callbackContact": null,
+          "reported": true
+        }
+      ]
+    }
+  ],
+  "cancellations": [
+    {
+      "id": "O-SANC01",
+      "metadata": [
+        {"comments": "Situation Contained"}
+      ],
+      "cancelledDeliveryNodes": [
+        {
+          "dnId": "SANC001",
+          "confidence": "MEDIUM",
+          "callbackContact": null,
+          "reported": false
+        }
+      ]
+    }
+  ]
+}

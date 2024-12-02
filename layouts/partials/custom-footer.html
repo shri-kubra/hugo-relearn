@@ -1,0 +1,37 @@
+<script src="{{"js/jquery.ba-throttle-debounce.min.js" | relURL}}{{ if not .Site.Params.disableAssetsBusting }}?{{ now.Unix }}{{ end }}"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+// the first argument of this call is the number of milliseconds (1 second = 1000 milliseconds)
+// to wait after a user stops typing before sending an event to Google Analytics.
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+/**
+ * Trigger a search in lunr and transform the result
+ *
+ * @param  {String} query
+ * @return {Array}  results
+ */
+function search(queryTerm) {
+  search_debounce();
+
+  // Find the item in our index corresponding to the lunr one to have more info
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+

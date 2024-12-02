@@ -1,0 +1,212 @@
+{
+  "ranges": [
+    {
+      "legendOrder": 1,
+      "rangeExpr": "cluster != true && 5001 <= cust_a.val",
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#BE281E",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#BE281E",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "/images/planned/red_diamond.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": [],
+          "opacity": 1
+        }
+      },
+      "rangeLabel": {
+        "EN-US": ">5000",
+        "fr-CA": ">5000"
+      }
+    },
+    {
+      "legendOrder": 1,
+      "rangeExpr": "cluster != true && 501 <= cust_a.val && 5000 >= cust_a.val",
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#BF8808",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#BF8808",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "/images/planned/yellow_star.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": [],
+          "opacity": 1
+        }
+      },
+      "rangeLabel": {
+        "EN-US": "501-5000",
+        "fr-CA": "501-5000"
+      }
+    },
+    {
+      "legendOrder": 1,
+      "rangeExpr": "cluster != true && 51 <= cust_a.val && 500 >= cust_a.val",
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#01A75A",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#01A75A",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "/images/planned/green_square.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": [],
+          "opacity": 1
+        }
+      },
+      "rangeLabel": {
+        "EN-US": "51-500",
+        "fr-CA": "51-500"
+      }
+    },
+    {
+      "legendOrder": 1,
+      "rangeExpr": "cluster != true && 21 <= cust_a.val && 50 >= cust_a.val",
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#007EA8",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#007EA8",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "/images/planned/blue_circle.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": [],
+          "opacity": 1
+        }
+      },
+      "rangeLabel": {
+        "EN-US": "21-50",
+        "fr-CA": "21-50"
+      }
+    },
+    {
+      "legendOrder": 1,
+      "rangeExpr": "cluster != true && 1 <= cust_a.val && 20 >= cust_a.val",
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#8532B3",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#8532B3",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "/images/planned/purple_triangle.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": [],
+          "opacity": 1
+        }
+      },
+      "rangeLabel": {
+        "EN-US": "1-20",
+        "fr-CA": "1-20"
+      }
+    },
+    {
+      "legendOrder": 1,
+      "rangeExpr": "cluster == true && n_out <= 50 && crew_icon != true",
+      "rangeStyles": {
+        "shape": null,
+        "icon": {
+          "url": "/images/planned/cluster.svg",
+          "size": [
+            36,
+            36
+          ],
+          "anchor": [
+            18,
+            18
+          ],
+          "labelValue": "${n_out}",
+          "labelAnchor": [
+            18,
+            18
+          ],
+          "opacity": 1
+        }
+      },
+      "rangeLabel": {
+        "EN-US": "Multiple",
+        "fr-CA": "Multiples"
+      }
+    },
+    {
+      "legendOrder": -1,
+      "rangeExpr": "cluster == true && n_out > 50 && crew_icon != true",
+      "rangeStyles": {
+        "shape": null,
+        "icon": {
+          "url": "/images/planned/cluster.svg",
+          "size": [
+            36,
+            36
+          ],
+          "anchor": [
+            18,
+            18
+          ],
+          "labelValue": "50+",
+          "labelAnchor": [
+            18,
+            18
+          ],
+          "opacity": 1
+        }
+      },
+      "rangeLabel": null
+    }
+  ]
+}

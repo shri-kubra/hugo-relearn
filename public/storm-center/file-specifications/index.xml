@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storm Center File Specifications :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/storm-center/file-specifications/index.html</link>
+    <description>Storm Center uses five mandatory types of data files:&#xA;Region files - These files define the boundaries of an organization’s service territory or region on the map. If an organization has multiple regions in its service territory, the organization can provide one region file for each region and choose whether to show multiple regions on one public-facing map or one region each on multiple public-facing maps. Thematic files - These files define the boundaries of areas within a region, such as counties, postal codes, or cities, towns, and villages.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/storm-center/file-specifications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Region File</title>
+      <link>http://localhost:1313/storm-center/file-specifications/region-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/file-specifications/region-file/index.html</guid>
+      <description>Introduction This document outlines the data structure of a region file, which the Storm Center map uses to define the boundaries of a region. Region files can be provided via direct upload to the Instance Manager or via HTTPS PUT request to an endpoint specified by the Instance Manager application.&#xA;Attachments&#xD;AZ-example-regions.json&#xD;(0 kb)&#xD;Assumptions Geometry boundaries within a region file will not overlap. If any of the provided geometry boundaries within a region file overlap, KUBRA will fail the entire region file.</description>
+    </item>
+    <item>
+      <title>Thematic File</title>
+      <link>http://localhost:1313/storm-center/file-specifications/thematic-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/file-specifications/thematic-file/index.html</guid>
+      <description>Introduction This document outlines the data structure of a thematic file, which the Storm Center map uses to create thematic map overlays. The combination of boundary and metadata for each provided shape is called a thematic area. A collection of thematic areas in a thematic file is called a thematic.&#xA;The organization using Storm Center must provide thematic files for each type of thematic, such as County, ZIP Code, or City/Town/Village (CTV).</description>
+    </item>
+    <item>
+      <title>Additional Map Layer File</title>
+      <link>http://localhost:1313/storm-center/file-specifications/additional-map-layer-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/file-specifications/additional-map-layer-file/index.html</guid>
+      <description>Introduction This document outlines the data structure of a additional map layer file, which the Storm Center map uses to define the external data the clients wants to convey to their customers. Additional map layer files can be delivered via HTTPS POST request to an Additional Map Layer Datafeed endpoint specified by the Data Feed application.&#xA;Attachments&#xD;additional-map-layer-file.json&#xD;(2 kb)&#xD;File Format Additional Map Layer files must comply with the following specification:</description>
+    </item>
+    <item>
+      <title>Delivery Node File</title>
+      <link>http://localhost:1313/storm-center/file-specifications/delivery-node-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/file-specifications/delivery-node-file/index.html</guid>
+      <description>Introduction This document outlines the structure of a delivery node file. Delivery node files are assumed to be complete snapshots of delivery node data, as opposed to incremental updates to delivery node data. This means that every delivery node file must contain at least one valid delivery node to be processed successfully.&#xA;Storm Center uses the term “delivery node” to refer to locations with IDs in an Outage Management System. For example, these could be premises, meters, or transformers.</description>
+    </item>
+  </channel>
+</rss>

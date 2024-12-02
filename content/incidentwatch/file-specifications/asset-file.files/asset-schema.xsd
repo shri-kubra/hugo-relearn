@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="assets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="asset" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="id"/>
+              <xs:element type="xs:float" name="latitude"/>
+              <xs:element type="xs:float" name="longitude"/>
+              <xs:element type="xs:string" name="servicedBy" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="metadata">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="pole_number"/>
+                    <xs:element type="xs:string" name="lamp_type"/>
+                    <xs:element type="xs:string" name="billing_info"/>
+                    <xs:element type="xs:string" name="division"/>
+                    <xs:element type="xs:string" name="sub_division"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

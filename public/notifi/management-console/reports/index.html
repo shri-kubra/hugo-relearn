@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="The Notifi Reports tool allows you to view statistical information about the performance of the Notifi system.
+Dashboard configuration, ad hoc report creation, and scheduled report delivery are provided by the optional Advanced Reporting module. These features are described on the Notifi Advanced Reporting page.
+Standard Report Dashboards There are up to seven standard dashboards available, depending on an organization’s configuration:
+Registrations – shows information about registrations over time, from different sources, by channel, by area, and by operating company (if applicable), as well as the number of pending registrations.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Reports :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="The Notifi Reports tool allows you to view statistical information about the performance of the Notifi system.
+Dashboard configuration, ad hoc report creation, and scheduled report delivery are provided by the optional Advanced Reporting module. These features are described on the Notifi Advanced Reporting page.
+Standard Report Dashboards There are up to seven standard dashboards available, depending on an organization’s configuration:
+Registrations – shows information about registrations over time, from different sources, by channel, by area, and by operating company (if applicable), as well as the number of pending registrations.">
+    <meta property="og:url" content="http://localhost:1313/notifi/management-console/reports/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Reports :: KUBRA Product Documentation">
+    <meta property="og:description" content="The Notifi Reports tool allows you to view statistical information about the performance of the Notifi system.
+Dashboard configuration, ad hoc report creation, and scheduled report delivery are provided by the optional Advanced Reporting module. These features are described on the Notifi Advanced Reporting page.
+Standard Report Dashboards There are up to seven standard dashboards available, depending on an organization’s configuration:
+Registrations – shows information about registrations over time, from different sources, by channel, by area, and by operating company (if applicable), as well as the number of pending registrations.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Notifi">
+    <meta itemprop="name" content="Reports :: KUBRA Product Documentation">
+    <meta itemprop="description" content="The Notifi Reports tool allows you to view statistical information about the performance of the Notifi system.
+Dashboard configuration, ad hoc report creation, and scheduled report delivery are provided by the optional Advanced Reporting module. These features are described on the Notifi Advanced Reporting page.
+Standard Report Dashboards There are up to seven standard dashboards available, depending on an organization’s configuration:
+Registrations – shows information about registrations over time, from different sources, by channel, by area, and by operating company (if applicable), as well as the number of pending registrations.">
+    <meta itemprop="wordCount" content="1869">
+    <title>Reports :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/notifi/management-console/reports/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#standard-report-dashboards">Standard Report Dashboards</a></li>
+    <li><a href="#report-dashboards-for-the-notifi-deregistration-manager">Report Dashboards for the Notifi Deregistration Manager</a></li>
+    <li><a href="#view-reports">View Reports</a>
+      <ul>
+        <li><a href="#filters">Filters</a></li>
+      </ul>
+    </li>
+    <li><a href="#download-report-data">Download Report Data</a></li>
+    <li><a href="#dashboard-descriptions">Dashboard Descriptions</a>
+      <ul>
+        <li><a href="#registrations-dashboard">Registrations Dashboard</a></li>
+        <li><a href="#enrollment-audit-dashboard">Enrollment Audit Dashboard</a></li>
+        <li><a href="#enrollments-dashboard">Enrollments Dashboard</a></li>
+        <li><a href="#messaging-dashboard">Messaging Dashboard</a></li>
+        <li><a href="#account-based-registrations-dashboard">Account-Based Registrations Dashboard</a></li>
+        <li><a href="#billing-dashboard">Billing Dashboard</a></li>
+        <li><a href="#outage-summary-dashboard">Outage Summary Dashboard</a></li>
+        <li><a href="#deregistrations-dashboard">Deregistrations Dashboard</a></li>
+        <li><a href="#tcpa-dashboard">TCPA Dashboard</a></li>
+        <li><a href="#terms--conditions-follow-ups-dashboard">Terms &amp; Conditions Follow-Ups Dashboard</a></li>
+        <li><a href="#phone-lookups-dashboard">Phone Lookups Dashboard</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notifi/index.html"><span itemprop="name">Notifi</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notifi/management-console/index.html"><span itemprop="name">Management Console for Notifi</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Reports</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notifi/management-console/admin/index.html" title="Admin (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notifi/management-console/advanced-reporting/index.html" title="Notifi Advanced Reporting (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable notifi" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="reports">Reports</h1>
+
+<p>The Notifi Reports tool allows you to view statistical information about the performance of the Notifi system.</p>
+<p>Dashboard configuration, ad hoc report creation, and scheduled report delivery are provided by the optional Advanced Reporting module. These features are described on the <a href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting page</a>.</p>
+<h2 id="standard-report-dashboards">Standard Report Dashboards</h2>
+<p>There are up to seven standard dashboards available, depending on an organization&rsquo;s configuration:</p>
+<ul>
+<li><strong>Registrations</strong> – shows information about registrations over time, from different sources, by channel, by area, and by operating company (if applicable), as well as the number of pending registrations.</li>
+<li><strong>Enrollment Audit</strong> – shows information about the number of customer contacts opted in or opted out of messages by date and by message category.</li>
+<li><strong>Enrollments</strong> – shows information about the total number of customer contacts enrolled by channel, message category, and month as a running total.</li>
+<li><strong>Messaging</strong> – shows information about the number and type of messages sent and received by Notifi over time, by channel, by message category, and by delivery status.</li>
+<li><strong>Account-Based Registrations</strong> – shows information about the number of customer accounts with contacts registered to receive messages, trends in the number and type of contacts registered to an account, and trends in the number and type of contacts enrolled by message category.</li>
+<li><strong>Billing</strong> - shows information about the number and type of messages sent and received by Notifi, focused on messages counted for billing purposes. This dashboard includes a date filter that shows messages sent in the previous full month by default. This dashboard also includes an environment filter that shows messages from the test environment, the production environment, or both.</li>
+<li><strong>Outage Summary</strong> - shows information about outage messages including the number of outage notifications for each outage message template and the number of outage reporting (OUT) and outage status (STAT) conversations started and completed. For outage reporting, a completed conversation is labeled &ldquo;reported out,&rdquo; and for outage status, a completed conversation is labeled either &ldquo;valid response&rdquo; for information provided about an existing outage or &ldquo;report outage&rdquo; for a response asking the customer if they want to report an outage.</li>
+<li><strong>Broadcast Summary</strong> - shows information about recent broadcasts grouped by broadcast name such as total messages sent, messages by channel, and processing time. The Broadcast Summary also includes a delivery summary breakdown.</li>
+</ul>
+<h2 id="report-dashboards-for-the-notifi-deregistration-manager">Report Dashboards for the Notifi Deregistration Manager</h2>
+<p>There are four additional dashboards related to the features provided by the <a href="/notifi/features/deregistration-manager/index.html">Notifi Deregistration Manager</a>:</p>
+<ul>
+<li><strong>Deregistrations</strong> - shows information about contacts deregistered by the Notifi Deregistration Manager by day and by module (Terms &amp; Conditions or TCPA).</li>
+<li><strong>TCPA</strong> - shows information about contacts being monitored for changes in ownership to comply with a TCPA ruling requiring companies to not send automated messages to contacts whose owners have not opted in.</li>
+<li><strong>T&amp;C Follow-Ups</strong> - shows information about follow-up messages sent to contacts who have not responded to accept Terms and Conditions for messaging, as well as how many contacts have completed registration in response to a follow-up message.</li>
+<li><strong>Phone Lookups</strong> - shows information about the number of phone lookups completed and how many numbers are landline vs. mobile.</li>
+</ul>
+<h2 id="view-reports">View Reports</h2>
+<p>To select a dashboard, click the <strong>Select Report</strong> drop-down and then select one of the dashboard names.</p>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>If you see a 401 error in the Reports tool, this means that your session has timed out. Sign out and sign back in to keep viewing reports.</p>
+  </div>
+</div>
+<h3 id="filters">Filters</h3>
+<p>Each dashboard includes a <strong>Filters</strong> section. The filters allow you to sort the data in the dashboard by date, channel, location (county or city), Operating Company, or other information.</p>
+<h4 id="date-filter">Date Filter</h4>
+<p>Some of the charts in each dashboard show information over a specific period of time. A date filter note in the <strong>Filters</strong> section at the top of the dashboard indicates the time period used for these charts.</p>
+<p>For example, the note “Date Filter is in the past 30 days” indicates that the charts show information for the past 30 days, unless a specific chart indicates otherwise.</p>
+<p>To select a different date range:</p>
+<ol>
+<li>Click on the <strong>Filters</strong> section of the dashboard to view filter data.</li>
+<li>In the Date Filter row, either change the number in the text box or adjust the drop-down values and the text box values to the desired date range. For example, you can view information that &ldquo;is in the past 30 days,&rdquo; &ldquo;is in range&rdquo; from one specific date until before another specific date, or &ldquo;is any time.&rdquo;</li>
+<li>Click the <strong>Run</strong> button to refresh the report data.</li>
+</ol>
+<h4 id="channel-filter">Channel Filter</h4>
+<p>By default, charts show combined data for all supported communication channels. The Registrations, Enrollment Audit, Enrollments, Messaging, Billing, and Outage Summary dashboards include a channel filter.</p>
+<p>To view data for a single channel:</p>
+<ol>
+<li>Click on the <strong>Filters</strong> section of the dashboard.</li>
+<li>In the Channel row, change the first drop-down value from &ldquo;is any value&rdquo; to &ldquo;is.&rdquo;</li>
+<li>Select the desired channel from the second drop-down list.</li>
+<li>Click the <strong>Run</strong> button to refresh the report data.</li>
+</ol>
+<h4 id="location-filters">Location Filters</h4>
+<p>The Registrations, Enrollments, Messaging, and Account-Based Registrations dashboards include filters by city and county. Use these filters to view data for a single city or county or for a group of cities or counties.</p>
+<p>To view data for a single location:</p>
+<ol>
+<li>Click on the <strong>Filters</strong> section of the dashboard.</li>
+<li>In the City, County, or Zip Code row, enter the name of the location, after the drop-down field &ldquo;is equal to.&rdquo;</li>
+<li>Click the <strong>Run</strong> button to refresh the report data.</li>
+</ol>
+<p>To view data for a group of locations:</p>
+<ol>
+<li>Click on the <strong>Filters</strong> section of the dashboard.</li>
+<li>In the City, County, or Zip Code row, enter the name of the location, after the drop-down field &ldquo;is equal to.&rdquo;</li>
+<li>Click the plus symbol to the right of the filter row to add another location name row.</li>
+<li>Repeat steps 1-3 for each additional location you want to include.</li>
+<li>Click the <strong>Run</strong> button to refresh the report data.</li>
+</ol>
+<p>Location filters are only available if county and/or city data is provided to Notifi.</p>
+<h4 id="operating-company-filter">Operating Company Filter</h4>
+<p>By default, charts show combined data for all operating companies. The Registrations, Enrollments, Messaging, and Account-Based Registrations dashboards include an operating company filter. Use the Operating Company filter to view data for a single operating company or for a group of operating companies.</p>
+<p>To view data for a single operating company:</p>
+<ol>
+<li>Click on the <strong>Filters</strong> section of the dashboard.</li>
+<li>In the Operating Company row, enter the name of the operating company, after the drop-down field &ldquo;is equal to.&rdquo;</li>
+<li>Click the <strong>Run</strong> button to refresh the report data.</li>
+</ol>
+<p>To view data for a group of operating companies:</p>
+<ol>
+<li>Click on the <strong>Filters</strong> section of the dashboard.</li>
+<li>In the Operating Company row, enter the name of the operating company, after the drop-down field &ldquo;is equal to.&rdquo;</li>
+<li>Click the plus symbol to the right of the filter row to add another operating company name row.</li>
+<li>Repeat steps 1-3 for each additional operating company you want to include.</li>
+<li>Click the <strong>Run</strong> button to refresh the report data.</li>
+</ol>
+<p>The operating company filter is only available if operating company data is provided to Notifi.</p>
+<h2 id="download-report-data">Download Report Data</h2>
+<p>To download data for a report:</p>
+<ol>
+<li>Hold the mouse cursor over the report.</li>
+<li>Click the icon of three dots in a vertical line</li>
+<li>Click the <strong>Download Data&hellip;</strong> option.</li>
+</ol>
+<p>You can download report data in TXT, Excel (2007 or later), CSV, JSON, HTML, Markdown, or PNG format.</p>
+<p>To download an entire dashboard, click the gear icon in the upper right corner of the dashboard. You can either download the dashboard as a PDF file or as a set of CSV files.</p>
+<h2 id="dashboard-descriptions">Dashboard Descriptions</h2>
+<h3 id="registrations-dashboard">Registrations Dashboard</h3>
+<p>You can use the Registrations dashboard to answer questions such as</p>
+<ul>
+<li>How have registrations grown over time?</li>
+<li>Where do most registered customers live?</li>
+<li>Which channel or channels are customers using the most?</li>
+<li>How are customers registering for alerts?</li>
+</ul>
+<h3 id="enrollment-audit-dashboard">Enrollment Audit Dashboard</h3>
+<p>You can use the Enrollment Audit dashboard to answer questions such as</p>
+<ul>
+<li>How does the rate of opt-ins compare to the rate of opt-outs?</li>
+<li>Which categories were the most popular in the past month?</li>
+<li>How is the relative popularity of categories changing over time?</li>
+</ul>
+<h3 id="enrollments-dashboard">Enrollments Dashboard</h3>
+<p>You can use the Enrollments dashboard to answer questions such as</p>
+<ul>
+<li>How many customer contacts are enrolled to receive outage alerts?</li>
+<li>How has the number of enrollments grown over time?</li>
+<li>Are there differences in the channels customers choose for different message categories?</li>
+</ul>
+<h3 id="messaging-dashboard">Messaging Dashboard</h3>
+<p>You can use the Messaging dashboard to answer questions such as</p>
+<ul>
+<li>How many messages were processed by the system last month?</li>
+<li>How many messages were processed by the system in the last calendar year?</li>
+<li>Which message category is the most popular?</li>
+<li>What is the success rate for message delivery?</li>
+</ul>
+<h3 id="account-based-registrations-dashboard">Account-Based Registrations Dashboard</h3>
+<p>You can use the Account-Based Registrations dashboard to answer questions such as</p>
+<ul>
+<li>What is the most popular combination of contact channels to register?</li>
+<li>How many customer accounts are registered for messages?</li>
+<li>What is the most popular number of contacts to register?</li>
+<li>How many email contacts are enrolled in usage alerts?</li>
+</ul>
+<h3 id="billing-dashboard">Billing Dashboard</h3>
+<p>You can use the Billing dashboard to answer questions such as</p>
+<ul>
+<li>How many billable messages were sent last month?</li>
+<li>How many of the messages sent last month were text messages?</li>
+<li>How many of the messages sent last month were Outage Update messages?</li>
+<li>How many of the messages sent last month were related to two-way text messaging conversations?</li>
+</ul>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>To view data for a specific month, enter the month in YYYY-MM format. For example, if you want to view data for June 2020, the date filter should read <code>Sent Date matches (advanced) 2020-06.</code></p>
+  </div>
+</div>
+<p>Billing for two-way text messaging conversations is tracked per session, while billing for proactive messages is tracked per message.</p>
+<h3 id="outage-summary-dashboard">Outage Summary Dashboard</h3>
+<p>You can use the Outages dashboard to answer questions such as</p>
+<ul>
+<li>How many outage notifications have been sent in the past week?</li>
+<li>How many two-way text messaging conversations asking for outage status were started?</li>
+<li>How many two-way text messaging conversations asking for outage status resulted in an outage report?</li>
+<li>How many two-way text messaging conversations about outage reports were completed successfully?</li>
+</ul>
+<h3 id="deregistrations-dashboard">Deregistrations Dashboard</h3>
+<p>You can use the Deregistrations dashboard to answer questions such as</p>
+<ul>
+<li>How many contacts have been deregistered by the Notifi Deregistration Manager in the past month?</li>
+<li>How many SMS contacts have been deregistered due to a change of ownership?</li>
+<li>What percentage of deregistrations by the Notifi Deregistration Manager are due to a lack of response to Terms &amp; Conditions?</li>
+</ul>
+<h3 id="tcpa-dashboard">TCPA Dashboard</h3>
+<p>You can use the TCPA dashboard to answer questions such as</p>
+<ul>
+<li>How many contacts were added to TCPA monitoring in the past month?</li>
+<li>How long have contacts being monitored by the Notifi Deregistration Manager been in service?</li>
+</ul>
+<h3 id="terms--conditions-follow-ups-dashboard">Terms &amp; Conditions Follow-Ups Dashboard</h3>
+<p>You can use the Terms &amp; Conditions Follow-Ups dashboard to answer questions such as</p>
+<ul>
+<li>How many follow-up messages were sent in the past month to customers who did not complete contact registration?</li>
+<li>How many follow-up messages resulted in completed registrations?</li>
+<li>Which channel has the most completed registrations due to follow-up messages?</li>
+</ul>
+<h3 id="phone-lookups-dashboard">Phone Lookups Dashboard</h3>
+<p>You can use the Phone Lookups dashboard to answer questions such as</p>
+<ul>
+<li>How many phone lookups have been completed in the past month?</li>
+<li>How many phone lookups have been completed per day for the past week?</li>
+<li>How many of the phone numbers we have looked up are wireless numbers?</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="parent " data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740" checked><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d"><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610"><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/notifi/management-console/reports/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

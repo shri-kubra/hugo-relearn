@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IncidentWatch :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/incidentwatch/index.html</link>
+    <description>What is IncidentWatch? IncidentWatch is KUBRA’s online, map-based incident reporting and management product. IncidentWatch uses asset data provided by an organization to show information about those assets on an interactive online map. End-users can then access the map from a link on the organization’s website to report incidents related to assets or to see the status of an incident.&#xA;The IncidentWatch product is deployed on a multi-tenant architecture supported by Amazon Web Services.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/incidentwatch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Feature List</title>
+      <link>http://localhost:1313/incidentwatch/features/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/incidentwatch/features/index.html</guid>
+      <description>The following diagram shows the different parts of the IncidentWatch map interface.&#xA;Map Header The map header at the top of the map includes a button for the tool panel as well as a search box. The header can optionally include an Organization logo with a link.&#xA;Open Tool Panel Button The button in the upper left corner of the map opens and closes the map tool panel. This button can optionally include a text label such as “Menu.</description>
+    </item>
+    <item>
+      <title>IncidentWatch File Specifications</title>
+      <link>http://localhost:1313/incidentwatch/file-specifications/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/incidentwatch/file-specifications/index.html</guid>
+      <description>IncidentWatch uses data feeds for asset data. Asset files define the locations and properties of the assets to be displayed on the IncidentWatch map.&#xA;KUBRA recommends providing asset files at least once per week and no more than once per day.&#xA;Providing Data Feeds Asset files must be delivered via HTTPS POST request. The POST requests require Basic Authentication. This is provided as the Authentication header value with the string value Basic followed by the base64-encoded username and password of a user that has access to upload files, in the format username:password.</description>
+    </item>
+  </channel>
+</rss>

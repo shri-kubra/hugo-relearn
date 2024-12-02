@@ -1,0 +1,9 @@
+baseURL = 'https://example.com'
+languageCode = 'en-us'
+
+title = 'KUBRA Product Documentation'
+theme = 'hugo-theme-relearn'
+
+[params]
+	collapsibleMenu = true
+	showVisitedLinks = true

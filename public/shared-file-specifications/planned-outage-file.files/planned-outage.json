@@ -1,0 +1,43 @@
+{
+  "plannedOutages": [
+    {
+      "id": "PO-PHX01",
+      "cause": "Tree Trimming",
+      "comments": null,
+      "start": "2017-04-05T13:27:06.974Z",
+      "end": "2017-04-05T17:27:06.974Z",
+      "duration": 14400,
+      "updatedAt": "2017-04-05T17:27:01.000Z",
+      "customersAffected": 10,
+      "metadata": {
+        "internalNote": "Vegetation Management",
+        "affectedTransformers": 5
+      },
+      "affectedDeliveryNodes": [
+        {
+          "dnId": "PHX01"
+        }
+      ],
+      "geometry": "MULTIPOLYGON(((-111.49 34.50,-114.91 34.50,-114.91 31.28,-111.49 31.28,-111.49 34.50)),((-113.577 34.610,-112.598 35.411,-113.576 35.411,-113.577 34.610)))"
+    },
+    {
+      "id": "PO-PHX02",
+      "cause": "Equipment Maintenance",
+      "comments": "Replacing Pole",
+      "start": "2017-04-05T08:13:00.000Z",
+      "end": "2017-04-05T21:30:00.000Z",
+      "duration": 47820,
+      "updatedAt": "2017-04-05T17:27:01.000Z",
+      "customersAffected": null,
+      "metadata": {
+        "internalNote": null,
+        "affectedTransformers": 1
+      },
+      "affectedDeliveryNodes": [
+        {
+          "dnId": "PHX02"
+        }
+      ]
+    }
+  ]
+}

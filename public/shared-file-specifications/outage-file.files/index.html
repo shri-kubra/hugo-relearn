@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="Introduction This document outlines the structure of an outage file. Outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.
+Outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.
+Infooutages-schema.xsd (5 KB)outage.xml (3 KB)outage.json (3 KB)File Structure JSON The outage file can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Outage File :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="Introduction This document outlines the structure of an outage file. Outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.
+Outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.
+Infooutages-schema.xsd (5 KB)outage.xml (3 KB)outage.json (3 KB)File Structure JSON The outage file can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab.">
+    <meta property="og:url" content="http://localhost:1313/shared-file-specifications/outage-file.files/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Outage File :: KUBRA Product Documentation">
+    <meta property="og:description" content="Introduction This document outlines the structure of an outage file. Outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.
+Outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.
+Infooutages-schema.xsd (5 KB)outage.xml (3 KB)outage.json (3 KB)File Structure JSON The outage file can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Outage File :: KUBRA Product Documentation">
+    <meta itemprop="description" content="Introduction This document outlines the structure of an outage file. Outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.
+Outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.
+Infooutages-schema.xsd (5 KB)outage.xml (3 KB)outage.json (3 KB)File Structure JSON The outage file can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab.">
+    <meta itemprop="wordCount" content="1625">
+    <title>Outage File :: KUBRA Product Documentation</title>
+    <link href="/shared-file-specifications/outage-file.files/index.xml" rel="alternate" type="application/rss+xml" title="Outage File :: KUBRA Product Documentation"><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1732735619" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1732735619" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1732735619" rel="stylesheet">
+    <link href="/css/auto-complete.css?1732735619" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1732735619" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1732735619" rel="stylesheet">
+    <link href="/css/fonts.css?1732735619" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1732735619" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1732735619" rel="stylesheet">
+    <link href="/css/theme-auto.css?1732735619" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1732735619" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1732735619" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1732735619"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/shared-file-specifications/outage-file.files/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#file-structure">File Structure</a>
+      <ul>
+        <li><a href="#json">JSON</a></li>
+        <li><a href="#xml">XML</a></li>
+      </ul>
+    </li>
+    <li><a href="#outage-elements">Outage Elements</a>
+      <ul>
+        <li><a href="#affected-delivery-node-elements">Affected Delivery Node Elements</a></li>
+      </ul>
+    </li>
+    <li><a href="#restoration-elements">Restoration Elements</a>
+      <ul>
+        <li><a href="#restored-delivery-node-elements">Restored Delivery Node Elements</a></li>
+      </ul>
+    </li>
+    <li><a href="#cancellation-elements">Cancellation Elements</a>
+      <ul>
+        <li><a href="#cancelled-delivery-node-elements">Cancelled Delivery Node Elements</a></li>
+      </ul>
+    </li>
+    <li><a href="#delivery-node-associated-with-multiple-outages">Delivery Node Associated with Multiple Outages</a></li>
+    <li><a href="#failure-scenarios">Failure Scenarios</a></li>
+    <li><a href="#compression">Compression</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/shared-file-specifications/index.html"><span itemprop="name">Shared File Specifications and Resources</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Outage File</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/shared-file-specifications/index.html" title="Shared File Specifications and Resources (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/shared-file-specifications/planned-outage-file.files/index.html" title="Planned Outage File (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable shared-file-specifications" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="outage-file">Outage File</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>This document outlines the structure of an outage file. Outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.</p>
+<p>Outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.</p>
+<div class="box attachments cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <ul class="attachments-files box-content">
+<li><a href="/shared-file-specifications/outage-file.files/outages-schema.xsd">outages-schema.xsd</a> (5 KB)</li>
+<li><a href="/shared-file-specifications/outage-file.files/outage.xml">outage.xml</a> (3 KB)</li>
+<li><a href="/shared-file-specifications/outage-file.files/outage.json">outage.json</a> (3 KB)</li>
+  </ul>
+</div>
+<h2 id="file-structure">File Structure</h2>
+<h3 id="json">JSON</h3>
+<p>The outage file can be sent in JavaScript Object Notation (JSON) format as specified in <a href="https://tools.ietf.org/html/rfc7159" target="_blank" rel="external">Internet Engineering Task Force standard RFC7159 <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+. The file must contain a valid object in JSON. The .json file extension <strong>MUST</strong> be used to indicate file type.</p>
+<h4 id="example-1---an-outage-file-in-json-format">Example 1 - An outage file in JSON format</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;outages&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;O-PHX01&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;outageConfirmed&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;crewStatus&#34;</span>: <span style="color:#e6db74">&#34;ENROUTE&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;crewIconIndicator&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;cause&#34;</span>: <span style="color:#e6db74">&#34;Branch On Line&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;comments&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;etr&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;etrConfidence&#34;</span>: <span style="color:#e6db74">&#34;LOW&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;startedAt&#34;</span>: <span style="color:#e6db74">&#34;2017-04-02T17:27:06.974Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;updatedAt&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T17:27:06.974Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;affectedDeliveryNodes&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;dnId&#34;</span>: <span style="color:#e6db74">&#34;PHX01&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;confidence&#34;</span>: <span style="color:#e6db74">&#34;HIGH&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;callbackContact&#34;</span>: <span style="color:#e6db74">&#34;16235479403&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;reported&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;dnId&#34;</span>: <span style="color:#e6db74">&#34;PHX03&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;confidence&#34;</span>: <span style="color:#e6db74">&#34;HIGH&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;callbackContact&#34;</span>: <span style="color:#e6db74">&#34;15551234567&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;reported&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;restorations&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;O-PHX02&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;restorationConfidence&#34;</span>: <span style="color:#e6db74">&#34;HIGH&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;restoredAt&#34;</span>: <span style="color:#e6db74">&#34;2017-04-05T17:27:06.974Z&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;customersRestored&#34;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;cause&#34;</span>: <span style="color:#e6db74">&#34;Branch Removed&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;restoredDeliveryNodes&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;dnId&#34;</span>: <span style="color:#e6db74">&#34;PHX02&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;confidence&#34;</span>: <span style="color:#e6db74">&#34;HIGH&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;callbackContact&#34;</span>: <span style="color:#e6db74">&#34;16235479403&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;reported&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cancellations&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;O-SANC01&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metadata&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;comments&#34;</span>: <span style="color:#e6db74">&#34;Power Available&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;internalComments&#34;</span>: <span style="color:#e6db74">&#34;This outage was confirmed to be invalid. Power is still available in this area.&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;status&#34;</span>: <span style="color:#e6db74">&#34;Confirmed Power On&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;cancelledDeliveryNodes&#34;</span>: [{
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;dnId&#34;</span>: <span style="color:#e6db74">&#34;SANC001&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;confidence&#34;</span>: <span style="color:#e6db74">&#34;MEDIUM&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;callbackContact&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;reported&#34;</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    }],
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="xml">XML</h3>
+<p>The outage file can be sent in XML format as specified by the <a href="https://www.w3.org/TR/REC-xml/" target="_blank" rel="external">W3 XML 1.0 5th Edition recommendation <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ adhering to the following schema:</p>
+<blockquote>
+<p><a href="../outage-file.files/outages-schema.xsd">outages-schema.xsd</a></p>
+</blockquote>
+<p>The .xml file extension <strong>MUST</strong> be used to indicate file type.</p>
+<h4 id="example-2---an-outage-file-in-xml-format">Example 2 - An outage file in XML format</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;catalog&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;outages&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;outage&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;id&gt;</span>O-PHX01<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;outageConfirmed&gt;</span>true<span style="color:#f92672">&lt;/outageConfirmed&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;crewStatus&gt;</span>ENROUTE<span style="color:#f92672">&lt;/crewStatus&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;crewIconIndicator&gt;</span>true<span style="color:#f92672">&lt;/crewIconIndicator&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;cause&gt;</span>Branch on Line<span style="color:#f92672">&lt;/cause&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;comments&gt;&lt;/comments&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;etr&gt;&lt;/etr&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;etrConfidence&gt;</span>LOW<span style="color:#f92672">&lt;/etrConfidence&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;startedAt&gt;</span>2017-04-02T17:27:06.974Z<span style="color:#f92672">&lt;/startedAt&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;updatedAt&gt;</span>2017-04-05T17:27:06.974Z<span style="color:#f92672">&lt;/updatedAt&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;affectedDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;dnId&gt;</span>PHX01<span style="color:#f92672">&lt;/dnId&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;confidence&gt;</span>HIGH<span style="color:#f92672">&lt;/confidence&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;callbackContact&gt;</span>16235479403<span style="color:#f92672">&lt;/callbackContact&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;reported&gt;</span>true<span style="color:#f92672">&lt;/reported&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/affectedDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;affectedDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;dnId&gt;</span>PHX03<span style="color:#f92672">&lt;/dnId&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;confidence&gt;</span>HIGH<span style="color:#f92672">&lt;/confidence&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;callbackContact&gt;</span>15551234567<span style="color:#f92672">&lt;/callbackContact&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;reported&gt;</span>true<span style="color:#f92672">&lt;/reported&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/affectedDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/outage&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/outages&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;restorations&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;restoration&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;id&gt;</span>O-PHX02<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;restorationConfidence&gt;</span>HIGH<span style="color:#f92672">&lt;/restorationConfidence&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;restoredAt&gt;</span>2017-04-05T17:27:06.974Z<span style="color:#f92672">&lt;/restoredAt&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;customersRestored&gt;</span>10<span style="color:#f92672">&lt;/customersRestored&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;cause&gt;</span>Vegetation Removed<span style="color:#f92672">&lt;/cause&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;metadata&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;reportedBy&gt;</span>IVR<span style="color:#f92672">&lt;/reportedBy&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;deviceType&gt;</span>TRANSFORMER<span style="color:#f92672">&lt;/deviceType&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/metadata&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;restoredDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;dnId&gt;</span>PHX02<span style="color:#f92672">&lt;/dnId&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;confidence&gt;</span>HIGH<span style="color:#f92672">&lt;/confidence&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;callbackContact&gt;</span>16235479403<span style="color:#f92672">&lt;/callbackContact&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;reported&gt;</span>true<span style="color:#f92672">&lt;/reported&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/restoredDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/restoration&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/restorations&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;cancellations&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;cancellation&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;id&gt;</span>O-SANC01<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;metadata&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;comments&gt;</span>Situation Contained<span style="color:#f92672">&lt;/comments&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;internalComments&gt;</span>This outage was confirmed to be invalid. Power is still available in this area.<span style="color:#f92672">&lt;/internalComments&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;status&gt;</span>Confirmed Power On<span style="color:#f92672">&lt;/status&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/metadata&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;cancelledDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;dnId&gt;</span>SANC001<span style="color:#f92672">&lt;/dnId&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;confidence&gt;</span>MEDIUM<span style="color:#f92672">&lt;/confidence&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;callbackContact&gt;&lt;/callbackContact&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;reported&gt;</span>false<span style="color:#f92672">&lt;/reported&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/cancelledDeliveryNodes&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/cancellation&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/cancellations&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/catalog&gt;</span></span></span></code></pre></div>
+<h2 id="outage-elements">Outage Elements</h2>
+<p>An <code>outages</code> wrapper member is used to encapsulate the outage elements. These are also referred to as unplanned outages.</p>
+<p>An <code>outage</code> member <strong>MUST</strong> contain at least the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>A string indicating the external ID in your Outage Management System (OMS).</td>
+</tr>
+<tr>
+<td>affectedDeliveryNodes</td>
+<td>An array of <code>affectedDeliveryNodes</code> members representing the affected delivery nodes or an empty array.</td>
+</tr>
+</tbody>
+</table>
+<p>An <code>outage</code> member <strong>MAY</strong> contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>crewStatus</td>
+<td>A string indicating the crew status, or a code which can be mapped to a specific string.</td>
+</tr>
+<tr>
+<td>crewIconIndicator</td>
+<td>A boolean used to determine whether the crew icon is shown for the outage location on the Storm Center map. If “True,” the crew icon will be shown. If “False,” the crew icon will not be shown. This element is used by Storm Center and is not used by Notifi.</td>
+</tr>
+<tr>
+<td>etr</td>
+<td>A dateTime representing the date and time of estimated time of restoration (ETR) in <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="external">ISO-8601 <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ format.</td>
+</tr>
+<tr>
+<td>etrConfidence</td>
+<td>A string representing the confidence level of the ETR. The default value is LOW. This value is case sensitive and must match exactly one of the following values: <code>LOW</code>, <code>MEDIUM</code>, or <code>HIGH</code>. ETR Confidence is used by Notifi and is not used by Storm Center.</td>
+</tr>
+<tr>
+<td>cause</td>
+<td>A string representing the cause of the outage, or a code which can be mapped to a specific string.</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>A string representing comments for the outage.</td>
+</tr>
+<tr>
+<td>startedAt</td>
+<td>A dateTime representing the date and time when the outage started in ISO-8601 format.</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>A dateTime representing the date and time when the outage status was last updated in ISO-8601 format.</td>
+</tr>
+<tr>
+<td>restoredAt</td>
+<td>A dateTime representing the date and time when the outage was restored in ISO-8601 format. This element is used by Storm Center and is not used by Notifi.</td>
+</tr>
+<tr>
+<td>outageConfirmed</td>
+<td>A boolean that indicates whether the outage has been confirmed by a customer. This element is used by Notifi and is not used by Storm Center.</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>An object to support custom data. This can include custom properties to be displayed with the outage that are not represented in the other elements of the <code>outage</code> member. Supported data types for metadata objects are string, number, percentage, datetime, and HTML markup.</td>
+</tr>
+</tbody>
+</table>
+<p>The following is an example of a <code>metadata</code> object with two properties:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>&#34;metadata&#34; : {
+    &#34;affectedTransformers&#34;: &#34;3&#34;,
+    &#34;environmentStatus&#34;: &#34;UNSAFE&#34;
+  }</code></pre></div>
+<h3 id="affected-delivery-node-elements">Affected Delivery Node Elements</h3>
+<p>An <code>affectedDeliveryNodes</code> member <strong>MUST</strong> contain at least the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dnId</td>
+<td>A string indicating the delivery node ID.</td>
+</tr>
+</tbody>
+</table>
+<p>An <code>affectedDeliveryNodes</code> member <strong>MAY</strong> contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>confidence</td>
+<td>A string representing the confidence level. The default value is LOW. This value is case sensitive and must match exactly one of the following values: <code>LOW</code>, <code>MEDIUM</code>, or <code>HIGH</code>. This element is used by Notifi and is not used by Storm Center.</td>
+</tr>
+<tr>
+<td>callbackContact (see <strong>Note</strong>)</td>
+<td>A string representing the callback contact information such as a phone number or email. This element is used by Notifi and is not used by Storm Center.</td>
+</tr>
+<tr>
+<td>reported</td>
+<td>A boolean to determine whether the outage for the affected delivery node was reported by a customer. This element is used by Notifi and is not used by Storm Center.</td>
+</tr>
+</tbody>
+</table>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Notifi may not have additional data about the delivery node, such as the address, available when sending outage messages to the callback contact. This fact should be considered and tested when designing message templates.</p>
+  </div>
+</div>
+<h2 id="restoration-elements">Restoration Elements</h2>
+<p>A <code>restorations</code> wrapper member is used to encapsulate the restoration elements. These are also referred to as explicit restorations.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Restoration elements are not required as part of an outage file. Currently, the Notifi solution uses restoration data to provide automated messages to customers, but Storm Center does not use restoration data.</p>
+  </div>
+</div>
+<p>A <code>restoration</code> member <strong>MUST</strong> contain at least the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>A string indicating the external ID in your Outage Management System (OMS).</td>
+</tr>
+<tr>
+<td>restoredDeliveryNodes</td>
+<td>An array of <code>restoredDeliveryNodes</code> members representing the restored delivery nodes.</td>
+</tr>
+</tbody>
+</table>
+<p>A <code>restoration</code> member <strong>MAY</strong> contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>restoredAt</td>
+<td>A dateTime representing the date and time when the outage was restored in ISO-8601 format.</td>
+</tr>
+<tr>
+<td>restorationConfidence</td>
+<td>A string representing the confidence level of the restoration. The default value is LOW. This value is case sensitive and must match exactly one of the following values: <code>LOW</code>, <code>MEDIUM</code>, or <code>HIGH</code>.</td>
+</tr>
+<tr>
+<td>customersRestored</td>
+<td>The number of customers restored.</td>
+</tr>
+<tr>
+<td>cause</td>
+<td>A string representing the cause of the restoration, or a code which can be mapped to a specific string.</td>
+</tr>
+<tr>
+<td>comments</td>
+<td>A string representing comments for the outage.</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>An object to support custom data. This can include custom properties to be displayed with the outage that are not represented in the other elements of the <code>outage</code> member. Supported data types for metadata objects are string, number, percentage, datetime, and HTML markup.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="restored-delivery-node-elements">Restored Delivery Node Elements</h3>
+<p>A <code>restoredDeliveryNodes</code> member <strong>MUST</strong> contain at least the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dnId</td>
+<td>A string indicating the delivery node ID.</td>
+</tr>
+</tbody>
+</table>
+<p>A <code>restoredDeliveryNodes</code> member <strong>MAY</strong> contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>confidence</td>
+<td>A string representing the confidence level. The default value is LOW. This value is case sensitive and must match exactly one of the following values: <code>LOW</code>, <code>MEDIUM</code>, or <code>HIGH</code>.</td>
+</tr>
+<tr>
+<td>callbackContact</td>
+<td>A string representing the callback contact information such as a phone number or email.</td>
+</tr>
+<tr>
+<td>reported</td>
+<td>A boolean to determine whether the outage for the affected delivery node was reported by a customer.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cancellation-elements">Cancellation Elements</h2>
+<p>A <code>cancellations</code> wrapper member is used to encapsulate the cancellation elements.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Cancellation elements are used by Notifi to differentiate cancelled outages from restorations to determine the correct message to send to affected customers. Storm Center does not use cancellation data.</p>
+  </div>
+</div>
+<p>A <code>cancellation</code> member <strong>MUST</strong> contain at least the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>A string indicating the external ID in your Outage Management System (OMS).</td>
+</tr>
+<tr>
+<td>cancelledDeliveryNodes</td>
+<td>An array of <code>cancelledDeliveryNodes</code> members representing the delivery nodes affected by the cancelled outage.</td>
+</tr>
+</tbody>
+</table>
+<p>A <code>cancellation</code> member <strong>MAY</strong> contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>metadata</td>
+<td>An object to support custom data. This can include custom properties to be displayed with the outage that are not represented in the other elements of the <code>outage</code> member. Supported data types for metadata objects are string, number, percentage, datetime, and HTML markup.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cancelled-delivery-node-elements">Cancelled Delivery Node Elements</h3>
+<p>A <code>cancelledDeliveryNodes</code> member <strong>MUST</strong> contain at least the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dnId</td>
+<td>A string indicating the delivery node ID.</td>
+</tr>
+</tbody>
+</table>
+<p>A <code>cancelledDeliveryNodes</code> member <strong>MAY</strong> contain the following elements:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>confidence</td>
+<td>A string representing the confidence level. The default value is LOW. This value is case sensitive and must match exactly one of the following values: <code>LOW</code>, <code>MEDIUM</code>, or <code>HIGH</code>.</td>
+</tr>
+<tr>
+<td>callbackContact</td>
+<td>A string representing the callback contact information such as a phone number or email.</td>
+</tr>
+<tr>
+<td>reported</td>
+<td>A boolean to determine whether the outage for the affected delivery node was reported by a customer.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="delivery-node-associated-with-multiple-outages">Delivery Node Associated with Multiple Outages</h2>
+<p>If a delivery node ID is included in an outage file as an affected delivery node for more than one outage, the outage file will be processed without errors. The number of customers affected for individual outage location icon information panels will include all affected delivery nodes. The number of customers affected for cluster icon information panels, outage summary reports, and the outage summary information in the overview panel will include only distinct (non-duplicate) delivery nodes.</p>
+<h2 id="failure-scenarios">Failure Scenarios</h2>
+<p>Complete and partial outage file processing failures are described on the <a href="/shared-file-specifications/failure-types/index.html#outage-files">Data Feed Processing Failures page</a>.</p>
+<h2 id="compression">Compression</h2>
+<p><a href="https://www.gnu.org/software/gzip/" target="_blank" rel="external">GZip <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>
+ file compression is supported for all file types. All GZip compressed files should end with .gz, such as <code>outages_20180101123045.json.gz</code>.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1732735619";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1732735619" defer></script>
+        <script src="/js/lunr/lunr.min.js?1732735619" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1732735619" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1732735619" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1732735619" defer></script>
+        <script src="/js/search.js?1732735619" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="parent " data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d" checked><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="active " data-nav-id="/shared-file-specifications/outage-file.files/index.html"><a class="padding" href="/shared-file-specifications/outage-file.files/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file.files/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file.files/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/shared-file-specifications/outage-file.files/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1732735619" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1732735619" defer></script>
+    <script src="/js/theme.js?1732735619" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1732735619"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

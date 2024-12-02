@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="The Notifi Broadcast tool allows you to send ad hoc messages to customers. You can send a broadcast message to
+all registered customer contacts in the Notifi system a specific category of customer contacts in the Notifi system registered customer contacts associated with a list of customer account numbers you provide in a CSV file customer contacts included with a list of account numbers in a CSV file you provide Before you try to broadcast your message, refer to the PreBroadcast Checklist to check if you have completed all the steps.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Broadcast :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="The Notifi Broadcast tool allows you to send ad hoc messages to customers. You can send a broadcast message to
+all registered customer contacts in the Notifi system a specific category of customer contacts in the Notifi system registered customer contacts associated with a list of customer account numbers you provide in a CSV file customer contacts included with a list of account numbers in a CSV file you provide Before you try to broadcast your message, refer to the PreBroadcast Checklist to check if you have completed all the steps.">
+    <meta property="og:url" content="http://localhost:1313/notifi/management-console/broadcast/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Broadcast :: KUBRA Product Documentation">
+    <meta property="og:description" content="The Notifi Broadcast tool allows you to send ad hoc messages to customers. You can send a broadcast message to
+all registered customer contacts in the Notifi system a specific category of customer contacts in the Notifi system registered customer contacts associated with a list of customer account numbers you provide in a CSV file customer contacts included with a list of account numbers in a CSV file you provide Before you try to broadcast your message, refer to the PreBroadcast Checklist to check if you have completed all the steps.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Notifi">
+    <meta itemprop="name" content="Broadcast :: KUBRA Product Documentation">
+    <meta itemprop="description" content="The Notifi Broadcast tool allows you to send ad hoc messages to customers. You can send a broadcast message to
+all registered customer contacts in the Notifi system a specific category of customer contacts in the Notifi system registered customer contacts associated with a list of customer account numbers you provide in a CSV file customer contacts included with a list of account numbers in a CSV file you provide Before you try to broadcast your message, refer to the PreBroadcast Checklist to check if you have completed all the steps.">
+    <meta itemprop="wordCount" content="4000">
+    <title>Broadcast :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/notifi/management-console/broadcast/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#initial-view">Initial View</a>
+      <ul>
+        <li><a href="#message-status">Message Status</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-broadcast-message">Create a Broadcast Message</a>
+      <ul>
+        <li><a href="#name-a-message">Name a Message</a></li>
+        <li><a href="#enter-template-content">Enter Template Content</a></li>
+        <li><a href="#select-recipients">Select Recipients</a></li>
+        <li><a href="#optional-set-subscriptions-to-filter-on">(Optional) Set Subscriptions To Filter On</a></li>
+        <li><a href="#save-a-draft">Save a Draft</a></li>
+        <li><a href="#test-a-message">Test a Message</a></li>
+        <li><a href="#send-a-message-immediately">Send a Message Immediately</a></li>
+        <li><a href="#schedule-a-message-for-later-delivery">Schedule a Message for Later Delivery</a></li>
+      </ul>
+    </li>
+    <li><a href="#monitoring-the-status-of-a-broadcast">Monitoring the Status of a Broadcast</a></li>
+    <li><a href="#edit-a-broadcast-message">Edit a Broadcast Message</a></li>
+    <li><a href="#cancel-a-broadcast-message">Cancel a Broadcast Message</a></li>
+    <li><a href="#copy-a-broadcast">Copy a Broadcast</a></li>
+    <li><a href="#upload-a-broadcast-audio-file">Upload a Broadcast Audio File</a></li>
+    <li><a href="#prebroadcast-checklist">PreBroadcast Checklist</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notifi/index.html"><span itemprop="name">Notifi</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notifi/management-console/index.html"><span itemprop="name">Management Console for Notifi</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Broadcast</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notifi/management-console/preferences/index.html" title="Preferences (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notifi/management-console/template-manager/index.html" title="Template Manager (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable notifi" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="broadcast">Broadcast</h1>
+
+<p>The Notifi Broadcast tool allows you to send ad hoc messages to customers. You can send a broadcast message to</p>
+<ul>
+<li>all registered customer contacts in the Notifi system</li>
+<li>a specific category of customer contacts in the Notifi system</li>
+<li>registered customer contacts associated with a list of customer account numbers you provide in a CSV file</li>
+<li>customer contacts included with a list of account numbers in a CSV file you provide</li>
+</ul>
+<p>Before you try to broadcast your message, refer to the <a href="/notifi/management-console/broadcast/index.html#prebroadcast-checklist">PreBroadcast Checklist</a> to check if you have completed all the steps.</p>
+<h2 id="initial-view">Initial View</h2>
+<p>When you first open the Broadcast tool, you will see a list of messages that are being composed and have not been sent or scheduled, messages that are pending delivery, and messages that are in the process of being sent.</p>
+<h3 id="message-status">Message Status</h3>
+<p>You can filter the list of broadcast messages by status. Notifi uses these broadcast message statuses:</p>
+<ul>
+<li>Composing - the message is being composed and has not been sent or scheduled (it is a draft)</li>
+<li>Pending - the message is awaiting delivery</li>
+<li>Running - the message is being delivered</li>
+<li>Completed - the message has been sent to all selected contacts</li>
+<li>Cancelled - the message was cancelled after being composed or scheduled</li>
+<li>Aborted - the message was stopped partway through delivery</li>
+<li>Failed - the message was not successfully sent</li>
+</ul>
+<h2 id="create-a-broadcast-message">Create a Broadcast Message</h2>
+<p>To create a broadcast message:</p>
+<ol>
+<li>Click the plus sign icon at the upper right of the message list - the icon will change to show the word &ldquo;New&rdquo; when you hold your mouse cursor over it.</li>
+<li>Enter a name for the broadcast message.</li>
+<li>Enter content for the message for all channels and languages you want to include.</li>
+<li>Select criteria to identify message recipients.</li>
+<li>(Optional) Upload a CSV file to identify a list of account numbers to receive the broadcast message.</li>
+<li>(Optional) Send a test message to one or more provided contacts to check that the message appears or sounds correct.</li>
+<li>Send the message immediately or schedule the message to be sent at a later date and time.</li>
+</ol>
+<h3 id="name-a-message">Name a Message</h3>
+<p>By default, the name of a new broadcast message is &ldquo;New Broadcast&rdquo; followed by the current date and time. For example: &ldquo;New Broadcast - Jan 2, 2020 4:45 PM.&rdquo;</p>
+<p>To change the name of the message, click the message name or the Edit button (pencil icon) that appears when you hold the mouse cursor over the message name.</p>
+<p>The broadcast message name is for your reference inside the Broadcast tool. It will not appear anywhere in the messages sent to customer contacts.</p>
+<h3 id="enter-template-content">Enter Template Content</h3>
+<p>The <strong>Templates</strong> section of the create message form shows the message templates for each available channel. If your Notifi implementation supports multiple languages, each available channel will also have a separate template for each supported language.</p>
+<p>At a maximum, Notifi supports broadcast message templates for voice, email, SMS text, and push notification channels.</p>
+<p>To create or edit a broadcast message template:</p>
+<ol>
+<li>Select the channel.</li>
+<li>(Optional) Select the language.</li>
+<li>Enter text for the message template.</li>
+<li>Repeat steps 1-3 for each channel and language you want to include in the broadcast message.</li>
+<li>Click the <strong>Next</strong> button to continue to the <strong>Criteria</strong> section of the form.</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The Broadcast tool does not provide any checks on the text you enter in the template fields. Please check the spelling, grammar, and message tone carefully. You may want to ask another person to check your work before you send the broadcast.</p>
+  </div>
+</div>
+<p>If you do not create a template for a channel, contacts for that channel will not receive the broadcast message. For example, if you only create an email template, the broadcast message will only be sent to email addresses.</p>
+<p>If you do not create a template for a language, contacts with that language selected as a preference will not receive the broadcast message. For example, if English and Spanish are supported and you only create English templates, only contacts with a preference for English will receive the broadcast message.</p>
+<h4 id="email-templates">Email Templates</h4>
+<p>The text you enter in the <strong>Subject</strong> field will be the subject line of the email message. The text you enter in the <strong>Body</strong> field will be the body or main content of the email message.</p>
+<p>Notifi does not add any formatting around the content in the <strong>Body</strong> field, so you must include any HTML formatting you want to appear in the email messages sent to customers.</p>
+<p>If you have an HTML email template created in another program, such as an email marketing program or a design program, you can use that HTML for the email template body.</p>
+<p>To include HTML formatting in a broadcast email template:</p>
+<ol>
+<li>Click the <strong>Edit HTML</strong> button (pencil icon).</li>
+<li>Copy the HTML from your other program.</li>
+<li>Paste the HTML into the Broadcast tool.</li>
+<li>Click the <strong>Edit HTML</strong> button again to preview the HTML content in rich text view.</li>
+</ol>
+<h4 id="push-notification-templates">Push Notification Templates</h4>
+<p>The text you enter in the <strong>Alert Title</strong> field will be the title of the push notification. The text you enter in the other field will be the body or detailed content of the push notification.</p>
+<p>Push notifications are only supported for Android and iOS mobile apps. This option will not appear if neither Android nor iOS applications are integrated with your Notifi implementation.</p>
+<p>iOS push notifications support a maximum of 65 characters for the alert title and 240 characters for the body of the message. Android push notifications support a maximum of 200 characters for the alert title and 1024 characters for the body of the message. Because the same broadcast message template is used for both iOS and Android, we recommend using the smaller character lengths.</p>
+<h4 id="sms-text-templates">SMS Text Templates</h4>
+<p>SMS text templates support a maximum of 140 bytes (or 160 characters, see below) in the U.S. for English-language messages. With Notifi 3.2 &amp; 4.0, the Broadcast tool works on the backend to stitch together multiple segments into one message a customer sees, allowing you to go over 160 characters. However, mobile carriers will still send such a longer message via multiple separate SMS messages/segments.</p>
+<p>The counter at the lower right side of the template field tracks the number of characters you have entered. A red counter serves as an alert indicating that your template exceeds the character limit, causing the message to be sent in more than one SMS segment, each limited to 140 bytes. The number of bytes you use depends both on the number of characters (1 character = 7/8 byte when using <a href="https://en.wikipedia.org/wiki/GSM_03.38" rel="external" target="_blank">ONLY GSM-7 characters</a>) and the type of characters you use. If you use non-GSM-7 characters such as common non-English characters á, Á, í, Í, ó, Ó, ú, or Ú, the mobile carriers need to use the larger UCS-2 character set, which uses 16 rather than 7 bits per character, allowing for less characters per segment. KUBRA recommends you keep segment count lower and thus your costs down. You can do this by substituting non-accented characters where reasonable, as we do when working on non-broadcast templates with clients i.e. use a, A, i, I, o, O, u, or U if customers can infer the word you are spelling without the accent marks.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The Broadcast tool is set up with a default limitation of 480 characters or three message segments but additional segments can be added up to a limit of 1600 for an extra cost. Talk to your CSM if you want to extend your limits.</p>
+  </div>
+</div>
+<p>To minimize cost to both sender and recipient, the following special characters will be replaced automatically when entered into a SMS broadcast template upon save or when sending the broadcast:</p>
+<div class="expand">
+  <input type="checkbox" id="R-expand-2bb502d514069c5719e8aa5ea551d21a" aria-controls="R-expandcontent-2bb502d514069c5719e8aa5ea551d21a">
+  <label class="expand-label" for="R-expand-2bb502d514069c5719e8aa5ea551d21a">
+    <i class="expander-icon fa-fw fas fa-chevron-down"></i>
+    <i class="expander-icon fa-fw fas fa-chevron-right"></i> Click here to expand list of replaced characters for SMS
+  </label>
+  <div id="R-expandcontent-2bb502d514069c5719e8aa5ea551d21a" class="expand-content">
+<table>
+<thead>
+<tr>
+<th>Unicode Character</th>
+<th>Glyph</th>
+<th>Changed to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U+0009</td>
+<td>	</td>
+<td>&ldquo;     &rdquo; (five spaces)</td>
+</tr>
+<tr>
+<td>U+00AB</td>
+<td>«</td>
+<td>&laquo;</td>
+</tr>
+<tr>
+<td>U+00BB</td>
+<td>»</td>
+<td>&raquo;</td>
+</tr>
+<tr>
+<td>U+2002</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+2003</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+2004</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+2005</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+2006</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+2007</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+2008</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+2009</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+200A</td>
+<td> </td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+200B</td>
+<td>​</td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+200C</td>
+<td>‌</td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+200D</td>
+<td>‍</td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+200E</td>
+<td>‎</td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+200F</td>
+<td>‏</td>
+<td>&quot; &quot; (single space)</td>
+</tr>
+<tr>
+<td>U+2010</td>
+<td>‐</td>
+<td>- (dash)</td>
+</tr>
+<tr>
+<td>U+2011</td>
+<td>‑</td>
+<td>- (dash)</td>
+</tr>
+<tr>
+<td>U+2012</td>
+<td>‒</td>
+<td>- (dash)</td>
+</tr>
+<tr>
+<td>U+2013</td>
+<td>–</td>
+<td>- (dash)</td>
+</tr>
+<tr>
+<td>U+2014</td>
+<td>—</td>
+<td>- (dash)</td>
+</tr>
+<tr>
+<td>U+2015</td>
+<td>―</td>
+<td>- (dash)</td>
+</tr>
+<tr>
+<td>U+2016</td>
+<td>‖</td>
+<td>| (vertical line)</td>
+</tr>
+<tr>
+<td>U+2017</td>
+<td>‗</td>
+<td>_</td>
+</tr>
+<tr>
+<td>U+2018</td>
+<td>‘</td>
+<td>'</td>
+</tr>
+<tr>
+<td>U+2019</td>
+<td>’</td>
+<td>'</td>
+</tr>
+<tr>
+<td>U+201A</td>
+<td>‚</td>
+<td>,</td>
+</tr>
+<tr>
+<td>U+201B</td>
+<td>‛</td>
+<td>'</td>
+</tr>
+<tr>
+<td>U+201C</td>
+<td>“</td>
+<td>&quot;</td>
+</tr>
+<tr>
+<td>U+201D</td>
+<td>”</td>
+<td>&quot;</td>
+</tr>
+<tr>
+<td>U+201E</td>
+<td>„</td>
+<td>,,</td>
+</tr>
+<tr>
+<td>U+2022</td>
+<td>•</td>
+<td>*</td>
+</tr>
+<tr>
+<td>U+2023</td>
+<td>‣</td>
+<td>*</td>
+</tr>
+<tr>
+<td>U+2026</td>
+<td>…</td>
+<td>&hellip;</td>
+</tr>
+<tr>
+<td>U+2032</td>
+<td>′</td>
+<td>'</td>
+</tr>
+<tr>
+<td>U+2033</td>
+<td>″</td>
+<td>''</td>
+</tr>
+<tr>
+<td>U+2034</td>
+<td>‴</td>
+<td>&rsquo;''</td>
+</tr>
+<tr>
+<td>U+2035</td>
+<td>‵</td>
+<td>'</td>
+</tr>
+<tr>
+<td>U+2036</td>
+<td>‶</td>
+<td>''</td>
+</tr>
+<tr>
+<td>U+2037</td>
+<td>‷</td>
+<td>&rsquo;''</td>
+</tr>
+<tr>
+<td>U+2039</td>
+<td>‹</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>U+203a</td>
+<td>›</td>
+<td>&gt;</td>
+</tr>
+<tr>
+<td>U+203c</td>
+<td>‼</td>
+<td>!!</td>
+</tr>
+<tr>
+<td>U+203d</td>
+<td>‽</td>
+<td>?</td>
+</tr>
+<tr>
+<td>U+2043</td>
+<td>⁃</td>
+<td>*</td>
+</tr>
+<tr>
+<td>U+204e</td>
+<td>⁎</td>
+<td>*</td>
+</tr>
+</tbody>
+</table>
+  </div>
+</div>
+<h4 id="voice-templates">Voice Templates</h4>
+<p>Voice templates for broadcast messages use text-to-speech to convert the text you type in the <strong>Body</strong> field into spoken voice messages.</p>
+<p>To have numbers or letters read separately, as for a phone number or address, add space characters between the number or letter characters. For example, this can help make sure a phone number is read as <code>five nine eight two</code> instead of <code>five thousand nine hundred eighty two</code>. You can also use space characters to indicate pauses in the message.</p>
+<p>A more specific example of recommended formatting for a phone number is <code>2 1 0 ... 3 5 3 ... 4 3 5 7</code>, which would be read with an additional pause between the area code and the first three digits of the phone number and between the first three digits and the last four digits of the phone number.</p>
+<h3 id="select-recipients">Select Recipients</h3>
+<p>The <strong>Criteria</strong> section of the create message form allows you to do the following:</p>
+<ol>
+<li>Select <strong>Criteria</strong> manually to filter who receives messages.
+OR</li>
+<li>Designate a CSV file you upload to filter who receives the messages.
+OR</li>
+<li>Designate a CSV file + subscriptions to filter who receives the messages.</li>
+</ol>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Warning
+  </div>
+  <div class="box-content">
+<p>If you choose to designate a CSV file, you cannot choose any other criteria except subscriptions.</p>
+  </div>
+</div>
+<p>Once the intended recipients are defined, there is an option to add a list of subscriptions to filter those recipients against (see next section).</p>
+<p>You can choose recipients for the message using the following address criteria types:</p>
+<ul>
+<li>Companies - if your organization has only one operating company, you can select the operating company to select all account numbers with contacts registered in the Notifi database</li>
+<li>States</li>
+<li>Counties</li>
+<li>ZIP Codes</li>
+</ul>
+<p>To add recipient criteria:</p>
+<ol>
+<li>Move the mouse cursor over the <strong>Add Criteria</strong> text to show the list of criteria types.</li>
+<li>Click on a criteria type.</li>
+<li>Select the values for that criteria type you want to use to identify message recipients.</li>
+<li>Click the <strong>X</strong> icon at the upper right corner of the pop-up window to close it. Your selected criteria will appear in a list below the <strong>Add Criteria</strong> text.</li>
+<li>Repeat steps 1-4 for all criteria types you want to include.</li>
+</ol>
+<p>If you select multiple options within one type of recipient criteria, the options will act as ALL/ANY/OR selections. If you select multiple types of recipient criteria, the selections will act as AND selections.</p>
+<p>For example, if you select five ZIP Codes, the broadcast message will be sent to contacts in the Notifi database registered to account numbers associated with ANY of the selected ZIP Codes.</p>
+<p>If you select two ZIP Codes and a County, the broadcast message will be sent to contacts in the Notifi database registered to account numbers associated with ANY of the selected ZIP Code AND the selected County.</p>
+<h4 id="upload-a-csv-file">Upload a CSV File</h4>
+<p>In addition to or as an alternative to the criteria types shown in the broadcast tool, you can upload a CSV file with a list of account numbers to identify recipients for the broadcast message. The CSV file can also include contact information.</p>
+<p>To upload a CSV file:</p>
+<ol>
+<li>Click the <strong>Upload</strong> button in the <strong>Criteria</strong> section of the create message form.</li>
+<li>Drag and drop the CSV file onto the pop-up window or click the <strong>Select File</strong> button and then locate the file on your computer.</li>
+<li>Click the <strong>X</strong> icon in the upper right corner of the pop-up window or &ldquo;Close&rdquo; once the progress bar says &ldquo;file uploaded successfully&rdquo;.</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The file you upload will be verified when it is uploaded to ensure it conforms to the file format information below. Verification may take several more minutes after the upload dialog is closed to finish saving the file, particularly if it is 100,000+ lines long. If you attempt to send the broadcast immediately (rather than a scheduled broadcast) before the file save process is complete, you may be forced to wait to start the broadcast until the file save process is fully complete in the background.</p>
+  </div>
+</div>
+<h4 id="csv-file-format">CSV File Format</h4>
+<p>The CSV file name has a length limit of 50 characters. The CSV file has a maximum size limit of 150 MB.</p>
+<p>A header row is required for CSV files to indicate which attributes the file includes and the order of the attributes.</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Required?</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>account</td>
+<td>Yes</td>
+<td>An account number - the Broadcast message will be sent to all contacts in the Notifi database registered to this account number, unless restricted by other selected criteria.</td>
+</tr>
+<tr>
+<td>contact</td>
+<td>No</td>
+<td>A phone number or email address you want to include as a contact for the account in addition to or in place of any contacts in the Notifi database registered to the account number. Phone numbers must be 11 digits (with leading country code and area code). Phone numbers must not contain any special characters.</td>
+</tr>
+<tr>
+<td>channel</td>
+<td>No if contact not provided; yes if contact provided</td>
+<td>The channel for the provided contact: one of <code>SMS</code>, <code>IVR</code>, or <code>E_MAIL</code>.</td>
+</tr>
+<tr>
+<td>supplemental</td>
+<td>No if contact not provided or if using <code>ignoreSubscribedContacts</code>; yes if contact provided and not using <code>ignoreSubscribedContacts</code></td>
+<td>Boolean - this tells Notifi whether to treat the provided contact as a Supplemental Contact or a Default Contact. If <code>true</code>, Notifi will treat the contact as a Supplemental Contact. If <code>false</code>, Notifi will treat the contact as a Default Contact. If you include a contact but do not specify a value for this attribute, Notifi will treat the contact as a Default Contact.</td>
+</tr>
+<tr>
+<td>ignoreSubscribedContacts</td>
+<td>No if contact not provided; yes if contact provided and not using <code>supplemental</code></td>
+<td>Boolean - this tells Notifi whether to ignore any contacts in the Notifi database registered to the account number when sending a message to the contact supplied in the CSV file. If <code>true</code>, Notifi will only send the broadcast message to the contact supplied in the CSV file. If <code>false</code>, Notifi will also send the broadcast message to contacts in the Notifi database registered to the account number, unless restricted by other selected criteria. The use case for this attribute is to provide a complete list of contacts for a broadcast message, which requires the attribute to be set to <code>true</code> for all rows in the CSV file.</td>
+</tr>
+</tbody>
+</table>
+<p>Broadcast messages are sent to Supplemental Contacts in addition to eligible registered contacts. Broadcast messages are sent to Default Contacts only when there are no contacts in the Notifi database registered to the account number.</p>
+<h4 id="use-case-examples-for-csv-file">Use Case Examples for CSV File</h4>
+<p>The supported attributes for CSV file upload in the Broadcast tool support the following use cases:</p>
+<ol>
+<li>Provide a list of account numbers - Notifi will send the broadcast message to contacts registered in the Notifi database to the provided account numbers. The file must not contain duplicate account numbers.</li>
+<li>Provide account numbers and supplemental contacts - Notifi will send the broadcast message to contacts registered in the Notifi database to the provided account numbers and to the provided supplemental contacts. The file must not contain duplicate account numbers.</li>
+<li>Provide account numbers and default contacts - Notifi will send the broadcast message to contacts registered in the Notifi database to the provided account numbers or to the provided default contacts if there are no contacts registered in the Notifi database for a specific account number. The file must not contain duplicate account numbers.</li>
+<li>Provide account numbers and contacts and ignore subscribed contacts - Notifi will send the broadcast message only to the contacts provided in the CSV file. This is the only use case that allows the CSV file to contain duplicate account numbers.</li>
+</ol>
+<h5 id="example-1---csv-with-account-numbers-only">Example 1 - CSV with Account Numbers Only</h5>
+<div class="highlight wrap-code"><pre tabindex="0"><code>account
+123456789010
+123456789011
+123456789012
+123456789013</code></pre></div>
+<h5 id="example-2---csv-with-account-numbers-and-supplemental-contacts">Example 2 - CSV with Account Numbers and Supplemental Contacts</h5>
+<div class="highlight wrap-code"><pre tabindex="0"><code>account,contact,channel,supplemental
+123456789010,username@example.com,E_MAIL,true
+123456789011,15551234567,SMS,true
+123456789012,user@kubra.com,E_MAIL,true
+123456789013,customer@abcenergy.com,E_MAIL,true</code></pre></div>
+<h5 id="example-3---account-numbers-and-default-contacts">Example 3 - Account Numbers and Default Contacts</h5>
+<div class="highlight wrap-code"><pre tabindex="0"><code>account,contact,channel,supplemental
+123456789010,username@example.com,E_MAIL,false
+123456789011,15551234567,SMS,false
+123456789012,user@kubra.com,E_MAIL,false
+123456789013,customer@abcenergy.com,E_MAIL,false</code></pre></div>
+<h5 id="example-4---account-numbers-and-contacts-ignore-subscribed-contacts">Example 4 - Account Numbers and Contacts, Ignore Subscribed Contacts</h5>
+<div class="highlight wrap-code"><pre tabindex="0"><code>account,contact,channel,ignoreSubscribedContacts
+123456789010,username@example.com,E_MAIL,true
+123456789011,15551234567,SMS,true
+123456789012,user@kubra.com,E_MAIL,true
+123456789013,customer@abcenergy.com,E_MAIL,true</code></pre></div>
+<p>This example allows you to include duplicate account numbers to provide more than one contact for a single account. If you use this example format, the <code>ignoreSubscribedContacts</code> attribute must be included and must be set to <code>true</code> for all rows in the file.</p>
+<h3 id="optional-set-subscriptions-to-filter-on">(Optional) Set Subscriptions To Filter On</h3>
+<p>To optionally designate only contacts subscribed to specific messaging programs such as Outage, Bill Ready, Payment Reminder, or Usage (will be dependent on your configuration) to receive the broadcast message, you can choose one or many subscriptions that will be provided to Notifi to help down-select which contacts the broadcast message is sent to.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>While subscriptions selected will affect the eventual number of messages sent, they will not affect the count of accounts seen in the broadcast details dialog when sending or scheduling a broadcast.</p>
+  </div>
+</div>
+<h3 id="save-a-draft">Save a Draft</h3>
+<p>To save a draft broadcast message without sending it or scheduling it to be sent, click the <strong>Save without Sending</strong> button on the create message form.</p>
+<h3 id="test-a-message">Test a Message</h3>
+<p>The <strong>Test</strong> section of the create message form allows you to send a test message to check that a broadcast message sounds or appears correctly before you send the broadcast message to the selected recipients.</p>
+<p>To send a test message:</p>
+<ol>
+<li>Hold your mouse cursor over the <strong>Add Contact</strong> text.</li>
+<li>Select a channel for the contact you want to use for the test message.</li>
+<li>Enter the contact information in the text box.</li>
+<li>(Optional) Select the language you want to use for the test message.</li>
+<li>Repeat steps 1-4 for any additional contacts you want to include in the test.</li>
+<li>Click the <strong>Send Test</strong> button.</li>
+</ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="send-a-message-immediately">Send a Message Immediately</h3>
+<p>The <strong>Schedule</strong> section of the create message form allows you to send a broadcast message to the selected recipients.</p>
+<p>To send a broadcast message immediately:</p>
+<ol>
+<li>Click the <strong>Send Immediately</strong> checkbox.</li>
+<li>Click the <strong>Send Broadcast</strong> button.</li>
+<li>Review the details for the message.</li>
+<li>Click the <strong>Yes</strong> button to confirm message delivery.</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Contacts with an active do not disturb period at the time the broadcast is sent will receive the message when their do not disturb period ends.</p>
+  </div>
+</div>
+<h3 id="schedule-a-message-for-later-delivery">Schedule a Message for Later Delivery</h3>
+<p>The <strong>Schedule</strong> section of the create message form allows you to schedule a broadcast message for later delivery to the selected recipients.</p>
+<p>To schedule a broadcast message for later delivery:</p>
+<ol>
+<li>Click the <strong>Date</strong> field.</li>
+<li>Select a date and time in the pop-up window. The slider at the bottom of the pop-up window allows you to select a time.</li>
+<li>Click the <strong>Done</strong> button.</li>
+<li>Click the <strong>Send Broadcast</strong> button.</li>
+<li>Review the details for the scheduled message.</li>
+<li>Click the <strong>Yes</strong> button to confirm message scheduling.</li>
+</ol>
+<p>To clear a selected date and time, click the <strong>Unschedule</strong> button.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The Broadcast tool uses your computer&rsquo;s current local time zone as the time zone for scheduled broadcast messages. Contacts with an active do not disturb period at the time the broadcast is scheduled will receive the message when their do not disturb period ends.</p>
+  </div>
+</div>
+<h2 id="monitoring-the-status-of-a-broadcast">Monitoring the Status of a Broadcast</h2>
+<p>To check the status of a broadcast that is in the process of sending, you can select a previously-created broadcast that is currently sending. The message that opens will not be editable, but it is possible to view the content that is being sent. You can see a percentage-based status bar at the top of the screen that provides a view of how much of the broadcast has been sent at this moment.</p>
+<p>The progress of this bar will be a near-realtime view of how quickly messages are passing through the event handling and message sending segments of Notifi. The progress bar data is based on the quantity of events that have been processed divided by the number of events submitted.</p>
+<p>As the broadcast is starting, the progress bar might be somewhat volatile: this is normal. The volatility is a result of the number of events submitted to Notifi being low and not a reflection of the total number of events. As all the events are submitted, the progress bar should indicate a more accurate view of the actual state of how much of the broadcast has been sent to KUBRA&rsquo;s method aggregators.</p>
+<h2 id="edit-a-broadcast-message">Edit a Broadcast Message</h2>
+<p>To resume working on a draft message or to edit a message that is pending delivery, select the message name from the list in the Broadcast tool. You may need to select the &ldquo;Composing&rdquo; or &ldquo;Pending&rdquo; message status to see the message name in the list.</p>
+<p>You cannot edit a broadcast message after it has been sent. To create a new broadcast message with content based on a previously sent message, you must create a new broadcast and copy over the template content.</p>
+<h2 id="cancel-a-broadcast-message">Cancel a Broadcast Message</h2>
+<p>To cancel a broadcast message, click the <strong>Cancel Broadcast</strong> button at the bottom of the create message form.</p>
+<p>If the broadcast message is being sent, you can abort the message. Some individual messages may still be delivered to recipients if they were already sent for delivery before the message was aborted.</p>
+<h2 id="copy-a-broadcast">Copy a Broadcast</h2>
+<p>Notifi lets you copy a broadcast, allowing you to duplicate a previously created broadcast. To copy the broadcast, click on the green <strong>Copy</strong> button to the right of the broadcast.</p>
+<p>The new copy will have the same verbiage, templates, and criteria as your original version. If you delete the recipient CSV file, it deletes the CSV file from the original as well.</p>
+<h2 id="upload-a-broadcast-audio-file">Upload a Broadcast Audio File</h2>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>The audio file upload functionality is only available with Notifi 4.0 after KUBRA has configured voice calling templates to use the audio files.</p>
+  </div>
+</div>
+<p>Notifi lets you upload a new audio file via the UI to supplement Text-to-Speech when creating an IVR template. The IVR templates have two template types: <strong>Audio file</strong> and <strong>Text-to-Speech</strong>. Broadcast supports either <strong>Audio file</strong> or <strong>Text-to-Speech</strong>, but not both.</p>
+<p>New broadcasts will default to the <strong>Text-to-Speech</strong> IVR template type.</p>
+<p>To upload an audio file:</p>
+<ol>
+<li>Check the <strong>Audio file</strong> box in <strong>Voice Template Type</strong> to enable the <strong>Upload</strong> button.</li>
+<li>Click the <strong>File upload</strong> button and select a supported audio file (see note below).</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The max supported file size for an audio file is 50 MB. The audio file length should not exceed 10 minutes. The preferred audio file format is .wav.</p>
+  </div>
+</div>
+<p>Once the audio file is uploaded successfully, the audio file name will appear in a tag below the file upload area.</p>
+<p>To delete the audio file, click the delete button to the right of the audio file name tag. Clicking the delete button will remove the audio file from the broadcast and re-enable Text functionality.</p>
+<ul>
+<li>Existing broadcasts will default to a type based on template data.
+<ul>
+<li>If an audio file exists - default to <strong>Audio file</strong>.</li>
+<li>If no audio file exists - default to <strong>Text-to-Speech</strong>.</li>
+</ul>
+</li>
+</ul>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Warning
+  </div>
+  <div class="box-content">
+<p>Uploading an audio file will override Text-to-Speech for all locales. The uploaded file will be sent to all contacts regardless of language preference. The audio file will be transcoded for the phone system as-needed.</p>
+  </div>
+</div>
+<p>Supported MIME types:</p>
+<table>
+<thead>
+<tr>
+<th>MIME</th>
+<th>TYPE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>audio/mpeg</td>
+<td>mpeg layer 3 audio</td>
+</tr>
+<tr>
+<td>audio/wav</td>
+<td>wav format audio</td>
+</tr>
+<tr>
+<td>audio/wave</td>
+<td>wav format audio</td>
+</tr>
+<tr>
+<td>audio/x-wav</td>
+<td>wav format audio</td>
+</tr>
+<tr>
+<td>audio/aiff</td>
+<td>audio interchange file format</td>
+</tr>
+<tr>
+<td>audio/x-aifc</td>
+<td>audio interchange file format</td>
+</tr>
+<tr>
+<td>audio/x-aiff</td>
+<td>audio interchange file format</td>
+</tr>
+<tr>
+<td>audio/x-gsm</td>
+<td>GSM audio format</td>
+</tr>
+<tr>
+<td>audio/gsm</td>
+<td>GSM audio format</td>
+</tr>
+<tr>
+<td>audio/ulaw</td>
+<td>μ-law audio format</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prebroadcast-checklist">PreBroadcast Checklist</h2>
+<p>Refer to the PreBroadcast checklist to confirm if you have completed all steps for a successful broadcast.</p>
+<section class="attachments green">
+	<label>
+		<i class="fas fa-paperclip"></i>
+		Attachments
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//notifi/management-console/broadcast.files/prebroadcast-checklist.pdf" >
+					prebroadcast-checklist.pdf
+				</a>
+				(55 kb)
+			</li>
+		
+	
+	</div>
+	
+</section>
+
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="parent " data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740" checked><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d"><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610"><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/notifi/management-console/broadcast/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

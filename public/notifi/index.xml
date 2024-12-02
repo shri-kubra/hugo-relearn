@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notifi :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/notifi/index.html</link>
+    <description>What is Notifi? Notifi is KUBRA’s automated alerts and preference management platform. Notifi uses business data from back-end systems to deliver messages to customers on a variety of communication channels according to customer preferences. Notifi also allows customers to request information and complete transactions such as outage reports and payment authorizations using automated SMS text conversations.&#xA;To put it another way, Notifi collects information about customers’ communication preferences and then “listens in” on business activities to update customers when something happens which is of interest to them.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/notifi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Feature List</title>
+      <link>http://localhost:1313/notifi/features/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/features/index.html</guid>
+      <description>Communication Channels Notifi supports SMS text messages, email messages, text-to-speech or prerecorded voice messages, and push notifications for Android and iOS mobile apps.&#xA;Two-Way Communication The latest version of Notifi uses natural language processing to identify a user’s intent from the word or words the user sends to the system. This means that users can either use keywords or complete sentences to request information or complete supported tasks.&#xA;Message Categories Notifi supports a wide variety of message categories for both proactive messages (one-way) and interactive automated conversations (two-way).</description>
+    </item>
+    <item>
+      <title>Management Console for Notifi</title>
+      <link>http://localhost:1313/notifi/management-console/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/index.html</guid>
+      <description>The Notifi Management Console allows admin users at an organization to track activity and manage some configurable features of a deployed Notifi system.&#xA;Note&#xD;The instructions provided on this website are for the most recent version of Notifi management tools. Older versions of these tools have different instructions provided in other formats.&#xA;Access Different user roles can be assigned to access different tools within the Notifi Management Console.&#xA;See the User Management page for more information about user management and permissions for access to Notifi tools.</description>
+    </item>
+    <item>
+      <title>Notifi Glossary of Terms</title>
+      <link>http://localhost:1313/notifi/notifi-glossary/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/notifi-glossary/index.html</guid>
+      <description>This page provides a list of terms and definitions related to the KUBRA Notifi product.&#xA;Term Definition Account A utility or organization account, identified by an account number supplied by the utility or other organization. There is typically one account per premises. Advanced Reporting An optional Notifi module that provides options for authorized admin users to create and share customizable charts and reports about customer activities. See the Notifi Advanced Reporting page for more information.</description>
+    </item>
+  </channel>
+</rss>

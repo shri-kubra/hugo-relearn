@@ -1,0 +1,1 @@
+<a href="{{ .Get "url" }}" target="_blank" rel="external">{{ with .Get "title" }}{{.}}{{else}}{{.Get "url"}} {{end}} <span class="fas fa-external-link-alt"></span><span class="sr-only">External link opens in new tab</span></a>

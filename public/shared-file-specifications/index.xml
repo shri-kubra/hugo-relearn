@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shared File Specifications and Resources :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/shared-file-specifications/index.html</link>
+    <description>Some file types are shared by multiple KUBRA products. We provide these file specifications in this section to indicate that they are shared by multiple products.&#xA;Not all products use all elements of a shared file type. Elements that are product-specific are noted in the file specification notes.&#xA;There are currently two shared file specifications for KUBRA products documented on this site:&#xA;Outage files - These files list outages affecting delivery nodes in a region and provide information about each outage such as an estimated restoration time, cause, comments, and repair crew status.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/shared-file-specifications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outage File</title>
+      <link>http://localhost:1313/shared-file-specifications/outage-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/shared-file-specifications/outage-file/index.html</guid>
+      <description>Introduction This document outlines the structure of an outage file. Outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.&#xA;Outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.&#xA;Attachments&#xD;outage.json&#xD;(3 kb)&#xD;outage.xml&#xD;(3 kb)&#xD;outages-schema.xsd&#xD;(5 kb)&#xD;File Structure JSON The outage file can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab&#xD;.</description>
+    </item>
+    <item>
+      <title>Planned Outage File</title>
+      <link>http://localhost:1313/shared-file-specifications/planned-outage-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/shared-file-specifications/planned-outage-file/index.html</guid>
+      <description>Introduction This document outlines the structure of a planned outage file. Planned outage files are assumed to be complete snapshots of outage data, as opposed to incremental updates to previously sent outage data.&#xA;Planned outage files must be delivered via HTTPS POST requests to an endpoint specified by the Data Feeds application.&#xA;Attachments&#xD;planned-outage.json&#xD;(1 kb)&#xD;planned-outage.xml&#xD;(1 kb)&#xD;planned-outages-schema.xsd&#xD;(2 kb)&#xD;File Structure JSON Planned outage files can be sent in JavaScript Object Notation (JSON) format as specified in Internet Engineering Task Force standard RFC7159 External link opens in new tab&#xD;.</description>
+    </item>
+    <item>
+      <title>Data Feed Processing Failures</title>
+      <link>http://localhost:1313/shared-file-specifications/failure-types/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/shared-file-specifications/failure-types/index.html</guid>
+      <description>There are two types of file processing failures for delivery node, outage, and planned outage data feeds:&#xA;Critical: Fatal; processing aborts and the entire file fails. Non-critical: Non-fatal; processing continues, but some or all of the affected entry may be discarded, the resulting outage data may be incorrect, etc. The following are the critical and non-critical failures that can occur when processing delivery node, outage, and planned outage files.&#xA;Delivery Node Files 1.</description>
+    </item>
+    <item>
+      <title>Image Resource Manager</title>
+      <link>http://localhost:1313/shared-file-specifications/image-resource-manager/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/shared-file-specifications/image-resource-manager/index.html</guid>
+      <description>To standardize image links and quality on all platform products, KUBRA created a tool called Image Resource Manager (IRM).&#xA;IRM can be used to upload custom icons, brand images, social media images, and any other image assets that the client requires for any platform product. The tool allows for creating and archiving image resources that can then be used in Storm Center, IncidentWatch, or Notifi. Images uploaded using IRM will only be available for that specific client, and are automatically cached using CloudFront to avoid issues with website load during large events.</description>
+    </item>
+  </channel>
+</rss>

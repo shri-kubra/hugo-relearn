@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analytics :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/storm-center/analytics/index.html</link>
+    <description>KUBRA uses Google Analytics Universal (GAU) and Google Analytics 4 (GA4) to track information about how users interact with Storm Center maps. These Analytics tools collect information from the map web page such as button clicks and anonymous information from the user’s browser such as language preference, browser version, and the device and operating system type.&#xA;GAU and GA4 data from Storm Center maps helps KUBRA improve the map interface, optimize the data flow, and help organizations providing Storm Center maps to their customers to understand how those customers are using the map.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/storm-center/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Analytics Universal</title>
+      <link>http://localhost:1313/storm-center/analytics/google-analytics-universal/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/analytics/google-analytics-universal/index.html</guid>
+      <description>Google Analytics Universal tracks the events listed below for Storm Center 5.&#xA;Tracked Events The analytics for Storm Center maps track three types of interactions: page views, clicks, and changes. Depending on map configuration, a specific map may not include all of the events described here.&#xA;The descriptions of tracked events use the terms from the following diagram of the parts of the Storm Center map interface.&#xA;Page View Interactions Storm Center maps include three items that are tracked as separate page views: the main map page, summary reports, and the message associated with an alert banner.</description>
+    </item>
+    <item>
+      <title>Google Analytics 4</title>
+      <link>http://localhost:1313/storm-center/analytics/google-analytics-4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/analytics/google-analytics-4/index.html</guid>
+      <description>Google Analytics 4 measures the events listed below for Storm Center 5.&#xA;Measured Events The analytics for Storm Center maps measure three types of interactions: page views, clicks, and changes. Depending on map configuration, a specific map may not include all of the events described here.&#xA;The descriptions of measured events use the terms from the following diagram of the parts of the Storm Center map interface.&#xA;Page View Interactions Storm Center maps include three items that are measured as separate page views: the main map page, summary reports, and the message associated with an alert banner.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration Guide :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/storm-center/configuration-guide/index.html</link>
+    <description>Instance Manager Overview The Instance Manager is the interface that allows you to create Storm Center instances, set up data files and feeds, and configure maps.&#xA;Note&#xD;Image Resource Manager now allows users to upload icons, brand images, social media images, and any other image assets that the client requires for their logos, any social media icons, or within content blocks. These icons and image assets can also be used to customize thematic layers, planned outage layers, and additional map layers.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/storm-center/configuration-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connect Data Files and Feeds</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/connect-data-files/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/connect-data-files/index.html</guid>
+      <description>Set Up Region Data To upload and manage region files for your Storm Center instances, use the Regions sub-section under Shared Resources in the left navigation panel of the Instance Manager Storm Center application.&#xA;Region files represent the geographic area served by a utility company, utility operating company, or other organization. Storm Center uses region files to create service territory boundaries and to verify that the polygons in a thematic file are within or intersecting the region.</description>
+    </item>
+    <item>
+      <title>Create Outage Data Layers</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/create-outage-layers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/create-outage-layers/index.html</guid>
+      <description>Typically, a Storm Center outage map provides two kinds of layers for showing outage information. One kind of layer shows outage location icons for individual outages and cluster icons for groups of outages. The other kind of layer shows the number or the percentage of customers affected by outages by shading a geographical area such as a county, municipality, or postal code area.&#xA;When creating an Additional Map Layer, refer to the Create Additional Map Layer page.</description>
+    </item>
+    <item>
+      <title>Create AML Data Layers</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/create-aml-data-layers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/create-aml-data-layers/index.html</guid>
+      <description>Storm Center also allows you to display additional data like hazards, gas outages, flooding etc. on your public or internal Outage Maps using Additional Map Layers.&#xA;To create an Additional Map Layer, use the Data Layers sub-section of the Shared Resources section of the Instance Dashboard.&#xA;Warning&#xD;Additional Map Layers can only be created once you have outage maps; they cannot exist in isolation.&#xA;Layer Name, Source, and Titles Click the Create Data Layer button.</description>
+    </item>
+    <item>
+      <title>Create Service Territory</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/create-service-territory/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/create-service-territory/index.html</guid>
+      <description>Storm Center outage maps can optionally show a visual indicator of the geographical area served by a utility, either as an outline or as a shaded area.&#xA;To create a visual indicator of a service territory or service area, use the Service Territories sub-section of the Shared Resources section of the Instance Dashboard.&#xA;Click the Create Service Territory button. Enter a name for the service territory boundary - this name is how you will identify the service territory in other areas of the Instance Manager; it will not show up on the map.</description>
+    </item>
+    <item>
+      <title>Create Summaries and Summary Reports</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/create-summaries/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/create-summaries/index.html</guid>
+      <description>Storm Center outage and AML maps can optionally show summary information for the entire service territory at the top of the overview panel. The workflow for each of them differs significantly so they have been documented separately.&#xA;To set up summary data, use the Summaries sub-section of the Shared Resources section of the Instance Dashboard.&#xA;Outage Summaries Click the Create Summary button. Enter a name for the summary - this name is how you will identify the summary information in other areas of the Instance Manager; it will not show up on the map.</description>
+    </item>
+    <item>
+      <title>Create Buttons and Content Blocks</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/create-buttons/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/create-buttons/index.html</guid>
+      <description>Storm Center outage maps can include buttons to provide links to external websites such as social media accounts or to other pages on the website of the organization using the map. Depending on the selected layout, these buttons can appear in the map header, in the overview panel, in the help panel, and at the bottom of information panels.&#xA;Storm Center outage maps can also include configurable content blocks that can appear in the overview panel, in the help panel, at the top of summary reports, and at the bottom of information panels.</description>
+    </item>
+    <item>
+      <title>Create Data Labels and Mapping</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/create-data-labels/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/create-data-labels/index.html</guid>
+      <description>Estimated Restoration Time Labels Storm Center outage maps can show standard text in place of estimated restoration time (ETR) values for null data and for expired values.&#xA;To configure the standard text to use on the Storm Center map, use the Data Labels sub-section of the Shared Resources section of the Instance Dashboard. You can use the same text for both null data and expired values, or different text for null data than for expired values.</description>
+    </item>
+    <item>
+      <title>Configure Map Interface</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/configure-map-interface/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/configure-map-interface/index.html</guid>
+      <description>The user interface (UI) for Storm Center outage maps includes configurable features for buttons and links, a logo, UI background colors, and UI font colors.&#xA;Note&#xD;The typeface and font size used for Storm Center outage maps are NOT configurable.&#xA;To provide settings for the configurable parts of the map interface, use the Design Manager sub-section of the Shared Resources section of the Instance Dashboard.&#xA;Click the Create a Design button.</description>
+    </item>
+    <item>
+      <title>Configure Layer Visibility</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/configure-layer-visibility/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/configure-layer-visibility/index.html</guid>
+      <description>Layer Visibility Layer Visibility refers to the way outage information layers are presented as choices in the Storm Center map legend.&#xA;To configure the choices to show in the Storm Center map legend, use the Layer Visibility sub-section of the Shared Resources section of the Instance Dashboard.&#xA;Prerequisites Before you can create a layer visibility configuration, you must create outage data layers.&#xA;Create a New Layer Visibility Configuration Click the Create New Configuration button.</description>
+    </item>
+    <item>
+      <title>Create and Deploy a Map</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/create-map-view/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/create-map-view/index.html</guid>
+      <description>Create a Map The Instance Manager refers to an individual outage map as a “view.” Each map view will have its own URL, and can contain different types of outage information or use different settings depending on the intended audience for the map. For example, employees may need access to more information than customers.&#xA;To create a new map view, click the Create New View button on the Instance Dashboard.</description>
+    </item>
+    <item>
+      <title>Embed a Map</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/embed-map-view/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/embed-map-view/index.html</guid>
+      <description>There are three options for embedding a Storm Center map into your website. The first option is to provide KUBRA with an SSL certificate for the CNAME record you want to use for the URL for a full-screen web page with a Storm Center map. The second option is to use an iframe on a web page you create as part of your website. The third option is to use a div element on a web page you create as part of your website.</description>
+    </item>
+  </channel>
+</rss>

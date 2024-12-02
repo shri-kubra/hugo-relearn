@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="Typically, a Storm Center outage map provides two kinds of layers for showing outage information. One kind of layer shows outage location icons for individual outages and cluster icons for groups of outages. The other kind of layer shows the number or the percentage of customers affected by outages by shading a geographical area such as a county, municipality, or postal code area.
+When creating an Additional Map Layer, refer to the Create Additional Map Layer page.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Create Outage Data Layers :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="Typically, a Storm Center outage map provides two kinds of layers for showing outage information. One kind of layer shows outage location icons for individual outages and cluster icons for groups of outages. The other kind of layer shows the number or the percentage of customers affected by outages by shading a geographical area such as a county, municipality, or postal code area.
+When creating an Additional Map Layer, refer to the Create Additional Map Layer page.">
+    <meta property="og:url" content="http://localhost:1313/storm-center/configuration-guide/create-outage-layers/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Create Outage Data Layers :: KUBRA Product Documentation">
+    <meta property="og:description" content="Typically, a Storm Center outage map provides two kinds of layers for showing outage information. One kind of layer shows outage location icons for individual outages and cluster icons for groups of outages. The other kind of layer shows the number or the percentage of customers affected by outages by shading a geographical area such as a county, municipality, or postal code area.
+When creating an Additional Map Layer, refer to the Create Additional Map Layer page.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Storm Center">
+    <meta itemprop="name" content="Create Outage Data Layers :: KUBRA Product Documentation">
+    <meta itemprop="description" content="Typically, a Storm Center outage map provides two kinds of layers for showing outage information. One kind of layer shows outage location icons for individual outages and cluster icons for groups of outages. The other kind of layer shows the number or the percentage of customers affected by outages by shading a geographical area such as a county, municipality, or postal code area.
+When creating an Additional Map Layer, refer to the Create Additional Map Layer page.">
+    <meta itemprop="wordCount" content="3244">
+    <title>Create Outage Data Layers :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/storm-center/configuration-guide/create-outage-layers/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#layer-name-source-and-titles">Layer Name, Source, and Titles</a></li>
+    <li><a href="#layer-data-source-and-information-panel-fields">Layer Data Source and Information Panel Fields</a>
+      <ul>
+        <li><a href="#metadata-fields---additional-data-for-outage-location-information-panels">Metadata Fields - Additional Data for Outage Location Information Panels</a></li>
+      </ul>
+    </li>
+    <li><a href="#data-mapping-for-outages-layers-and-planned-outage-layers">Data Mapping for Outages Layers and Planned Outage Layers</a></li>
+    <li><a href="#extra-text-for-information-panels">Extra Text for Information Panels</a></li>
+    <li><a href="#additional-settings-for-outages-layers-and-planned-outage-layers">Additional Settings for Outages Layers and Planned Outage Layers</a></li>
+    <li><a href="#estimated-restoration-time-settings">Estimated Restoration Time Settings</a></li>
+    <li><a href="#range-styles-for-outage-thematic-planned-outage-and-additional-map-layers">Range Styles for Outage, Thematic, Planned Outage, and Additional Map Layers</a>
+      <ul>
+        <li><a href="#range-expressions">Range Expressions</a></li>
+        <li><a href="#kubra-recommended-icons-and-colorshape-combinations">KUBRA-recommended icons and color/shape combinations</a></li>
+      </ul>
+    </li>
+    <li><a href="#legend-labels">Legend Labels</a></li>
+    <li><a href="#layer-field-labels">Layer Field Labels</a></li>
+    <li><a href="#buttons-for-external-links">Buttons for External Links</a></li>
+    <li><a href="#customers-affected-masking">Customers Affected Masking</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/storm-center/index.html"><span itemprop="name">Storm Center</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/storm-center/configuration-guide/index.html"><span itemprop="name">Configuration Guide</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Create Outage Data Layers</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/configuration-guide/connect-data-files/index.html" title="Connect Data Files and Feeds (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/configuration-guide/create-aml-data-layers/index.html" title="Create AML Data Layers (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable storm-center" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="create-outage-data-layers">Create Outage Data Layers</h1>
+
+<p>Typically, a Storm Center outage map provides two kinds of layers for showing outage information. One kind of layer shows outage location icons for individual outages and cluster icons for groups of outages. The other kind of layer shows the number or the percentage of customers affected by outages by shading a geographical area such as a county, municipality, or postal code area.</p>
+<p>When creating an Additional Map Layer, refer to the <a href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create Additional Map Layer page</a>.</p>
+<p>To create an outage data layer, use the <strong>Data Layers</strong> sub-section of the <strong>Shared Resources</strong> section of the Instance Dashboard.</p>
+<h2 id="layer-name-source-and-titles">Layer Name, Source, and Titles</h2>
+<ol>
+<li>Click the <strong>Create Data Layer</strong> button.</li>
+<li>Enter a name for the layer - this name is how you will identify the layer in other areas of the Instance Manager; it will not show up on the map.</li>
+<li>Select an access restriction policy. The options available in the drop-down come from the policies created in the <a href="/storm-center/configuration-guide/index.html#create-access-restriction-policies">Access Restriction section</a> of the Instance Dashboard.</li>
+<li>Select a layer type.
+<ul>
+<li>&ldquo;Thematic&rdquo; is for showing outages by area and has a source type of ZIP (postal code), County, Cities/Towns/Villages (CTV), or a Custom thematic name, depending on the thematic file types you uploaded when you <a href="/storm-center/configuration-guide/connect-data-files/index.html#set-up-thematic-data">set up thematic data</a> for the instance.</li>
+<li>&ldquo;Outages&rdquo; is for showing active outages by location and includes cluster icons for representing groups of nearby active outage locations.</li>
+<li>&ldquo;Planned&rdquo; is for showing planned outages by location and includes cluster icons for representing groups of nearby planned outage locations. This layer type is only available with the Planned Outages module.</li>
+</ul>
+</li>
+<li>Enter titles for the layer for each language supported by the instance - these titles will be used at the top of the information panels on the map.
+<ul>
+<li>If you want to use the name of the specific area (such as the county name) as the information panel title, enter <code>${name}</code> in the layer title fields.</li>
+<li>If you want to include the name of the state in the information panel title, enter <code>${hierarchy.state}</code> in the layer title fields.</li>
+<li>For an Outages layer, a Planned layer, or an Additional Map layer, enter a title for the information panels associated with individual outage icons and a title for the information panels associated with cluster icons.</li>
+<li>KUBRA recommends a maximum of 15-20 characters for these titles. You may need to adjust the length or formatting of the titles after testing them on a map to ensure that they display and wrap well.</li>
+</ul>
+</li>
+</ol>
+<h2 id="layer-data-source-and-information-panel-fields">Layer Data Source and Information Panel Fields</h2>
+<ol>
+<li>Under Layer Sources, select the region data you want to associate with the layer.</li>
+<li>Under Information Panel Fields, select the data fields you want to include in the information panels for the layer.</li>
+</ol>
+<p>The following table shows which data fields are available for thematic layers, for individual location icons in an outages layer, for cluster icons in an outages layer, for individual location icons in a planned layer, for cluster icons in a planned layer.</p>
+<table>
+<thead>
+<tr>
+<th>Data Field</th>
+<th>Thematic Layer</th>
+<th>Individual Location - Outages Layer</th>
+<th>Cluster - Outages Layer</th>
+<th>Individual Location - Planned Layer</th>
+<th>Cluster - Planned Layer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cause</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Comments</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Crew Status</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Duration</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>End Time</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Estimated Restoration Time</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Incident ID</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Number of Customers Affected</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Number of Customers Served</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Number of Outages</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Percentage of Customers Affected</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Start Time</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metadata-fields---additional-data-for-outage-location-information-panels">Metadata Fields - Additional Data for Outage Location Information Panels</h3>
+<p>In addition to the standard data fields, you can optionally define one or more <strong>Metadata</strong> fields to display additional types of data in the information panels for individual outage locations or individual planned outage locations.</p>
+<p>To add a metadata field, click the <strong>Add Metadata Field</strong> button in the Individual Data subsection of the Information Panel Fields section for an Outages layer or a Planned layer.</p>
+<ol>
+<li>Provide a name for the metadata field. This name must match the name of a metadata element property supplied in outage data files submitted to Storm Center.</li>
+<li>Select a data type from the drop-down. Options are
+<ul>
+<li>string</li>
+<li>number</li>
+<li>percentage</li>
+<li>datetime</li>
+<li>HTML markup</li>
+</ul>
+</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Element names are case-sensitive. Ensure you think about case when naming elements.</p>
+  </div>
+</div>
+<h2 id="data-mapping-for-outages-layers-and-planned-outage-layers">Data Mapping for Outages Layers and Planned Outage Layers</h2>
+<p>The Field Mappings selection of the data layer form associates data field mapping with one or more field types in the data layer. This allows the map to mask field values from an outage file, or planned outage file with customer-friendly or public-facing values.</p>
+<p>If you want to provide mapping for one or more data fields in the information panel for individual active or planned outage location icons, click the <strong>Submit</strong> button at the bottom of the Create Data Layer form to save your in-progress layer and then follow the instructions to <a href="/storm-center/configuration-guide/create-data-labels/index.html#outage-data-mapping">create data mapping</a>.</p>
+<p>After you create the data mapping you want to use, return to the edit data layer form under Data Layers and click the <strong>Add Field Mapping Relationship</strong> button. Next, select a data field from the drop-down and then select the mapping name.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Data mapping can only be provided for crew status, cause, and metadata fields. Planned outage layers can include cause and metadata fields, but do not include crew status fields.</p>
+  </div>
+</div>
+<h2 id="extra-text-for-information-panels">Extra Text for Information Panels</h2>
+<p>The Infobox Extra Text section of the data layer form associates configurable content blocks with the information panels in the data layer. This allows the map to show additional content at the bottom of the information panels, and can include different content for individual outage icon information panels than for cluster icon information panels.</p>
+<p>If you want to include extra content at the bottom of the information panels, click the <strong>Submit</strong> button at the bottom of the create data layer form to save your in-progress layer and then follow the instructions to <a href="/storm-center/configuration-guide/create-buttons/index.html">create a configurable content block</a>.</p>
+<p>After you create the content blocks you want to use, return to the edit data layer form under Data Layers and select the content block name from the <strong>Info Panel Content Block</strong> drop-down field for the information panel you want to add the content to.</p>
+<p>Storm Center can optionally include expanded cluster information panels at some zoom levels. These information panels are associated with a cluster icon, but they show information for each of the individual outages elements included in the cluster. If you provide extra text for individual outage icon information panels, that text will also appear in the outage cards for each outage in an expanded cluster information panel.</p>
+<h2 id="additional-settings-for-outages-layers-and-planned-outage-layers">Additional Settings for Outages Layers and Planned Outage Layers</h2>
+<ol>
+<li>Crew Icon Indicator on individual outage location icons when the outage data indicates a crew is on site at the location can be defined in <strong>Range Expressions</strong>. However, you still need to click the <strong>Enable Crew Icon Indicator</strong> checkbox to ensure the crew icon is visible. This setting is not applicable for Planned Outage Layers.
+<ul>
+<li>Crew indicators will be shown on the map when all of the following are true:
+<ul>
+<li>this setting is enabled</li>
+<li>the data provided in the outage data feed for an outage location indicates that there is a crew at the location</li>
+<li><code>crew_icon</code> is set to <code>true</code> in <strong>Range Expressions</strong> for that outage layer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If you do not want to display polygons behind individual outage location icons to indicate the area affected by the outage when an outage affects three or more delivery nodes, click the <strong>Disable Polygons</strong> checkbox.</li>
+<li>Provide zoom settings and cluster tolerance.
+<ul>
+<li>Enter a maximum zoom level at which to combine outage location icons into Clusters.</li>
+<li>Enter a zoom level at which to provide expanded outage information in the information panels for outage cluster icons - KUBRA recommends setting this zoom level one level below the <strong>Max Zoom to Cluster</strong> setting. If you do not want to show individual outage information in cluster icon information panels at any zoom level, set the <strong>Start Zoom to Paginate Outage</strong> to -1.</li>
+<li>Select a Cluster Tolerance Level on the slider between 20 and 40.</li>
+</ul>
+</li>
+</ol>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>The recommended Cluster Tolerance Level is based on the size of the outage location and cluster icons. If you are using the default WCAG-compliant icon set, KUBRA recommends setting the cluster tolerance to 35.</p>
+  </div>
+</div>
+<h2 id="estimated-restoration-time-settings">Estimated Restoration Time Settings</h2>
+<ol>
+<li>If you want to show expired estimated restoration time (ETR) values in the information panels for the layer, clear the <strong>Mask Expired ETR</strong> checkbox. This checkbox is selected by default. You may want to clear this checkbox if you are creating an internal-facing map and want to see all ETRs as reported from the source system for outage data, for example.</li>
+<li>Select an ETR grouping condition - options are &ldquo;Latest ETR Any&rdquo; and &ldquo;Latest ETR All.&rdquo;
+<ul>
+<li>&ldquo;Latest ETR Any&rdquo; means that the map will display the latest ETR for outages in the cluster or area if <strong>any</strong> of the outages has a specific, valid ETR (not null or expired). If none of the outages in the cluster or area has a specific, valid ETR, the map will display the default message specified for null or expired ETRs in the <a href="/storm-center/configuration-guide/create-data-labels/index.html">Data Labels</a> sub-section of the <strong>Shared Resources</strong> section.</li>
+<li>&ldquo;Latest ETR All&rdquo; means that the map will display the latest ETR for outages in the cluster or area only if <strong>all</strong> of the outages have a specific, valid ETR (not null or expired). If any of the outages in the cluster or area has a null or expired ETR, the map will display the default message for null or expired ETRs.</li>
+</ul>
+</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The Planned layer type uses these settings for the &ldquo;End Time&rdquo; field.</p>
+  </div>
+</div>
+<h2 id="range-styles-for-outage-thematic-planned-outage-and-additional-map-layers">Range Styles for Outage, Thematic, Planned Outage, and Additional Map Layers</h2>
+<p>You can customize how a Storm Center layer looks by writing a JSON object. For a map data layer, each JSON object consists of properties representing the ranges.</p>
+<p>Storm Center provides 3 choices to assist you in writing your JSON object.</p>
+<ol>
+<li>Select a pre-existing template under <strong>Apply Styling Template</strong>, modify if needed
+OR</li>
+<li>Copy a template from another layer in the same instance, modify if needed
+OR</li>
+<li>Write your own JSON object.</li>
+</ol>
+<p>This table lists all the choices you have while writing or editing a range on a JSON object.</p>
+<table>
+<thead>
+<tr>
+<th>JSON property</th>
+<th>Description</th>
+<th>Possible use cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>legendOrder</code></td>
+<td>Decides the order of the defined range in the legend.</td>
+<td>A legend order of <code>-1</code> will hide this range style from the legend.</td>
+</tr>
+<tr>
+<td><code>rangeExpr</code></td>
+<td>Decides range conditions.</td>
+<td>See <a href="/storm-center/configuration-guide/create-outage-layers/index.html#range-expressions">Range Expressions</a> for more details.</td>
+</tr>
+<tr>
+<td><code>rangeLabel</code></td>
+<td>Defines the range label for each range, appears to the right of the icon in the map legend.</td>
+<td>Each defined range should have range labels in all languages supported for that instance of Storm Center. KUBRA recommends a maximum of 25 characters for these labels.</td>
+</tr>
+<tr>
+<td><code>rangeStyles</code></td>
+<td>Defines the styles associated with a range.</td>
+<td>Since it is an object that contains the styles, all options under <strong>Range Styles</strong> will be included in the table with a dot notation.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape</code></td>
+<td>Defines all the characteristics of a polygon shape.</td>
+<td>These characteristics exist when there is a shape to represent for thematics or outage polygons.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.borderColor</code></td>
+<td>Defines the polygon&rsquo;s border color.</td>
+<td>Use Hex color codes.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.borderOpacity</code></td>
+<td>Defines the polygon&rsquo;s border opacity.</td>
+<td>Accepts a decimal value between and including 0 and 1.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.borderWeight</code></td>
+<td>Defines the polygon&rsquo;s border weight.</td>
+<td>Accepts an integer value equal to or greater than 0.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.fillColor</code></td>
+<td>Defines the polygon&rsquo;s fill color.</td>
+<td>Use Hex color codes.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.shape.opacity</code></td>
+<td>Defines the polygon&rsquo;s opacity.</td>
+<td>Accepts a decimal value between and including 0 and 1.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon</code></td>
+<td>Defines all the characteristics of the icon specific to that range.</td>
+<td>These characteristics exist when there is an icon to represent the outage location.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.url</code></td>
+<td>Defines the url for the icon.</td>
+<td>KUBRA requires using the path URL from Image Resource Manager for this purpose.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.size</code></td>
+<td>Defines the icon size.</td>
+<td>Provide a width and height in pixels for the icon. Input accepted is an array [width, height].</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.anchor</code></td>
+<td>Defines the icon anchor.</td>
+<td>The coordinates of the &ldquo;tip&rdquo; of the icon (relative to its top left corner). The icon will be aligned so that this point is at the marker&rsquo;s geographical location. Input accepted is an array [x,y].</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.labelValue</code></td>
+<td>Displays a map label for that icon.</td>
+<td>Clients can request specific values they want the label to display. You can use properties of the record for the label value, for example <code>${n_out}</code>, <code>${cust_a.val}</code>.</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.labelAnchor</code></td>
+<td>Defines the icon label anchor.</td>
+<td>The coordinates of the &ldquo;tip&rdquo; of the icon label (relative to its top left corner). The label will be aligned so that this point is at the marker&rsquo;s geographical location. Input accepted is an array [x,y].</td>
+</tr>
+<tr>
+<td><code>rangeStyles.icon.opacity</code></td>
+<td>Defines icon opacity.</td>
+<td>Accepts a decimal value between and including 0 and 1.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="range-expressions">Range Expressions</h3>
+<p>A range expression is a JSON property which decides range definition conditions. Conditions are defined over data fields. Each data field supports specific operators depending on the data type of the field.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Range expressions can include one or more conditions using the &amp;&amp; (AND) and || (OR) operators.</p>
+  </div>
+</div>
+<p>You can use the following conditions to define a range.</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>JSON parameter</th>
+<th>Data type</th>
+<th>Special features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cluster</td>
+<td><code>cluster</code></td>
+<td>boolean</td>
+<td>Special field indicating if the map element corresponds to a cluster or not.</td>
+</tr>
+<tr>
+<td>Cause</td>
+<td><code>cause</code></td>
+<td>string, JSON object</td>
+<td>Supports mapping tables; view warning below when using mapping tables for Range Expressions.</td>
+</tr>
+<tr>
+<td>Number of customers affected</td>
+<td><code>cust_a.val</code></td>
+<td>integer</td>
+<td>To access the <code>value</code> of <code>cust_a</code>, use the <code>cust_a.val</code> parameter.</td>
+</tr>
+<tr>
+<td>Percentage of customers affected</td>
+<td><code>perc_cust_a.val</code></td>
+<td>integer</td>
+<td>To access the <code>value</code> of <code>perc_cust_a</code>, use the <code>perc_cust_a.val</code> parameter.</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td><code>comments</code></td>
+<td>string</td>
+<td>No special features.</td>
+</tr>
+<tr>
+<td>Crew icon</td>
+<td><code>crew_icon</code></td>
+<td>boolean</td>
+<td>To determine whether the crew icon is shown for the outage location on the Storm Center map. If <strong>True</strong>, the crew icon will be shown. If <strong>False</strong>, the crew icon will not be shown. However, you still need to click the <strong>Enable Crew Indicator</strong> checkbox to confirm the icon will be visible.</td>
+</tr>
+<tr>
+<td>Crew status</td>
+<td><code>crew_status</code></td>
+<td>string, JSON object</td>
+<td>Supports mapping tables; view warning below when using mapping tables for Range Expressions.</td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td><code>metadata</code></td>
+<td>JSON object, supports integer, string, boolean</td>
+<td>Elements within the Metadata property support mapping tables depending on the configuration; view warning below when using mapping tables for Range Expressions.</td>
+</tr>
+<tr>
+<td>Number of outages</td>
+<td><code>n_out</code></td>
+<td>integer</td>
+<td>No special features.</td>
+</tr>
+</tbody>
+</table>
+<p>When using mapping tables for a range expression, you should reference mapping table languages with square brackets like <code>parameter['language']</code>. The languages available are EN-US, ES-ES, es-US, and fr-CA. For example, accessing the cause in French would be <code>cause['fr-CA']</code>. Ideally, we recommend using the default language used when creating the instance when you reference a language in the mapping table.</p>
+<p>Ensure you have an additional condition defining the parameter as not equal to null (to avoid an error when parsing the expression).</p>
+<p>For example, &ldquo;cause != null&rdquo;. &ldquo;cause != null &amp;&amp; cause[&lsquo;EN-US&rsquo;] == &lsquo;Planned maintenance&rsquo;&rdquo; is an example of a condition that supports mapping tables.</p>
+<p>The table below indicates the operators allowed with data types used in Range Expressions.</p>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>Operators allowed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>OR, AND, ==, !=, unary operator (!a)</td>
+</tr>
+<tr>
+<td>string</td>
+<td>OR, AND, ===, ==, !==, !=, can use (&lt;, &gt;, &lt;=, &gt;=) operators when lexical and case dependent matching</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>OR, AND, ===, ==, !==, !=, &lt;, &gt;, &lt;=, &gt;=, +, -, *, /, unary operators (+a, -a, !a)</td>
+</tr>
+</tbody>
+</table>
+<p>Specific data fields are available for Range Expressions that work only with specific layers. Refer to the <a href="/storm-center/configuration-guide/create-outage-layers/index.html#layer-data-source-and-information-panel-fields">Layer Data Source and Information Panel Fields</a> for more clarity.</p>
+<p>For a sample template for each data layer type, refer to the sample JSON object attached below.</p>
+<section class="attachments blue">
+	<label>
+		<i class="fas fa-paperclip"></i>
+		JSON templates
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//storm-center/configuration-guide/create-outage-layers.files/outage-layer-crew-template.json" >
+					outage-layer-crew-template.json
+				</a>
+				(9 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//storm-center/configuration-guide/create-outage-layers.files/outage-layer-no-crew-template.json" >
+					outage-layer-no-crew-template.json
+				</a>
+				(4 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//storm-center/configuration-guide/create-outage-layers.files/planned-outage-layer-template.json" >
+					planned-outage-layer-template.json
+				</a>
+				(4 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//storm-center/configuration-guide/create-outage-layers.files/thematic-layer-cust-affected-template.json" >
+					thematic-layer-cust-affected-template.json
+				</a>
+				(3 kb)
+			</li>
+		
+	
+		
+		
+			<li>
+				<a href="http://localhost:1313//storm-center/configuration-guide/create-outage-layers.files/thematic-layer-perc-cust-affected-template.json" >
+					thematic-layer-perc-cust-affected-template.json
+				</a>
+				(3 kb)
+			</li>
+		
+	
+	</div>
+	
+</section>
+
+<h3 id="kubra-recommended-icons-and-colorshape-combinations">KUBRA-recommended icons and color/shape combinations</h3>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Storm Center recommends using a combination of color and shape for location icons to help users with color vision deficiency. In addition, the colors for the recommended icons were selected to provide adequate contrast with the white color used for the icon shapes and with the background map.</p>
+  </div>
+</div>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>KUBRA recommends using the following image sizes (in pixels):
+24x24 up to 32x32 for individual outages and 40x40 for outage clusters</p>
+  </div>
+</div>
+<h4 id="icons-for-outage-layers">Icons for Outage layers</h4>
+<p>These are the default KUBRA-recommended ADA-compliant icons for an outage layer or cluster outage layer:</p>
+<ul>
+<li>Blue Circle</li>
+<li>Yellow Star (five-pointed)</li>
+<li>Purple Triangle</li>
+<li>Red Diamond</li>
+<li>Green Square</li>
+<li>Orange Equals Sign</li>
+<li>Pink Star (six-pointed)</li>
+<li>Cluster</li>
+</ul>
+<p><a href="#R-image-65e335c301dc0367c020c962502ae983" class="lightbox-link"><img alt="WCAG-compliant outage location icons" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/default-active-outage-icons.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-65e335c301dc0367c020c962502ae983"><img alt="WCAG-compliant outage location icons" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/default-active-outage-icons.png"></a></p>
+<p>These are the default KUBRA-recommended ADA-compliant icons for an outage layer with crew dispatched:</p>
+<ul>
+<li>Blue Circle with crew</li>
+<li>Yellow Star (five-pointed) with crew</li>
+<li>Purple Triangle with crew</li>
+<li>Red Diamond with crew</li>
+<li>Green Square with crew</li>
+<li>Orange Equals Sign with crew</li>
+<li>Pink Star (six-pointed) with crew</li>
+</ul>
+<p><a href="#R-image-64df37848d3344ff06cd82fe40faaab6" class="lightbox-link"><img alt="WCAG-compliant outage location icons with crew" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/default-active-outage-icons-crew.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-64df37848d3344ff06cd82fe40faaab6"><img alt="WCAG-compliant outage location icons with crew" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/default-active-outage-icons-crew.png"></a></p>
+<p>Shown below is the default KUBRA single outage location icon.</p>
+<p><a href="#R-image-f7d04dbb3221b5dac8428db42b2b27cd" class="lightbox-link"><img alt="Single outage location icon" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/single-active-outage-icon.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f7d04dbb3221b5dac8428db42b2b27cd"><img alt="Single outage location icon" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/single-active-outage-icon.png"></a></p>
+<p>Shown below is the KUBRA outage location crew icon.</p>
+<p><a href="#R-image-a24f20183420e082262fd2d5255e2185" class="lightbox-link"><img alt="Outage location crew icon" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/default-crew-icon.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a24f20183420e082262fd2d5255e2185"><img alt="Outage location crew icon" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/default-crew-icon.png"></a></p>
+<h4 id="color-combinations-for-thematic-layers">Color combinations for thematic layers</h4>
+<p>These are the KUBRA-recommended ADA-compliant colors for thematic area:</p>
+<ul>
+<li>Blue</li>
+<li>Green</li>
+<li>Purple</li>
+<li>Red</li>
+<li>Yellow</li>
+<li>Orange</li>
+<li>Pink</li>
+<li>Gray</li>
+</ul>
+<p><a href="#R-image-6fc224cb3df94a9e4c87036600aebdeb" class="lightbox-link"><img alt="WCAG-compliant thematic area colors" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/default-thematic-area-colors.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6fc224cb3df94a9e4c87036600aebdeb"><img alt="WCAG-compliant thematic area colors" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/default-thematic-area-colors.png"></a></p>
+<h4 id="icons-for-planned-outage-layers">Icons for Planned Outage layers</h4>
+<p>These are the KUBRA-recommended ADA-compliant Planned outage icons:</p>
+<ul>
+<li>Blue Circle</li>
+<li>Yellow Star (five-pointed)</li>
+<li>Purple Triangle</li>
+<li>Red Diamond</li>
+<li>Green Square</li>
+<li>Orange Equals Sign</li>
+<li>Pink Star (six-pointed)</li>
+<li>Cluster</li>
+</ul>
+<p><a href="#R-image-87120473c5b6c10a764c4c3018b581f0" class="lightbox-link"><img alt="Planned outage location icons" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/default-planned-outage-icons.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-87120473c5b6c10a764c4c3018b581f0"><img alt="Planned outage location icons" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/default-planned-outage-icons.png"></a></p>
+<p>Shown below is the default KUBRA single planned outage icon.</p>
+<p><a href="#R-image-538bd4110e42ae4573708c56b87d2cca" class="lightbox-link"><img alt="KUBRA-recommended single planned outage location icon" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/single-planned-outage-icon.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-538bd4110e42ae4573708c56b87d2cca"><img alt="KUBRA-recommended single planned outage location icon" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/single-planned-outage-icon.png"></a></p>
+<h2 id="legend-labels">Legend Labels</h2>
+<p>The map legend includes an introductory label to indicate what the numbers for each range refer to. For example, if you chose &ldquo;Customers Affected&rdquo; as the method for determining ranges, you could use &ldquo;Customers Affected&rdquo; or &ldquo;Affected by Outages&rdquo; as the Legend Label.</p>
+<p>Enter labels to be used on the map legend for each language supported by the instance. KUBRA recommends a maximum of 25 characters for the map legend labels.</p>
+<h2 id="layer-field-labels">Layer Field Labels</h2>
+<p>You can determine the order of the data fields shown in the information panel for the layer and provide labels for each field. Data fields are arranged vertically - the field with order 1 will be at the top of the information panel, followed by the field with order 2, and so on.</p>
+<p>Choose an order for each data field and enter labels for each language supported by the instance. Labels for mobile browsers should be shorter than labels for desktop browsers so they can be read on a narrow screen.</p>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Tip
+  </div>
+  <div class="box-content">
+<p>If you want to include punctuation after the field labels in the information panel, you <strong>must</strong> include the punctuation in the text fields here.</p>
+  </div>
+</div>
+<p>KUBRA recommends a maximum of 45 characters for information panel field labels. You may need to adjust the length or formatting of the labels after testing them on a map to ensure that they display and wrap well.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The field labels and order for Start Time, Estimated Restoration Time, End Time, and Number of Customers Affected are shared by the information panels for individual outage locations and outage clusters.</p>
+  </div>
+</div>
+<h2 id="buttons-for-external-links">Buttons for External Links</h2>
+<p>If you want to add one or more buttons to the bottom of the information panels for the layer, click the drop-down under <strong>Custom Footer Buttons</strong> and then select a button name from the list.</p>
+<p>Before you can select a button here, you must <a href="/storm-center/configuration-guide/create-buttons/index.html">create buttons</a>.</p>
+<h2 id="customers-affected-masking">Customers Affected Masking</h2>
+<ol>
+<li>If you want to mask the exact number of customers affected at or below a specific value, click the <strong>Customer Masking</strong> checkbox and then enter a number.</li>
+<li>If you want to mask the exact percentage of customers affected at or below a specific value, click the <strong>% Customer Masking</strong> checkbox and then enter a number.</li>
+</ol>
+<p>The value or values you enter for customer masking here will be combined with verbiage you enter in the <strong>Shared Resources</strong> section of the <a href="/storm-center/configuration-guide/create-map-view/index.html#shared-resources">Create New View form</a> to create a label on the map such as &ldquo;Fewer than 5&rdquo; or &ldquo;Less than 10%.&rdquo;</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740"><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d"><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610" checked><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/storm-center/configuration-guide/create-outage-layers/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

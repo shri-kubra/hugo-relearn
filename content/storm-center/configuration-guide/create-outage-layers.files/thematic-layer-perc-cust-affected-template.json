@@ -1,0 +1,132 @@
+{
+  "ranges": [
+    {
+      "legendOrder": 1,
+      "rangeExpr": "percent_cust_a.val > 50",
+      "rangeLabel": {
+        "EN-US": ">50%",
+        "ES-ES": ">50%",
+        "fr-CA": ">50%"
+      },
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#BE281E",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#BE281E",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/5mYQoL-thematic_red.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 2,
+      "rangeExpr": "percent_cust_a.val <= 50 && percent_cust_a.val > 30",
+      "rangeLabel": {
+        "EN-US": "30-50%",
+        "ES-ES": "30-50%",
+        "fr-CA": "30-50%"
+      },
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#E77204",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#E77204",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/Jq0O1G-thematic_orange.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 3,
+      "rangeExpr": "percent_cust_a.val <= 30 && percent_cust_a.val > 10",
+      "rangeLabel": {
+        "EN-US": "10-30%",
+        "ES-ES": "10-30%",
+        "fr-CA": "10-30%"
+      },
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#8532B3",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#8532B3",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/IkmEzR-thematic_purple.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 4,
+      "rangeExpr": "percent_cust_a.val <= 10",
+      "rangeLabel": {
+        "EN-US": "<=10%",
+        "ES-ES": "<=10%",
+        "fr-CA": "<=10%"
+      },
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#01A75A",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#01A75A",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/iCp6gb-thematic_green.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    }
+  ]
+}

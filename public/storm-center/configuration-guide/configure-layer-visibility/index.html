@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.132.2">
+    <meta name="generator" content="Relearn 7.1.1">
+    <meta name="description" content="Layer Visibility Layer Visibility refers to the way outage information layers are presented as choices in the Storm Center map legend.
+To configure the choices to show in the Storm Center map legend, use the Layer Visibility sub-section of the Shared Resources section of the Instance Dashboard.
+Prerequisites Before you can create a layer visibility configuration, you must create outage data layers.
+Create a New Layer Visibility Configuration Click the Create New Configuration button.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Configure Layer Visibility :: KUBRA Product Documentation">
+    <meta name="twitter:description" content="Layer Visibility Layer Visibility refers to the way outage information layers are presented as choices in the Storm Center map legend.
+To configure the choices to show in the Storm Center map legend, use the Layer Visibility sub-section of the Shared Resources section of the Instance Dashboard.
+Prerequisites Before you can create a layer visibility configuration, you must create outage data layers.
+Create a New Layer Visibility Configuration Click the Create New Configuration button.">
+    <meta property="og:url" content="http://localhost:1313/storm-center/configuration-guide/configure-layer-visibility/index.html">
+    <meta property="og:site_name" content="KUBRA Product Documentation">
+    <meta property="og:title" content="Configure Layer Visibility :: KUBRA Product Documentation">
+    <meta property="og:description" content="Layer Visibility Layer Visibility refers to the way outage information layers are presented as choices in the Storm Center map legend.
+To configure the choices to show in the Storm Center map legend, use the Layer Visibility sub-section of the Shared Resources section of the Instance Dashboard.
+Prerequisites Before you can create a layer visibility configuration, you must create outage data layers.
+Create a New Layer Visibility Configuration Click the Create New Configuration button.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Storm Center">
+    <meta itemprop="name" content="Configure Layer Visibility :: KUBRA Product Documentation">
+    <meta itemprop="description" content="Layer Visibility Layer Visibility refers to the way outage information layers are presented as choices in the Storm Center map legend.
+To configure the choices to show in the Storm Center map legend, use the Layer Visibility sub-section of the Shared Resources section of the Instance Dashboard.
+Prerequisites Before you can create a layer visibility configuration, you must create outage data layers.
+Create a New Layer Visibility Configuration Click the Create New Configuration button.">
+    <meta itemprop="wordCount" content="3943">
+    <title>Configure Layer Visibility :: KUBRA Product Documentation</title><link rel="shortcut icon" href="http://localhost:1313//images/kubra_favicon.png" type="image/x-icon" />
+
+    <link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733165514" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733165514" rel="stylesheet">
+    <link href="/css/fonts.css?1733165514" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733165514" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733165514" rel="stylesheet">
+    <link href="/css/theme-auto.css?1733165514" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1733165514" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1733165514" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1733165514"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script><style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</style>
+
+  </head>
+  <body class="mobile-support html" data-url="/storm-center/configuration-guide/configure-layer-visibility/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#layer-visibility">Layer Visibility</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#create-a-new-layer-visibility-configuration">Create a New Layer Visibility Configuration</a>
+      <ul>
+        <li><a href="#add-layer-options">Add Layer Options</a></li>
+        <li><a href="#add-layer-sub-controls">Add Layer Sub-Controls</a></li>
+        <li><a href="#select-default-options-per-map-mode">Select Default Options per Map Mode</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuration-examples">Configuration Examples</a>
+      <ul>
+        <li><a href="#example-1---one-visibility-option-per-layer-with-auto-switching-between-visibility-options">Example 1 - One visibility option per layer with auto-switching between visibility options</a></li>
+        <li><a href="#example-2---one-visibility-option-for-outage-locations-layer-and-one-visibility-option-for-thematic-layers-with-auto-switching-between-thematic-sub-controls">Example 2 - One visibility option for outage locations layer and one visibility option for thematic layers with auto-switching between thematic sub-controls</a></li>
+        <li><a href="#example-3---one-visibility-option-per-layer-with-no-auto-switching-between-layers">Example 3 - One visibility option per layer with no auto-switching between layers</a></li>
+        <li><a href="#example-4---one-visibility-option-for-all-layers-with-auto-switching-between-sub-controls">Example 4 - One visibility option for all layers with auto-switching between sub-controls</a></li>
+        <li><a href="#example-5---one-visibility-configuration-for-active-outage-layers-and-one-visibility-configuration-for-planned-outages-in-list-format">Example 5 - One visibility configuration for active outage layers and one visibility configuration for planned outages in list format</a></li>
+        <li><a href="#example-6---one-visibility-configuration-for-planned-outages-and-one-visibility-configuration-for-active-outage-layers-in-menu-format">Example 6 - One visibility configuration for planned outages and one visibility configuration for active outage layers in menu format</a></li>
+        <li><a href="#example-7---separate-visibility-options-for-active-outages-and-planned-outages">Example 7 - Separate visibility options for active outages and planned outages</a></li>
+        <li><a href="#example-8---separate-visibility-configurations-for-active-outage-locations-and-planned-outage-locations">Example 8 - Separate visibility configurations for active outage locations and planned outage locations</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Documents for KUBRA Solutions</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/storm-center/index.html"><span itemprop="name">Storm Center</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/storm-center/configuration-guide/index.html"><span itemprop="name">Configuration Guide</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Configure Layer Visibility</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/configuration-guide/configure-map-interface/index.html" title="Configure Map Interface (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/storm-center/configuration-guide/create-map-view/index.html" title="Create and Deploy a Map (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable storm-center" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="configure-layer-visibility">Configure Layer Visibility</h1>
+
+<h2 id="layer-visibility">Layer Visibility</h2>
+<p>Layer Visibility refers to the way outage information layers are presented as choices in the Storm Center map legend.</p>
+<p>To configure the choices to show in the Storm Center map legend, use the <strong>Layer Visibility</strong> sub-section of the <strong>Shared Resources</strong> section of the Instance Dashboard.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you can create a layer visibility configuration, you must <a href="/storm-center/configuration-guide/create-outage-layers/index.html">create outage data layers</a>.</p>
+<h2 id="create-a-new-layer-visibility-configuration">Create a New Layer Visibility Configuration</h2>
+<ol>
+<li>Click the <strong>Create New Configuration</strong> button.</li>
+<li>Enter a name for the layer visibility configuration - this name is how you will identify the layer visibility configuration in other areas of the Instance Manager and in a URL parameter to control the configuration selected on map page load. This name will not show up on the map user interface.</li>
+<li>If you want to show a general label for the layer visibility configuration in the map legend, enter a label. Provide separate labels for each language supported by the instance. This label will appear in the map view selector or in the map legend above the map view selector if a map uses multiple layer visibility configurations.</li>
+<li>Click the <strong>Submit</strong> button.</li>
+</ol>
+<p>Each visibility configuration can have options and sub-controls.</p>
+<ul>
+<li>Options determine how many items will be included in the map view selector in the map legend.</li>
+<li>Sub-controls allow you to include multiple layers under one option and automatically switch between the layers at a zoom level you specify.</li>
+</ul>
+<h3 id="add-layer-options">Add Layer Options</h3>
+<p>After you submit a new layer visibility configuration, the Create Option form opens automatically. To edit layer options or add layer options to an existing layer visibility configuration, click the <strong>Edit Options</strong> button in the Visibility Configurations list.</p>
+<ol>
+<li>To add a new layer option to the visibility configuration, click the <strong>Create New Option</strong> button.</li>
+<li>Enter a name for the option - this name is how you will identify the option in other areas of the Layer Visibility forms and in a URL parameter to control the option selected on map page load. It will not show up on the map user interface.</li>
+<li>Enter a label for the option to be shown in the selector in the map legend - provide separate labels for each language supported by the instance.</li>
+<li>Select the layer or layers you want to include for the option. If you include multiple layers here, all layers will appear at the same time when the option is selected.</li>
+</ol>
+<ul>
+<li>If you want to include multiple layers with automatic switching between the layers based on zoom level, do not select a layer here and instead select the layers as sub-controls.</li>
+</ul>
+<ol>
+<li>Enter a minimum and maximum zoom level for the option. These settings combine with the check zoom in and check zoom out settings as described in the examples below.</li>
+<li>If you want to have the map switch from the current option to a different option when the user has this option selected and zooms out, check the <strong>Check Zoom Out</strong> setting.</li>
+<li>If you want to have the map switch from the current option to a different option when the user has this option selected and zooms in, check the <strong>Check Zoom In</strong> setting.</li>
+<li>If you want to disable the option when there is overwritten data for customers affected entered in the <a href="/storm-center/management-console/area-manager/index.html">Area Manager app</a>, check the <strong>Disable Option when Customers Affected Override Present</strong> setting.</li>
+<li>If you want to disable the option when there is overwritten data for ETR entered in the Area Manager app, check the <strong>Disable Option when ETR Override Present</strong> setting.</li>
+<li>To add the option to the layer visibility configuration, click the <strong>Submit</strong> button.</li>
+<li>Repeat these steps for each option you want to add to the layer visibility configuration.</li>
+</ol>
+<p>After you have created all the options you want to include in the visibility configuration, you can change the order in which the options will appear in the map view selector. The numbers in the &ldquo;Order&rdquo; column on the Visibility Options screen from lowest to highest will be the order from top to bottom in the map view selector.</p>
+<h3 id="add-layer-sub-controls">Add Layer Sub-Controls</h3>
+<p>To edit sub-controls or add sub-controls to an option, click the <strong>Edit Sub-Controls</strong> button in the Visibility Options list or on the Edit Option form.</p>
+<ol>
+<li>To add a new sub-control, click the <strong>Create New Sub-Control</strong> button.</li>
+<li>Enter a name for the sub-control - this name is how you will identify the sub-control in other areas of the Layer Visibility forms.</li>
+<li>Select the layer you want to include in the sub-control.</li>
+<li>Enter a minimum and maximum zoom level for the sub-control.</li>
+<li>To add the sub-control to the option, click the <strong>Submit</strong> button.</li>
+<li>Repeat these steps for each sub-control you want to add to the option.</li>
+</ol>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>The zoom level settings for the sub-controls on an option must be adjacent but not overlapping.</p>
+  </div>
+</div>
+<h3 id="select-default-options-per-map-mode">Select Default Options per Map Mode</h3>
+<p>To add settings for the visibility options to be shown on page load for blue-sky mode and storm mode, return to the Visibility Configurations list and then click the <strong>Edit</strong> button to the right of the visibility configuration name.</p>
+<ol>
+<li>Select which visibility option will be shown on page load for blue-sky mode.</li>
+<li>Select which visibility option will be shown on page load for storm mode.</li>
+</ol>
+<p>Blue-sky mode and storm mode are the two map modes you can change between in the <a href="/storm-center/management-console/settings/index.html">Storm Center Settings app</a>. Selecting a different visibility option for storm mode than for blue-sky mode in this section of the Instance Manager allows you to change what users see on the map on page load if you change the map mode from &ldquo;blue-sky&rdquo; to &ldquo;storm&rdquo; in the Storm Center Settings app.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>If a map includes more than one visibility configuration, the storm mode setting will only work for the first visibility configuration in the list.</p>
+  </div>
+</div>
+<h2 id="configuration-examples">Configuration Examples</h2>
+<p>You can use settings for visibility configurations, visibility options, and sub-controls to create multiple ways of presenting outage layers on a map. Some examples are discussed below.</p>
+<p>Examples 1-4 use a map with the following settings.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Zoom Level</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Maximum Zoom Level</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Starting Zoom Level</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Layer 1</td>
+<td>An outages layer called &ldquo;Location&rdquo;</td>
+</tr>
+<tr>
+<td>Layer 2</td>
+<td>A thematic layer for ZIP Code</td>
+</tr>
+<tr>
+<td>Layer 3</td>
+<td>A thematic layer for County</td>
+</tr>
+</tbody>
+</table>
+<p>Examples 5-8 use a map that also has a planned outages layer called &ldquo;Planned.&rdquo;</p>
+<h3 id="example-1---one-visibility-option-per-layer-with-auto-switching-between-visibility-options">Example 1 - One visibility option per layer with auto-switching between visibility options</h3>
+<p>To create a map that provides separate map view choices for each layer and automatically switches from the county layer to the ZIP code layer to the outages layer as a user zooms in, follow these guidelines.</p>
+<p>Auto-switching between the map view choices is especially helpful for users on mobile devices, as it helps ensure that the user can always see useful information. Keeping separate visibility options for each layer allows users to select any of the choices at any zoom level.</p>
+<ul>
+<li>Create three visibility options, one for each data layer: Location, ZIP Code, and County.</li>
+<li>Use the settings from the table below.</li>
+<li>Select the Location option as the default for blue-sky mode.</li>
+<li>Select the County option as the default for storm mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Location</td>
+<td>Outages - Location</td>
+<td>13</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>ZIP Code</td>
+<td>Thematic - ZIP Code</td>
+<td>9</td>
+<td>12</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>County</td>
+<td>Thematic - County</td>
+<td>5</td>
+<td>8</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>The visibility options in the configuration will match the map view choices available in the map legend.</p>
+<p><a href="#R-image-2f5681ce5dd8669ab3ee7a79513aca39" class="lightbox-link"><img alt="Configuration and Map Legend - example 1" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/visibility-example-1.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2f5681ce5dd8669ab3ee7a79513aca39"><img alt="Configuration and Map Legend - example 1" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/visibility-example-1.png"></a></p>
+<p>The configuration will create a map that looks like this.</p>
+<p><a href="#R-image-6bc4973d8f8b7cceeffbef3da94f9d08" class="lightbox-link"><img alt="Map example - three layer options" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/separate-options-switching-dropdown.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6bc4973d8f8b7cceeffbef3da94f9d08"><img alt="Map example - three layer options" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/separate-options-switching-dropdown.png"></a></p>
+<p>The user can use the map view selector in the map legend to change between visibility options at any zoom level. Because the Location option is selected as the default for blue-sky mode, the map opens at zoom level 10 with the Location option selected. If an admin user changes the map from blue-sky mode to storm mode, the map will open at zoom level 10 with the County option selected.</p>
+<p>If the user selects the County option, the map will show the County layer. If the user then zooms in, the map will change from the County option to the ZIP Code option when the user zooms in to any of the zoom levels in the range for the ZIP Code option. If the user continues to zoom in with the ZIP Code option selected, the map will change from the ZIP Code option to the Location option when the user zooms in to any of the zoom levels in the range for the Location option.</p>
+<p>If the user zooms out with any of the three options selected, the map will not change from the selected option to one of the other options. In addition, the user can select a different option at any zoom level. The map view will change if the user zooms in and the new zoom level is in the range for a different option.</p>
+<h3 id="example-2---one-visibility-option-for-outage-locations-layer-and-one-visibility-option-for-thematic-layers-with-auto-switching-between-thematic-sub-controls">Example 2 - One visibility option for outage locations layer and one visibility option for thematic layers with auto-switching between thematic sub-controls</h3>
+<p>To create a map that provides two map view choices, one for outages by location and one for outages by area, and that automatically switches between the county layer and the ZIP code layer when the &ldquo;outages by area&rdquo; choice is selected and a user zooms in or out, follow these guidelines.</p>
+<ul>
+<li>Create two visibility options: one for the outages layer (Locations option) and one for the two thematic layers (Areas option). Do not select a layer at the option level for the Areas option.</li>
+<li>Create two sub-controls for the Areas option: one for the County layer and one for the ZIP Code layer.</li>
+<li>Use the settings from the table below.</li>
+<li>Select the Locations option as the default for blue-sky mode.</li>
+<li>Select the Areas option as the default for storm mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Locations</td>
+<td>Outages - Location</td>
+<td>13</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Areas</td>
+<td>none</td>
+<td>5</td>
+<td>12</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>ZIP Code</td>
+<td>Thematic - ZIP Code</td>
+<td>10</td>
+<td>18</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>County</td>
+<td>Thematic - County</td>
+<td>5</td>
+<td>9</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Sub-Controls are considered to have the Check Zoom In and Check Zoom Out settings selected by default.</p>
+  </div>
+</div>
+<p>The visibility options in the configuration will match the map view choices available in the map legend.</p>
+<p><a href="#R-image-8c03629528daf38d064cec698c34f360" class="lightbox-link"><img alt="Configuration and Map Legend - example 2" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/visibility-example-2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c03629528daf38d064cec698c34f360"><img alt="Configuration and Map Legend - example 2" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/visibility-example-2.png"></a></p>
+<p>The configuration will create a map that looks like this.</p>
+<p><a href="#R-image-0fd9b0cad07c533fff3d4a7dfd2dda57" class="lightbox-link"><img alt="Map example - two options" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/two-options-dropdown.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fd9b0cad07c533fff3d4a7dfd2dda57"><img alt="Map example - two options" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/two-options-dropdown.png"></a></p>
+<p>The user can use the map view selector in the map legend to change between visibility options at any zoom level. Because the Locations option is selected as the default for blue-sky mode, the map opens at zoom level 10 with the Locations option selected. If an admin user changes the map from blue-sky mode to storm mode, the map will open at zoom level 10 with the Areas option selected.</p>
+<p>If the user selects the Areas option, the map will show either the County layer or the ZIP Code layer depending on the current zoom level. If the user zooms in with the Outages by Area choice selected, the map will change from the County layer to the ZIP Code layer when the user zooms in to any of the zoom levels in the range for the ZIP Code sub-control. If the user continues to zoom in, the map will change from the ZIP Code layer to the Location option when the user zooms in to any of the zoom levels in the range for the Location option.</p>
+<p>If the user zooms out with the Outages by Area choice selected, the map will change from the ZIP Code layer to the County layer when the user zooms out to any of the zoom levels in the range for the County sub-control.</p>
+<h3 id="example-3---one-visibility-option-per-layer-with-no-auto-switching-between-layers">Example 3 - One visibility option per layer with no auto-switching between layers</h3>
+<p>To create a map that provides separate map view choices for each layer and does not automatically switch between layers when a user zooms in or out, follow these guidelines.</p>
+<ul>
+<li>Create three visibility options, one for each data layer.</li>
+<li>Use the settings from the table below.</li>
+<li>Select the Location option as the default for blue-sky mode.</li>
+<li>Select the County option as the default for storm mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Location</td>
+<td>Outages - Location</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>ZIP Code</td>
+<td>Thematic - ZIP Code</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>County</td>
+<td>Thematic - County</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>The visibility options in the configuration will match the map view choices available in the map legend.</p>
+<p><a href="#R-image-f2d6b09335262500bf197f5f446cb19a" class="lightbox-link"><img alt="Configuration and Map Legend - example 3" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/visibility-example-3.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f2d6b09335262500bf197f5f446cb19a"><img alt="Configuration and Map Legend - example 3" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/visibility-example-3.png"></a></p>
+<p>The configuration will create a map that looks like this.</p>
+<p><a href="#R-image-3d5cdb1b6df6fd650c14f89accdd3f66" class="lightbox-link"><img alt="Map example - three options" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/separate-options-dropdown.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3d5cdb1b6df6fd650c14f89accdd3f66"><img alt="Map example - three options" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/separate-options-dropdown.png"></a></p>
+<p>The user can use the map view selector in the map legend to change between visibility options, and each visibility option is visible at all zoom levels supported by the map.</p>
+<h3 id="example-4---one-visibility-option-for-all-layers-with-auto-switching-between-sub-controls">Example 4 - One visibility option for all layers with auto-switching between sub-controls</h3>
+<p>To create a map that does not include map view choices in the map legend and automatically switches between the layers when a user zooms in or out, follow these guidelines.</p>
+<ul>
+<li>Create one visibility option with no layers selected at the option level.</li>
+<li>Create three sub-controls, one for each layer.</li>
+<li>Use the settings from the table below.</li>
+<li>Select the visibility option as the default for both blue-sky mode and storm mode. This means that changing the map mode in the <a href="/storm-center/management-console/settings/index.html">Storm Center Settings app</a> will not change the map UI.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outages</td>
+<td>none</td>
+<td>5</td>
+<td>18</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Outages - Location</td>
+<td>14</td>
+<td>18</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ZIP Code</td>
+<td>Thematic - ZIP Code</td>
+<td>11</td>
+<td>13</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>County</td>
+<td>Thematic - County</td>
+<td>5</td>
+<td>10</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>The combination of the sub-control zoom level ranges should be the same as the overall zoom level range for the map, and the ranges of the sub-controls should be adjacent but not overlapping.</p>
+<p>Because there is only one visibility option in the configuration and because layers are only connected at the sub-control level, there will not be any map view choices in the map legend.</p>
+<p>The configuration will create a map that looks like this.</p>
+<p><a href="#R-image-30944bfb687e6f6537c517f644f3036f" class="lightbox-link"><img alt="Map example - one option - ZIP codes" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/no-dropdown.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-30944bfb687e6f6537c517f644f3036f"><img alt="Map example - one option - ZIP codes" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/no-dropdown.png"></a></p>
+<p><a href="#R-image-64fdd86fd8b7cde920b2a8afbb38125f" class="lightbox-link"><img alt="Map example - one option - outage locations" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/no-dropdown-locations.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-64fdd86fd8b7cde920b2a8afbb38125f"><img alt="Map example - one option - outage locations" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/no-dropdown-locations.png"></a></p>
+<p>The user does not have a choice to change between the layers in the map legend. The County sub-control is visible at the minimum zoom level supported by the map, and this view changes to the ZIP Code sub-control when the user zooms in to any of the zoom levels in the range for the ZIP Code sub-control, and then to the Location sub-control when the user zooms in to any of the zoom levels in the range for the Location sub-control.</p>
+<h3 id="example-5---one-visibility-configuration-for-active-outage-layers-and-one-visibility-configuration-for-planned-outages-in-list-format">Example 5 - One visibility configuration for active outage layers and one visibility configuration for planned outages in list format</h3>
+<p>To create a map that shows a list of radio buttons for active outages and planned outages always visible on the map legend and includes a map view selector to view active outages by location or by area when the active outages choice is selected, follow these guidelines.</p>
+<ul>
+<li>Create one visibility configuration called Active-Outages with one visibility option for the location layer and one visibility option with sub-controls for the county and ZIP code layers.</li>
+<li>Use the settings from the table below for this Active Outages visibility configuration.</li>
+<li>Select the Locations visibility option as the default for blue-sky mode and the Areas visibility option as the default for storm mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Locations</td>
+<td>Outages - Location</td>
+<td>13</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Areas</td>
+<td>none</td>
+<td>5</td>
+<td>12</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>ZIP Code</td>
+<td>Thematic - ZIP Code</td>
+<td>10</td>
+<td>18</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>County</td>
+<td>Thematic - County</td>
+<td>5</td>
+<td>9</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Create a second visibility configuration with one visibility option for the planned outages layer.</li>
+<li>Use the settings from the table below for this Planned Outages visibility configuration.</li>
+<li>Select the Planned Outages visibility option as the default for both blue-sky and storm mode for the planned outage visibility configuration.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planned Outages</td>
+<td>Planned</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Select both the Active-Outages visibility configuration and the Planned-Outages visibility configuration under Shared Resources in the <a href="/storm-center/configuration-guide/create-map-view/index.html#shared-resources">Create Map View form</a>. The order in which you select the visibility configurations is the order in which they will appear in the map legend.</li>
+<li>Select the &ldquo;Show Legend as List&rdquo; option under Widgets in the <a href="/storm-center/configuration-guide/create-map-view/index.html#widgets">Create Map View form</a>.</li>
+</ul>
+<p>The visibility configurations in the map view configuration will match the radio button map view choices available in the map legend, and the visibility options in the active outages configuration will match the drop-down map view choices available in the map legend.</p>
+<p><a href="#R-image-81b047238dbfaf8441e2577d8c004d23" class="lightbox-link"><img alt="Configuration and Map Legend - example 5" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/visibility-example-5.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-81b047238dbfaf8441e2577d8c004d23"><img alt="Configuration and Map Legend - example 5" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/visibility-example-5.png"></a></p>
+<p>The configuration will create a map that looks like this.</p>
+<p><a href="#R-image-8c716fce1b3495701c065803cdc3b60a" class="lightbox-link"><img alt="Map example - two visibilities - list format" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/two-visibilities-list-format.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c716fce1b3495701c065803cdc3b60a"><img alt="Map example - two visibilities - list format" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/two-visibilities-list-format.png"></a></p>
+<p>The user can use the radio buttons above the map view selector in the map legend to choose to view either Active Outages or Planned Outages.</p>
+<p>If the user selects the Active Outages radio button, the user can use the map view selector to change between Locations and Areas at any zoom level. While the Areas choice is selected, the map will change from showing Counties to showing ZIP Codes if the user zooms in to a zoom level in the range for the ZIP Codes sub-control.</p>
+<p>If the user selects the Planned Outages radio button, the map will show cluster icons and individual outage icons for planned outages at all zoom levels.</p>
+<p>If an admin user puts the map into Storm Mode using the <a href="/storm-center/management-console/settings/index.html">Settings app</a>, the selector under Active Outages will show Areas on page load instead of Locations. The Storm Mode setting will not have any effect on the Planned Outages map view choice.</p>
+<h3 id="example-6---one-visibility-configuration-for-planned-outages-and-one-visibility-configuration-for-active-outage-layers-in-menu-format">Example 6 - One visibility configuration for planned outages and one visibility configuration for active outage layers in menu format</h3>
+<p>To create a map that shows a map view selector at the top of the map legend that includes radio buttons for planned outages and active outages and choices to view active outages by location or by area when the active outages radio button is selected, follow these guidelines.</p>
+<ul>
+<li>Create one visibility configuration with one visibility option for the planned outages layer.</li>
+<li>Use the settings from the table below for this Planned Outages visibility configuration.</li>
+<li>Select the planned outages visibility option as the default for both blue-sky and storm mode for the planned outage visibility configuration.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planned Outages</td>
+<td>Planned</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Create a second visibility configuration called Active-Outages with one visibility option for the location layer and one visibility option with sub-controls for the county and ZIP code layers.</li>
+<li>Use the settings from the table below for this Active Outages visibility configuration.</li>
+<li>Select the Locations visibility option as the default for blue-sky mode and the Areas visibility option as the default for storm mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Locations</td>
+<td>Outages - Location</td>
+<td>13</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Areas</td>
+<td>none</td>
+<td>5</td>
+<td>12</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>ZIP Code</td>
+<td>Thematic - ZIP Code</td>
+<td>10</td>
+<td>18</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>County</td>
+<td>Thematic - County</td>
+<td>5</td>
+<td>9</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Select both the Planned-Outages visibility configuration and the Active-Outages visibility configuration under Shared Resources in the <a href="/storm-center/configuration-guide/create-map-view/index.html#shared-resources">Create Map View form</a>.</li>
+<li>Leave the &ldquo;Show Legend as List&rdquo; option unselected under Widgets in the <a href="/storm-center/configuration-guide/create-map-view/index.html#widgets">Create Map View form</a>.</li>
+</ul>
+<p>The visibility configurations in the map view configuration will match the radio button map view choices available in the map view selector, and the visibility options in the active outages configuration will match the drop-down list map view choices available in the map view selector.</p>
+<p><a href="#R-image-00a6c69542fa093588bd4ffed011ab31" class="lightbox-link"><img alt="Configuration and Map Legend - example 6" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/visibility-example-6.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-00a6c69542fa093588bd4ffed011ab31"><img alt="Configuration and Map Legend - example 6" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/visibility-example-6.png"></a></p>
+<p>The configuration will create a map that looks like this.</p>
+<p><a href="#R-image-cce68685eff9db53b6c6d1a33b453b2d" class="lightbox-link"><img alt="Map example - two visibilities - menu format" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/two-visibilities-menu-format.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cce68685eff9db53b6c6d1a33b453b2d"><img alt="Map example - two visibilities - menu format" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/two-visibilities-menu-format.png"></a></p>
+<p>The user can open the map view selector at the top of the map legend to see two radio buttons, one for Planned Outages and one for Active Outages. While the Active Outages radio button is selected, the user can also use a list of choices to change between viewing active outages by location and viewing active outages by area. The user can change between Locations and Areas at any zoom level. While the Areas option is selected, the map will change from showing Counties to showing ZIP Codes if the user zooms in to a zoom level in the range for the ZIP Codes sub-control.</p>
+<p>If the user selects the Planned Outages radio button, the map will show cluster icons and individual outage icons for planned outages at all zoom levels.</p>
+<p>If an admin user puts the map into Storm Mode using the <a href="/storm-center/management-console/settings/index.html">Settings app</a>, the Storm Mode setting will not have any effect because the Planned Outages configuration appears first and does not have multiple visibility options.</p>
+<h3 id="example-7---separate-visibility-options-for-active-outages-and-planned-outages">Example 7 - Separate visibility options for active outages and planned outages</h3>
+<p>To create a map that shows separate map view choices for active outages and planned outages as a list in the map view selector in the map legend, follow these guidelines. This is similar to the setup in example 3, except with active outages and planned outages layers instead of multiple active outages layers.</p>
+<ul>
+<li>Create one visibility option for Active Outages with an Outages layer, and one visibility option for Planned Outages with a Planned layer.</li>
+<li>Use the settings from the table below.</li>
+<li>Select the Planned Outages visibility option as the default for blue-sky mode.</li>
+<li>Select the Active Outages visibility option as the default for storm mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active Outages</td>
+<td>Outages - Locations</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Planned Outages</td>
+<td>Planned</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>The visibility options in the configuration will match the map view choices available in the map legend.</p>
+<p><a href="#R-image-881605bc7a5ba58cc23e19f5c9ea2b6b" class="lightbox-link"><img alt="Configuration and Map Legend - example 7" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/visibility-example-7.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-881605bc7a5ba58cc23e19f5c9ea2b6b"><img alt="Configuration and Map Legend - example 7" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/visibility-example-7.png"></a></p>
+<p>The configuration will create a map that looks like this.</p>
+<p><a href="#R-image-f134e94215816f6220d3322dd3e9e4e1" class="lightbox-link"><img alt="Map example - active and planned outages options" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/active-planned-dropdown.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f134e94215816f6220d3322dd3e9e4e1"><img alt="Map example - active and planned outages options" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/active-planned-dropdown.png"></a></p>
+<p>The user can open the map view selector at the top of the map legend to change between viewing active outages and viewing planned outages. For this example, the outage icons and cluster icons are visible at all zoom levels.</p>
+<p>If an admin user puts the map into Storm Mode using the <a href="/storm-center/management-console/settings/index.html">Settings app</a>, the map view selector will show Active Outages on page load instead of Planned Outages.</p>
+<h3 id="example-8---separate-visibility-configurations-for-active-outage-locations-and-planned-outage-locations">Example 8 - Separate visibility configurations for active outage locations and planned outage locations</h3>
+<p>To create a map that shows separate map view choices for active outages and planned outages as radio buttons on the map legend, follow these guidelines.</p>
+<ul>
+<li>Create one visibility configuration for Active Outages with one visibility option for the Outages - Locations layer.</li>
+<li>Use the settings from the table below.</li>
+<li>Select the Active Outages visibility option as the default for both blue-sky mode and storm mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active Outages</td>
+<td>Outages - Locations</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Create a second visibility configuration for Planned Outages with one visibility option for the Planned Outages layer.</li>
+<li>Use the settings from the table below.</li>
+<li>Select the Planned Outages visibility option as the default for both blue-sky mode and storm mode.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option/Sub-Control</th>
+<th>Layer</th>
+<th>Minimum Zoom Level</th>
+<th>Maximum Zoom Level</th>
+<th>Check Zoom In</th>
+<th>Check Zoom Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planned Outages</td>
+<td>Planned</td>
+<td>5</td>
+<td>18</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>The visibility configurations in the map view configuration will match the radio button map view choices available in the map legend.</p>
+<p><a href="#R-image-96774c4f1a97a2fa4547d393e776bd57" class="lightbox-link"><img alt="Configuration and Map Legend - example 8" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/visibility-example-8.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-96774c4f1a97a2fa4547d393e776bd57"><img alt="Configuration and Map Legend - example 8" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/visibility-example-8.png"></a></p>
+<p>The configuration will create a map that looks like this.</p>
+<p><a href="#R-image-2553b4d92d21d0c2867e0fd5279e2402" class="lightbox-link"><img alt="Map example - active and planned outages radio buttons" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/images/active-planned-radios.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2553b4d92d21d0c2867e0fd5279e2402"><img alt="Map example - active and planned outages radio buttons" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/images/active-planned-radios.png"></a></p>
+<p>The user can select a radio button on the map legend to change between viewing active outages and viewing planned outages. For this example, the outage icons and cluster icons are visible at all zoom levels.</p>
+<p>Because there is only one visibility option for each visibility configuration, the Storm Mode setting in the <a href="/storm-center/management-console/settings/index.html">Settings app</a> will have no effect on the map.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="logo" href="http://localhost:1313/">
+  <img src="http://localhost:1313//images/kubra-logo_white.png" alt="KUBRA logo" style="width: 94%; height: 94%">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.en.js?1733165514";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733165514" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733165514" defer></script>
+        <script src="/js/search.js?1733165514" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-shortcutmenu-home" class="R-sidebarmenu">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/index.html"><input type="checkbox" id="R-section-558e91aae69e00d79e2cafd95e12ec00" aria-controls="R-subsections-558e91aae69e00d79e2cafd95e12ec00"><label for="R-section-558e91aae69e00d79e2cafd95e12ec00"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Dropcountr</span></label><a class="padding" href="/dropcountr/index.html">Dropcountr<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-558e91aae69e00d79e2cafd95e12ec00" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/dropcountr/user-guides/index.html"><input type="checkbox" id="R-section-2184eb3c2ded3a2fd10f6cf232e36223" aria-controls="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" checked><label for="R-section-2184eb3c2ded3a2fd10f6cf232e36223"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu User Guides</span></label><a class="padding" href="/dropcountr/user-guides/index.html">User Guides<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2184eb3c2ded3a2fd10f6cf232e36223" class="collapsible-menu">
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-self-serve-pricing/index.html"><a class="padding" href="/dropcountr/user-guides/clear-self-serve-pricing/index.html">CLEAR Self-Serve Pricing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/dropcountr/user-guides/clear-tips/index.html"><a class="padding" href="/dropcountr/user-guides/clear-tips/index.html">CLEAR Tips<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/incidentwatch/index.html"><input type="checkbox" id="R-section-32fefdc07fecf67094a8402fb25b3279" aria-controls="R-subsections-32fefdc07fecf67094a8402fb25b3279"><label for="R-section-32fefdc07fecf67094a8402fb25b3279"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch</span></label><a class="padding" href="/incidentwatch/index.html">IncidentWatch<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-32fefdc07fecf67094a8402fb25b3279" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/features/index.html"><a class="padding" href="/incidentwatch/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/incidentwatch/file-specifications/index.html"><input type="checkbox" id="R-section-85a5e0a360726237fcb4b6a415e1b212" aria-controls="R-subsections-85a5e0a360726237fcb4b6a415e1b212" checked><label for="R-section-85a5e0a360726237fcb4b6a415e1b212"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu IncidentWatch File Specifications</span></label><a class="padding" href="/incidentwatch/file-specifications/index.html">IncidentWatch File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-85a5e0a360726237fcb4b6a415e1b212" class="collapsible-menu">
+            <li class="" data-nav-id="/incidentwatch/file-specifications/asset-file/index.html"><a class="padding" href="/incidentwatch/file-specifications/asset-file/index.html">Asset File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/notifi/index.html"><input type="checkbox" id="R-section-7275f2fd18ab5926c2bffc825757c740" aria-controls="R-subsections-7275f2fd18ab5926c2bffc825757c740"><label for="R-section-7275f2fd18ab5926c2bffc825757c740"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notifi</span></label><a class="padding" href="/notifi/index.html">Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7275f2fd18ab5926c2bffc825757c740" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/notifi/features/index.html"><input type="checkbox" id="R-section-fdc0388fabb6c64724d17110be5ef9e3" aria-controls="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" checked><label for="R-section-fdc0388fabb6c64724d17110be5ef9e3"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Feature List</span></label><a class="padding" href="/notifi/features/index.html">Feature List<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fdc0388fabb6c64724d17110be5ef9e3" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/features/deregistration-manager/index.html"><a class="padding" href="/notifi/features/deregistration-manager/index.html">Deregistration Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/default-supplemental-contacts/index.html"><a class="padding" href="/notifi/features/default-supplemental-contacts/index.html">Default and Supplemental Contacts<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/aggregated-messaging/index.html"><a class="padding" href="/notifi/features/aggregated-messaging/index.html">Aggregated Messaging<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/excessive-messaging-protection/index.html"><a class="padding" href="/notifi/features/excessive-messaging-protection/index.html">Excessive Messaging Protection<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/features/standard-advanced-reporting/index.html"><a class="padding" href="/notifi/features/standard-advanced-reporting/index.html">Standard and Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/notifi/management-console/index.html"><input type="checkbox" id="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e" aria-controls="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" checked><label for="R-section-fb5e8e000fd5f95926c138c6b5ed0f9e"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Notifi</span></label><a class="padding" href="/notifi/management-console/index.html">Management Console for Notifi<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb5e8e000fd5f95926c138c6b5ed0f9e" class="collapsible-menu">
+            <li class="" data-nav-id="/notifi/management-console/history/index.html"><a class="padding" href="/notifi/management-console/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/preferences/index.html"><a class="padding" href="/notifi/management-console/preferences/index.html">Preferences<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/broadcast/index.html"><a class="padding" href="/notifi/management-console/broadcast/index.html">Broadcast<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/template-manager/index.html"><a class="padding" href="/notifi/management-console/template-manager/index.html">Template Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/admin/index.html"><a class="padding" href="/notifi/management-console/admin/index.html">Admin<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/reports/index.html"><a class="padding" href="/notifi/management-console/reports/index.html">Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/advanced-reporting/index.html"><a class="padding" href="/notifi/management-console/advanced-reporting/index.html">Notifi Advanced Reporting<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/enrollments/index.html"><a class="padding" href="/notifi/management-console/enrollments/index.html">Enrollments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/notifi/management-console/user-management/index.html"><a class="padding" href="/notifi/management-console/user-management/index.html">User Management - Notifi<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/notifi/notifi-glossary/index.html"><a class="padding" href="/notifi/notifi-glossary/index.html">Notifi Glossary of Terms<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/shared-file-specifications/index.html"><input type="checkbox" id="R-section-9b0f69db12de826586271bd3eb6cb69d" aria-controls="R-subsections-9b0f69db12de826586271bd3eb6cb69d"><label for="R-section-9b0f69db12de826586271bd3eb6cb69d"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Shared File Specifications and Resources</span></label><a class="padding" href="/shared-file-specifications/index.html">Shared File Specifications and Resources<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-9b0f69db12de826586271bd3eb6cb69d" class="collapsible-menu">
+            <li class="" data-nav-id="/shared-file-specifications/outage-file/index.html"><a class="padding" href="/shared-file-specifications/outage-file/index.html">Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/planned-outage-file/index.html"><a class="padding" href="/shared-file-specifications/planned-outage-file/index.html">Planned Outage File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/failure-types/index.html"><a class="padding" href="/shared-file-specifications/failure-types/index.html">Data Feed Processing Failures<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/shared-file-specifications/image-resource-manager/index.html"><a class="padding" href="/shared-file-specifications/image-resource-manager/index.html">Image Resource Manager<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/storm-center/index.html"><input type="checkbox" id="R-section-679b9995ae8651d7dcafc3e50e257610" aria-controls="R-subsections-679b9995ae8651d7dcafc3e50e257610" checked><label for="R-section-679b9995ae8651d7dcafc3e50e257610"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center</span></label><a class="padding" href="/storm-center/index.html">Storm Center<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-679b9995ae8651d7dcafc3e50e257610" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/features/index.html"><a class="padding" href="/storm-center/features/index.html">Map Feature List<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/getting-started/index.html"><a class="padding" href="/storm-center/getting-started/index.html">Getting Started<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/file-specifications/index.html"><input type="checkbox" id="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" aria-controls="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" checked><label for="R-section-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storm Center File Specifications</span></label><a class="padding" href="/storm-center/file-specifications/index.html">Storm Center File Specifications<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b1dc5d2b05ba5fd1f9b3b7fd6b069ad" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/file-specifications/region-file/index.html"><a class="padding" href="/storm-center/file-specifications/region-file/index.html">Region File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/thematic-file/index.html"><a class="padding" href="/storm-center/file-specifications/thematic-file/index.html">Thematic File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/additional-map-layer-file/index.html"><a class="padding" href="/storm-center/file-specifications/additional-map-layer-file/index.html">Additional Map Layer File<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/file-specifications/delivery-node-file/index.html"><a class="padding" href="/storm-center/file-specifications/delivery-node-file/index.html">Delivery Node File<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/storm-center/configuration-guide/index.html"><input type="checkbox" id="R-section-00a5d585c2b0f5ab3b299b940e2e0309" aria-controls="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" checked><label for="R-section-00a5d585c2b0f5ab3b299b940e2e0309"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Configuration Guide</span></label><a class="padding" href="/storm-center/configuration-guide/index.html">Configuration Guide<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-00a5d585c2b0f5ab3b299b940e2e0309" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/configuration-guide/connect-data-files/index.html"><a class="padding" href="/storm-center/configuration-guide/connect-data-files/index.html">Connect Data Files and Feeds<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-outage-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-outage-layers/index.html">Create Outage Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-aml-data-layers/index.html"><a class="padding" href="/storm-center/configuration-guide/create-aml-data-layers/index.html">Create AML Data Layers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-service-territory/index.html"><a class="padding" href="/storm-center/configuration-guide/create-service-territory/index.html">Create Service Territory<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-summaries/index.html"><a class="padding" href="/storm-center/configuration-guide/create-summaries/index.html">Create Summaries and Summary Reports<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-buttons/index.html"><a class="padding" href="/storm-center/configuration-guide/create-buttons/index.html">Create Buttons and Content Blocks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-data-labels/index.html"><a class="padding" href="/storm-center/configuration-guide/create-data-labels/index.html">Create Data Labels and Mapping<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/configure-map-interface/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-map-interface/index.html">Configure Map Interface<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/storm-center/configuration-guide/configure-layer-visibility/index.html"><a class="padding" href="/storm-center/configuration-guide/configure-layer-visibility/index.html">Configure Layer Visibility<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/create-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/create-map-view/index.html">Create and Deploy a Map<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/configuration-guide/embed-map-view/index.html"><a class="padding" href="/storm-center/configuration-guide/embed-map-view/index.html">Embed a Map<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/management-console/index.html"><input type="checkbox" id="R-section-189c8bdd40f13a4e7586f8422311296c" aria-controls="R-subsections-189c8bdd40f13a4e7586f8422311296c" checked><label for="R-section-189c8bdd40f13a4e7586f8422311296c"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Management Console for Storm Center (Control Center)</span></label><a class="padding" href="/storm-center/management-console/index.html">Management Console for Storm Center (Control Center)<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-189c8bdd40f13a4e7586f8422311296c" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/management-console/alert-banner/index.html"><a class="padding" href="/storm-center/management-console/alert-banner/index.html">Alert Banner App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager/index.html"><a class="padding" href="/storm-center/management-console/area-manager/index.html">Area Manager App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers/index.html"><a class="padding" href="/storm-center/management-console/custom-layers/index.html">Custom Layers App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/settings/index.html"><a class="padding" href="/storm-center/management-console/settings/index.html">Settings App<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/area-manager-admin/index.html"><a class="padding" href="/storm-center/management-console/area-manager-admin/index.html">Area Manager Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/custom-layers-admin/index.html"><a class="padding" href="/storm-center/management-console/custom-layers-admin/index.html">Custom Layers Admin Tool<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/management-console/user-management/index.html"><a class="padding" href="/storm-center/management-console/user-management/index.html">User Management - Storm Center<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/deploy-manager/index.html"><a class="padding" href="/storm-center/deploy-manager/index.html">Deploy Manager<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/map-history/index.html"><a class="padding" href="/storm-center/map-history/index.html">Map History<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="alwaysopen " data-nav-id="/storm-center/analytics/index.html"><input type="checkbox" id="R-section-fb3b15ac10f6742749cf574c537bd818" aria-controls="R-subsections-fb3b15ac10f6742749cf574c537bd818" checked><label for="R-section-fb3b15ac10f6742749cf574c537bd818"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Analytics</span></label><a class="padding" href="/storm-center/analytics/index.html">Analytics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-fb3b15ac10f6742749cf574c537bd818" class="collapsible-menu">
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-universal/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-universal/index.html">Google Analytics Universal<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/analytics/google-analytics-4/index.html"><a class="padding" href="/storm-center/analytics/google-analytics-4/index.html">Google Analytics 4<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storm-center/data-monitoring/index.html"><a class="padding" href="/storm-center/data-monitoring/index.html">Storm Center Data Monitoring<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storm-center/troubleshooting/index.html"><a class="padding" href="/storm-center/troubleshooting/index.html">Troubleshooting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/release-process/index.html"><a class="padding" href="/release-process/index.html">Release Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/updates/index.html"><a class="padding" href="/updates/index.html">Documentation updates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/storm-center/configuration-guide/configure-layer-visibility/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>© 2017 - 2024 KUBRA</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1733165514" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733165514" defer></script>
+    <script src="/js/theme.js?1733165514" defer></script><script src="/js/jquery.ba-throttle-debounce.min.js?1733165514"></script>
+
+<script>
+
+function send_search_term_to_ga() {
+  var searchTxt = document.getElementById('search-by').value;
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Search',
+    eventAction: 'Keyword',
+    eventLabel: searchTxt
+  });
+};
+
+
+
+search_debounce = $.debounce( 2000, send_search_term_to_ga );
+
+
+
+function search(queryTerm) {
+  search_debounce();
+
+  
+  return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    return pagesIndex.filter(function(page) {
+      return page.uri === result.ref;
+    })[0];
+  });
+}
+
+</script>
+
+
+  </body>
+</html>

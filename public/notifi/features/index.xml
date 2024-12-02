@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feature List :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/notifi/features/index.html</link>
+    <description>Communication Channels Notifi supports SMS text messages, email messages, text-to-speech or prerecorded voice messages, and push notifications for Android and iOS mobile apps.&#xA;Two-Way Communication The latest version of Notifi uses natural language processing to identify a user’s intent from the word or words the user sends to the system. This means that users can either use keywords or complete sentences to request information or complete supported tasks.&#xA;Message Categories Notifi supports a wide variety of message categories for both proactive messages (one-way) and interactive automated conversations (two-way).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/notifi/features/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deregistration Manager</title>
+      <link>http://localhost:1313/notifi/features/deregistration-manager/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/features/deregistration-manager/index.html</guid>
+      <description>What is the Notifi Deregistration Manager? The Notifi Deregistration Manager is a microservice built to identify and deregister contacts in existing and future Notifi environments according to configurable rules. KUBRA created the Deregistration Manager to allow Notifi to manage large numbers of contacts while remaining compliant with recent FCC rulings on the TCPA and other regulations for sending automated messages to customers.&#xA;Terms and Conditions - Managing Pending Contacts By default, Notifi uses a double-opt-in process for new SMS and email contacts: when a new contact is added to the Notifi system, Notifi sends a confirmation message to the customer which asks the customer to respond.</description>
+    </item>
+    <item>
+      <title>Default and Supplemental Contacts</title>
+      <link>http://localhost:1313/notifi/features/default-supplemental-contacts/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/features/default-supplemental-contacts/index.html</guid>
+      <description>Feature Information Notifi provides support for default and supplemental contacts to support messaging to contacts that customers have provided to an organization, even if those contacts have not been registered in the Notifi system.&#xA;Default contacts are used to send messages in cases where an account either does not have registered contacts in the Notifi system or does not have a subscription for the message category being sent. For example, Notifi can use default contacts to send messages such as scheduled outage notifications or outage alerts for critical care customers using the main phone number or email address on file for an account whenever there is not an existing subscription for outage messages in the Notifi system.</description>
+    </item>
+    <item>
+      <title>Aggregated Messaging</title>
+      <link>http://localhost:1313/notifi/features/aggregated-messaging/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/features/aggregated-messaging/index.html</guid>
+      <description>Feature Information Notifi provides aggregated messaging to improve the customer experience by eliminating multiple similar messages sent to a single contact as part of the same event.&#xA;For example, if a landlord is registered to receive outage notifications for all 50 units in an apartment building, and there is a power outage affecting the entire building, Notifi will detect that there is one contact associated with all 50 premise locations, and send one message to the contact.</description>
+    </item>
+    <item>
+      <title>Excessive Messaging Protection</title>
+      <link>http://localhost:1313/notifi/features/excessive-messaging-protection/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/features/excessive-messaging-protection/index.html</guid>
+      <description>Feature Information Notifi provides excessive messaging protection to improve the customer experience by providing messaging caps in situations where too many messages are being sent to a customer.&#xA;If a customer contact (such as a phone number or email address) has been receiving a large number of messages, Notifi can be set to pause delivery of any further SMS or email messages for a set period of time to limit the total number of messages sent to a single contact.</description>
+    </item>
+    <item>
+      <title>Standard and Advanced Reporting</title>
+      <link>http://localhost:1313/notifi/features/standard-advanced-reporting/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/features/standard-advanced-reporting/index.html</guid>
+      <description>Standard Reporting Standard Reporting for Notifi is included as a Reports tool in the Management Console for Notifi. The Reports tool provides a set of report dashboards configured to provide information about operations that have occurred within the Notifi system.&#xA;Dashboards can be exported as PDF files for review offline. KUBRA can also set up PDF files of individual dashboards to be delivered via email as part of an implementation project.</description>
+    </item>
+  </channel>
+</rss>

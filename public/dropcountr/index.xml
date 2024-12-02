@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dropcountr :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/dropcountr/index.html</link>
+    <description>What is Dropcountr? KUBRA Dropcountr™ is a cloud-based engagement and analytics solution that provides customers with consumption insights, peer comparisons, bill and usage history, threshold and leak alerts, irrigation analysis, and water-saving tips.&#xA;What is CLEAR? CLEAR is the utility dashboard for Dropcountr where utility employees can manage customers, broadcasts, tips, rebates, and pricing.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/dropcountr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User Guides</title>
+      <link>http://localhost:1313/dropcountr/user-guides/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dropcountr/user-guides/index.html</guid>
+      <description>Introduction KUBRA hosts Dropcountr user guides in this section for newly added features and support for its numerous dashboard.&#xA;User guide list CLEAR Self-Serve Pricing&#xD;CLEAR Tips</description>
+    </item>
+  </channel>
+</rss>

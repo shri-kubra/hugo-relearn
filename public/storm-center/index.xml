@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storm Center :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/storm-center/index.html</link>
+    <description>What is Storm Center? Storm Center is KUBRA’s online outage map product. Storm Center uses outage data provided by an organization such as a utility company to show information about power outages on an interactive online map. Customers can access the map from a link on the utility’s website to see information about outages in their area or across the utility’s service territory.&#xA;The Storm Center product is deployed on a multi-tenant architecture supported by Amazon Web Services.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/storm-center/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Map Feature List</title>
+      <link>http://localhost:1313/storm-center/features/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/features/index.html</guid>
+      <description>Info&#xD;This page provides information about features of Storm Center maps based on the most recently available features. KUBRA periodically releases new features for the Storm Center solution and may include a preview of the new features for non-critical instances before releasing the new features to all instances.&#xA;The following diagram shows the different parts of the Storm Center map interface. Storm Center maps can be configured with or without a map header.</description>
+    </item>
+    <item>
+      <title>Getting Started</title>
+      <link>http://localhost:1313/storm-center/getting-started/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/getting-started/index.html</guid>
+      <description>Storm Center relies on four mandatory types of data files and one optional type of data file to present outage information on an interactive map. The Instance Manager interface allows authorized users to set up data files and feeds for Storm Center instances and to manage configurable features and maps related to an organization’s instances.&#xA;Data Files Region files - These files define the boundaries of an organization’s service territory or region on the map.</description>
+    </item>
+    <item>
+      <title>Storm Center File Specifications</title>
+      <link>http://localhost:1313/storm-center/file-specifications/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/file-specifications/index.html</guid>
+      <description>Storm Center uses five mandatory types of data files:&#xA;Region files - These files define the boundaries of an organization’s service territory or region on the map. If an organization has multiple regions in its service territory, the organization can provide one region file for each region and choose whether to show multiple regions on one public-facing map or one region each on multiple public-facing maps. Thematic files - These files define the boundaries of areas within a region, such as counties, postal codes, or cities, towns, and villages.</description>
+    </item>
+    <item>
+      <title>Configuration Guide</title>
+      <link>http://localhost:1313/storm-center/configuration-guide/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/configuration-guide/index.html</guid>
+      <description>Instance Manager Overview The Instance Manager is the interface that allows you to create Storm Center instances, set up data files and feeds, and configure maps.&#xA;Note&#xD;Image Resource Manager now allows users to upload icons, brand images, social media images, and any other image assets that the client requires for their logos, any social media icons, or within content blocks. These icons and image assets can also be used to customize thematic layers, planned outage layers, and additional map layers.</description>
+    </item>
+    <item>
+      <title>Management Console for Storm Center (Control Center)</title>
+      <link>http://localhost:1313/storm-center/management-console/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/management-console/index.html</guid>
+      <description>Control Center Dashboard The Control Center Dashboard acts as the management console for Storm Center. It allows admin users at an organization to manage some configurable features of their deployed Storm Center outage maps. The dashboard includes three sections: Apps, Deployments, and App Administration.&#xA;For users in a Control Center access group, the app and tool names appear in a navigation panel on the left side of the screen. Users who have access to more than one instance can see the name of the selected instance in the navigation panel, under the Control Center title.</description>
+    </item>
+    <item>
+      <title>Deploy Manager</title>
+      <link>http://localhost:1313/storm-center/deploy-manager/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/deploy-manager/index.html</guid>
+      <description>Introduction The Deploy Manager dashboard allows you to verify configuration changes made to an instance, deploy configuration changes for an instance, check the current deployment status for an instance, and view the history of previous deployments and file processing jobs for an instance.&#xA;The available tools on the Deploy Manager dashboard are&#xA;Deploy Verify Instance Current Status Deployment History Users with access restricted to the Storm Center Control Center only have access to the Deployment History tool.</description>
+    </item>
+    <item>
+      <title>Map History</title>
+      <link>http://localhost:1313/storm-center/map-history/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/map-history/index.html</guid>
+      <description>Introduction Map History is an optional module for Storm Center. Enabling this module allows an organization to keep up to five years of historical data processed by Storm Center. The Map History module also includes a Map History Viewer tool, where authorized users can select a time period from the five-year data retention window and view the selected data on an interactive map. Authorized users can also bookmark a specific date and time from the data retention window for future reference.</description>
+    </item>
+    <item>
+      <title>Analytics</title>
+      <link>http://localhost:1313/storm-center/analytics/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/analytics/index.html</guid>
+      <description>KUBRA uses Google Analytics Universal (GAU) and Google Analytics 4 (GA4) to track information about how users interact with Storm Center maps. These Analytics tools collect information from the map web page such as button clicks and anonymous information from the user’s browser such as language preference, browser version, and the device and operating system type.&#xA;GAU and GA4 data from Storm Center maps helps KUBRA improve the map interface, optimize the data flow, and help organizations providing Storm Center maps to their customers to understand how those customers are using the map.</description>
+    </item>
+    <item>
+      <title>Storm Center Data Monitoring</title>
+      <link>http://localhost:1313/storm-center/data-monitoring/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/data-monitoring/index.html</guid>
+      <description>KUBRA has set up multiple monitors for receipt and processing of data files related to Storm Center. The following list describes these monitors.&#xA;Outage File Processing Queue Monitor This monitor triggers an alarm if there are more than 20 messages indicating an outage file was successfully uploaded in the data feeds queue. Messages are removed from the queue when the file is pulled for processing, so a backlog of messages indicates an issue with file processing.</description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://localhost:1313/storm-center/troubleshooting/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/troubleshooting/index.html</guid>
+      <description>Deploying Configuration Updates Each time you change the configuration for an instance - any changes made in the Instance Manager outside of the Control Center tools - you must re-deploy the instance to see those changes reflected on the map views associated with the instance. Check the Status section of the instance dashboard to see if there are changes to the instance configuration that have not been deployed. If the deployed instance is up to date with the current configurations in the Instance Manager, you will see a green check mark icon next to Deployment Up-to-Date under the instance status.</description>
+    </item>
+  </channel>
+</rss>

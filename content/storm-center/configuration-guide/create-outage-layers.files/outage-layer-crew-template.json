@@ -1,0 +1,375 @@
+{
+  "ranges": [
+    {
+      "legendOrder": -1,
+      "rangeExpr": "cluster != true && cust_a.val > 2000 && crew_icon == true",
+      "rangeLabel": null,
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#000000",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#E500FA",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/WszV4c-ada2_outages_pink_star_crew.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 1,
+      "rangeExpr": "cluster != true && cust_a.val > 2000 && crew_icon != true",
+      "rangeLabel": {
+        "EN-US": ">2000",
+        "ES-ES": ">2000",
+        "fr-CA": ">2000"
+      },
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#000000",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#E500FA",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/angS5J-ada2_outages_pink_star.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": -1,
+      "rangeExpr": "cluster != true && cust_a.val > 500 && cust_a.val <= 2000 && crew_icon == true",
+      "rangeLabel": null,
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#000000",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#BF8808",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/bToKyo-ada2_outages_yellow_star_crew.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 2,
+      "rangeExpr": "cluster != true && cust_a.val > 500 && cust_a.val <= 2000 && crew_icon != true",
+      "rangeLabel": {
+        "EN-US": "501-2000",
+        "ES-ES": "501-2000",
+        "fr-CA": "501-2000"
+      },
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#000000",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#BF8808",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/cIsHyz-ada2_outages_yellow_star.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      },
+      "showInLegend": true
+    },
+    {
+      "legendOrder": -1,
+      "rangeExpr": "cluster != true && cust_a.val > 50 && cust_a.val <= 500 && crew_icon == true",
+      "rangeLabel": null,
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#000000",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#A23DD9",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/9MXRG2-ada2_outages_purple_triangle_crew.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 3,
+      "rangeExpr": "cluster != true && cust_a.val > 50 && cust_a.val <= 500 && crew_icon != true",
+      "rangeLabel": {
+        "EN-US": "51-500",
+        "ES-ES": "51-500",
+        "fr-CA": "51-500"
+      },
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#000000",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#A23DD9",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/rMWIRR-ada2_outages_purple_triangle.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": -1,
+      "rangeExpr": "cluster != true && cust_a.val > 1 && cust_a.val <= 50 && crew_icon == true",
+      "rangeLabel": null,
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#000000",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#01A75A",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/LJ70mB-ada2_outages_green_square_crew.svg",
+          "size": [
+            32,
+            32
+          ],
+          "anchor": [
+            16,
+            16
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 4,
+      "rangeExpr": "cluster != true && cust_a.val > 1 && cust_a.val <= 50 && crew_icon != true",
+      "rangeLabel": {
+        "EN-US": "1-50",
+        "ES-ES": "1-50",
+        "fr-CA": "1-50"
+      },
+      "rangeStyles": {
+        "shape": {
+          "borderColor": "#000000",
+          "borderOpacity": 0.8,
+          "borderWeight": 1,
+          "fillColor": "#01A75A",
+          "opacity": 0.4
+        },
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/BShiUB-ada2_outages_green_square.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 6,
+      "rangeExpr": "cluster == true && n_out <= 50 && crew_icon != true",
+      "rangeLabel": {
+        "EN-US": "Multiple",
+        "ES-ES": "Múltiples",
+        "fr-CA": "Multiples"
+      },
+      "rangeStyles": {
+        "shape": null,
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/JoweEk-ada2_outages_cluster.svg",
+          "size": [
+            40,
+            40
+          ],
+          "anchor": [
+            20,
+            20
+          ],
+          "labelValue": "${n_out}",
+          "labelAnchor": [
+            20,
+            20
+          ],
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": -1,
+      "rangeExpr": "cluster == true && n_out > 50 && crew_icon != true",
+      "rangeLabel": null,
+      "rangeStyles": {
+        "shape": null,
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/JoweEk-ada2_outages_cluster.svg",
+          "size": [
+            40,
+            40
+          ],
+          "anchor": [
+            20,
+            20
+          ],
+          "labelValue": "50+",
+          "labelAnchor": [
+            20,
+            20
+          ],
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": -1,
+      "rangeExpr": "cluster == true && n_out <= 50 && crew_icon == true",
+      "rangeLabel": null,
+      "rangeStyles": {
+        "shape": null,
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/kQ9Ria-ada2_outages_cluster_crew.svg",
+          "size": [
+            40,
+            40
+          ],
+          "anchor": [
+            20,
+            20
+          ],
+          "labelValue": "${n_out}",
+          "labelAnchor": [
+            20,
+            20
+          ],
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": -1,
+      "rangeExpr": "cluster == true && n_out > 50 && crew_icon == true",
+      "rangeLabel": null,
+      "rangeStyles": {
+        "shape": null,
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/kQ9Ria-ada2_outages_cluster_crew.svg",
+          "size": [
+            40,
+            40
+          ],
+          "anchor": [
+            20,
+            20
+          ],
+          "labelValue": "50+",
+          "labelAnchor": [
+            20,
+            20
+          ],
+          "opacity": 1
+        }
+      }
+    },
+    {
+      "legendOrder": 7,
+      "rangeExpr": "crew_icon == true",
+      "rangeLabel": {
+        "EN-US": "Crew",
+        "ES-ES": "Cuadrilla",
+        "fr-CA": "Équipe"
+      },
+      "rangeStyles": {
+        "shape": null,
+        "icon": {
+          "url": "https://qa.kubra.io/static/images/U1nIiW-ada2_outages_crew.svg",
+          "size": [
+            24,
+            24
+          ],
+          "anchor": [
+            12,
+            12
+          ],
+          "labelValue": null,
+          "labelAnchor": null,
+          "opacity": 1
+        }
+      }
+    }
+  ]
+}

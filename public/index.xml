@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documents for KUBRA Solutions :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/index.html</link>
+    <description>Info&#xD;This website provides overview information and other documents about KUBRA solutions.&#xA;Documents by Solution IncidentWatch - IncidentWatch provides a web-based map for reporting and monitoring incidents that affect assets such as area lights, poles, and roads.&#xA;Notifi - Notifi provides an automated alerts and preference management system that supports proactive SMS text, email, voice, and mobile app push notification messages as well as two-way automated SMS conversations.&#xA;Storm Center - Storm Center provides web-based maps of power outages that support outage information by location and area, as well as summary reports for outages by area, a weather radar layer, and repair crew on-site and status information.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dropcountr</title>
+      <link>http://localhost:1313/dropcountr/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dropcountr/index.html</guid>
+      <description>What is Dropcountr? KUBRA Dropcountr™ is a cloud-based engagement and analytics solution that provides customers with consumption insights, peer comparisons, bill and usage history, threshold and leak alerts, irrigation analysis, and water-saving tips.&#xA;What is CLEAR? CLEAR is the utility dashboard for Dropcountr where utility employees can manage customers, broadcasts, tips, rebates, and pricing.</description>
+    </item>
+    <item>
+      <title>IncidentWatch</title>
+      <link>http://localhost:1313/incidentwatch/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/incidentwatch/index.html</guid>
+      <description>What is IncidentWatch? IncidentWatch is KUBRA’s online, map-based incident reporting and management product. IncidentWatch uses asset data provided by an organization to show information about those assets on an interactive online map. End-users can then access the map from a link on the organization’s website to report incidents related to assets or to see the status of an incident.&#xA;The IncidentWatch product is deployed on a multi-tenant architecture supported by Amazon Web Services.</description>
+    </item>
+    <item>
+      <title>Notifi</title>
+      <link>http://localhost:1313/notifi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/index.html</guid>
+      <description>What is Notifi? Notifi is KUBRA’s automated alerts and preference management platform. Notifi uses business data from back-end systems to deliver messages to customers on a variety of communication channels according to customer preferences. Notifi also allows customers to request information and complete transactions such as outage reports and payment authorizations using automated SMS text conversations.&#xA;To put it another way, Notifi collects information about customers’ communication preferences and then “listens in” on business activities to update customers when something happens which is of interest to them.</description>
+    </item>
+    <item>
+      <title>Shared File Specifications and Resources</title>
+      <link>http://localhost:1313/shared-file-specifications/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/shared-file-specifications/index.html</guid>
+      <description>Some file types are shared by multiple KUBRA products. We provide these file specifications in this section to indicate that they are shared by multiple products.&#xA;Not all products use all elements of a shared file type. Elements that are product-specific are noted in the file specification notes.&#xA;There are currently two shared file specifications for KUBRA products documented on this site:&#xA;Outage files - These files list outages affecting delivery nodes in a region and provide information about each outage such as an estimated restoration time, cause, comments, and repair crew status.</description>
+    </item>
+    <item>
+      <title>Storm Center</title>
+      <link>http://localhost:1313/storm-center/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/storm-center/index.html</guid>
+      <description>What is Storm Center? Storm Center is KUBRA’s online outage map product. Storm Center uses outage data provided by an organization such as a utility company to show information about power outages on an interactive online map. Customers can access the map from a link on the utility’s website to see information about outages in their area or across the utility’s service territory.&#xA;The Storm Center product is deployed on a multi-tenant architecture supported by Amazon Web Services.</description>
+    </item>
+    <item>
+      <title>Release Process</title>
+      <link>http://localhost:1313/release-process/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/release-process/index.html</guid>
+      <description>Types of Releases KUBRA makes four types of releases for the multi-tenant products documented on this website.&#xA;Maintenance Releases Maintenance Downtime Releases Feature Releases Preview Releases Maintenance Releases do not include any changes to features or configuration items. They may include security updates, bug fixes, or internal product changes that are only visible to KUBRA.&#xA;Maintenance Downtime Releases are similar to Maintenance Releases, except that they may cause a period of downtime.</description>
+    </item>
+    <item>
+      <title>Documentation updates</title>
+      <link>http://localhost:1313/updates/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/updates/index.html</guid>
+      <description>This page provides a list of updates to the content on this website in reverse chronological order.&#xA;October 25, 2023 Notifi Added information about charsets to the Broadcast section June 15, 2023 Shared File Specifications &amp; Storm Center Moved Delivery Node file from Shared File Specs to Storm Center File Specifications May 16, 2023 Storm Center Included Additional Map Layer default icons in the documentation May 2, 2023 Storm Center Added Additional Map Layer (AML) documentation to existing documentation March 14, 2023 Notifi Included char replacements in the Broadcast section March 2, 2023 Notifi Updated Broadcast to include more information about text templates January 26, 2023 Notifi Removed the Ignore Do Not Disturb section in Broadcast January 9, 2023 Storm Center Edited URL parameters to add gpsMarker parameter January 6, 2023 Storm Center Updated limitation of bookmarks in Map View December 1, 2022 Notifi Added documentation to highlight Blitz’s ability to upload a new audio file November 3, 2022 Notifi Added Looker training information to Advanced Reporting October 17, 2022 Storm Center Added the Google Analytics 4 (GA4) section to ensure smooth documentation transfer from Google Analytics Universal to GA4 October 12, 2022 Notifi Added information about Ignore DND checkbox September 13, 2022 Shared File Specifications, Storm Center Moved Planned Outages spec from Storm Center to Shared File specifications Modified index page for Shared File Specs to include three shared file specs August 24, 2022 Notifi Modified content on Deregistration Manager to reflect current functionality August 10, 2022 Storm Center Updated documentation to highlight a lack of support for mobile devices in landscape mode June 27, 2022 Storm Center Added Range Expressions to the Outage Layers page in the Configuration Guide to reflect new functionality Added documentation to differentiate between Castilian Spanish and American Spanish June 6th, 2023 Shared File Specifications Moved the Delivery Node file out of the Shared File Specifications and into Storm Center File Specs because Notifi does not care about the Delivery Node file.</description>
+    </item>
+  </channel>
+</rss>

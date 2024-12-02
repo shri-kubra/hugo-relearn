@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Management Console for Notifi :: KUBRA Product Documentation</title>
+    <link>http://localhost:1313/notifi/management-console/index.html</link>
+    <description>The Notifi Management Console allows admin users at an organization to track activity and manage some configurable features of a deployed Notifi system.&#xA;Note&#xD;The instructions provided on this website are for the most recent version of Notifi management tools. Older versions of these tools have different instructions provided in other formats.&#xA;Access Different user roles can be assigned to access different tools within the Notifi Management Console.&#xA;See the User Management page for more information about user management and permissions for access to Notifi tools.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/notifi/management-console/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>History</title>
+      <link>http://localhost:1313/notifi/management-console/history/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/history/index.html</guid>
+      <description>The Notifi History tool provides a searchable history of all messages sent and received by the Notifi system.&#xA;Info&#xD;The History tool retains data for up to 6 months. To review data older than 6 months, use the Reports tool.&#xA;Access Access to the History tool may require a second login using the same username and password you use for the Notifi Management Console.&#xA;The History tool may open in a new browser tab.</description>
+    </item>
+    <item>
+      <title>Preferences</title>
+      <link>http://localhost:1313/notifi/management-console/preferences/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/preferences/index.html</guid>
+      <description>The Notifi Preferences tool allows you to look up a customer account to view or edit the customer’s communication preferences.&#xA;Enter an account number in the search bar and press Enter or click the Search button to view Notifi preference center information for that account.&#xA;Note&#xD;If you are comparing information between the Preferences tool and the History tool, make sure you are looking at the same environment for both (test, production, etc.</description>
+    </item>
+    <item>
+      <title>Broadcast</title>
+      <link>http://localhost:1313/notifi/management-console/broadcast/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/broadcast/index.html</guid>
+      <description>The Notifi Broadcast tool allows you to send ad hoc messages to customers. You can send a broadcast message to&#xA;all registered customer contacts in the Notifi system a specific category of customer contacts in the Notifi system registered customer contacts associated with a list of customer account numbers you provide in a CSV file customer contacts included with a list of account numbers in a CSV file you provide Before you try to broadcast your message, refer to the PreBroadcast Checklist to check if you have completed all the steps.</description>
+    </item>
+    <item>
+      <title>Template Manager</title>
+      <link>http://localhost:1313/notifi/management-console/template-manager/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/template-manager/index.html</guid>
+      <description>Notifi uses message templates for proactive messages that include static content and data elements. The Template Manager tool allows you to review the content of these message templates and to submit changes to the templates for review and promotion from a test instance to the production instance.&#xA;Info&#xD;The Template Manager tool only contains templates for proactive (one-way, outbound) messages. Interactive automated conversations (two-way messages) are managed separately. You must submit a ticket to KUBRA support for any requested changes to conversation verbiage.</description>
+    </item>
+    <item>
+      <title>Admin</title>
+      <link>http://localhost:1313/notifi/management-console/admin/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/admin/index.html</guid>
+      <description>The Notifi Admin tool allows you to manage some configurable features of the Notifi system related to outbound message delivery.&#xA;Your implementation may not include all of the settings described here, depending on the implementation’s configuration.&#xA;Optional Settings Real-Time Outage Status Notifi supports two methods for retrieving outage status information: a web service call to the Outage Management System (OMS) or a check of the latest file in the Notifi Outage Hub.</description>
+    </item>
+    <item>
+      <title>Reports</title>
+      <link>http://localhost:1313/notifi/management-console/reports/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/reports/index.html</guid>
+      <description>The Notifi Reports tool allows you to view statistical information about the performance of the Notifi system.&#xA;Dashboard configuration, ad hoc report creation, and scheduled report delivery are provided by the optional Advanced Reporting module. These features are described on the Notifi Advanced Reporting page.&#xA;Standard Report Dashboards There are up to seven standard dashboards available, depending on an organization’s configuration:&#xA;Registrations – shows information about registrations over time, from different sources, by channel, by area, and by operating company (if applicable), as well as the number of pending registrations.</description>
+    </item>
+    <item>
+      <title>Notifi Advanced Reporting</title>
+      <link>http://localhost:1313/notifi/management-console/advanced-reporting/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/advanced-reporting/index.html</guid>
+      <description>The Notifi Advanced Reporting module expands the features offered by the Reports tool to allow authorized users to&#xA;drill down to view detailed data for reports in the standard dashboards create new reports add new reports to new dashboards or to existing dashboards schedule report data to be delivered via email export report data Note&#xD;For more training on Advanced Reporting, refer to the Data Consumer and LookML Developer sections on Looker training.</description>
+    </item>
+    <item>
+      <title>Enrollments</title>
+      <link>http://localhost:1313/notifi/management-console/enrollments/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/enrollments/index.html</guid>
+      <description>The Notifi Enrollments tool allows you to look up a customer account and view a list of all changes to enrollments for contacts registered to that account.&#xA;You can use the Enrollments tool to view:&#xA;The type and number of enrollments for a specific account When a specific enrollment was created If the email address or phone number for a specific account is correct (in response to a customer call, for example) How many and what kind of enrollments were created for a specific account on a specific date or over a range of dates Search for an Account To see information in the Enrollments tool, you must enter an account number in the Search bar at the top of the tool.</description>
+    </item>
+    <item>
+      <title>User Management - Notifi</title>
+      <link>http://localhost:1313/notifi/management-console/user-management/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notifi/management-console/user-management/index.html</guid>
+      <description>User Management Dashboard KUBRA administrators must create accounts with User Administrator permissions for each tenant as part of a Notifi implementation project. After these accounts are created, admin users can sign in and access tools for creating and managing additional user accounts for access to Notifi admin tools.&#xA;Info&#xD;If the organization is using single sign-on via an identity provider such as Active Directory, user management will be done by the organization’s identity provider administrators.</description>
+    </item>
+  </channel>
+</rss>
